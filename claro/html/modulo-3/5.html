@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Módulo 3 · Lección 5 — Que el agente lea la spec, y cuándo no usar OpenSpec</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560&family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,460;8..60,620&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../estilos.css">
+</head>
+<body>
+  <div class="barra" aria-hidden="true"><span></span></div>
+  <header class="techo">
+    <button class="icono menu" type="button" data-menu>Lecciones</button>
+    <a class="marca" href="../index.html">En claro</a>
+    <span class="aqui-titulo">Módulo 3 · Lección 5 — Que el agente lea la spec, y cuándo no usar OpenSpec</span>
+    <div class="acciones">
+      <button class="icono" type="button" data-letra="menos" aria-label="Texto más chico">A−</button>
+      <button class="icono" type="button" data-letra="mas" aria-label="Texto más grande">A+</button>
+      <button class="icono" type="button" data-tema-boton>Noche</button>
+    </div>
+  </header>
+  <div class="marco">
+    <nav class="indice" aria-label="Módulos"><details><summary>Módulo 1</summary><ol><li><a href="../modulo-1/1.html">1. El mapa: para qué sirve un harness</a></li><li><a href="../modulo-1/2.html">2. Los tres pilares importan lo mismo</a></li><li><a href="../modulo-1/3.html">3. El contexto: menos información, y más útil</a></li><li><a href="../modulo-1/4.html">4. Cómo pedir el trabajo, y cómo usar los tres pilares juntos</a></li><li><a href="../modulo-1/5.html">5. Deja la computadora y las cuentas listas</a></li><li><a href="../modulo-1/6.html">6. Ejercicio: el mismo pedido, con harness y sin él</a></li><li><a href="../modulo-1/7.html">7. Por qué una sesión larga sale cara</a></li><li><a href="../modulo-1/8.html">8. Comandos que sí vas a usar</a></li><li><a href="../modulo-1/9.html">9. Modelos en tu computadora, y cuándo no conviene</a></li><li><a href="../modulo-1/10.html">10. El original está vacío</a></li></ol></details>
+<details><summary>Módulo 2</summary><ol><li><a href="../modulo-2/1.html">1. El mapa: de una idea vaga a un plano que no hay que adivinar</a></li><li><a href="../modulo-2/2.html">2. Planificar es ahora el trabajo caro</a></li><li><a href="../modulo-2/3.html">3. Cada documento responde una sola pregunta</a></li><li><a href="../modulo-2/4.html">4. Escribe el PRD por capas, no de un tirón</a></li><li><a href="../modulo-2/5.html">5. La historia, el criterio y los huecos</a></li><li><a href="../modulo-2/6.html">6. Dónde vive el backlog, y con qué permiso</a></li><li><a href="../modulo-2/7.html">7. Estimar, ordenar y saber cuándo está terminado</a></li><li><a href="../modulo-2/8.html">8. Hay varias herramientas. El orden no cambia</a></li><li><a href="../modulo-2/9.html">9. Dónde profundizar, cuando haga falta</a></li><li><a href="../modulo-2/10.html">10. Ejercicio: recorta el MVP hasta poder defenderlo</a></li></ol></details>
+<details open><summary>Módulo 3</summary><ol><li><a href="1.html">1. El mapa: dos caminos, y cuándo usar cada uno</a></li><li><a href="2.html">2. Dos caminos: directo o con contrato</a></li><li><a href="3.html">3. Explorar, planear, ejecutar</a></li><li><a href="4.html">4. OpenSpec por dentro</a></li><li><a href="5.html" class="actual">5. Que el agente lea la spec, y cuándo no usar OpenSpec</a></li><li><a href="6.html">6. Ejercicio: escribe la spec de lo que ya funciona</a></li><li><a href="7.html">7. Dónde profundizar</a></li></ol></details>
+<details><summary>Módulo 4</summary><ol><li><a href="../modulo-4/1.html">1. El mapa: de &quot;lo implementé&quot; a &quot;está listo&quot;</a></li><li><a href="../modulo-4/2.html">2. Verde no es lo mismo que correcto</a></li><li><a href="../modulo-4/3.html">3. Revisar para romper, no para aprobar</a></li><li><a href="../modulo-4/4.html">4. La documentación que se queda atrás</a></li><li><a href="../modulo-4/5.html">5. Cuatro documentos. Tres se generan. Uno se decide.</a></li><li><a href="../modulo-4/6.html">6. Ejercicio: mide qué está probado de verdad</a></li><li><a href="../modulo-4/7.html">7. Dónde profundizar</a></li></ol></details>
+<details><summary>Módulo 5</summary><ol><li><a href="../modulo-5/1.html">1. El mapa: de la costumbre al guardarraíl</a></li><li><a href="../modulo-5/2.html">2. De la regla escrita al guardarraíl que se ejecuta</a></li><li><a href="../modulo-5/3.html">3. Qué se automatiza, y qué solo lo parece</a></li><li><a href="../modulo-5/4.html">4. Un agente dentro del pipeline</a></li><li><a href="../modulo-5/5.html">5. Lo que cuesta, y por qué se apagan los guardarraíles</a></li><li><a href="../modulo-5/6.html">6. Ejercicio: audita las reglas que escribiste</a></li><li><a href="../modulo-5/7.html">7. Dónde profundizar</a></li></ol></details>
+<details><summary>Módulo 6</summary><ol><li><a href="../modulo-6/1.html">1. El mapa: auditar lo que no escribiste</a></li><li><a href="../modulo-6/2.html">2. Heredado no es viejo. Es lo que nadie puede explicar</a></li><li><a href="../modulo-6/3.html">3. El cuello no es encontrar. Es comprobar</a></li><li><a href="../modulo-6/4.html">4. Lo más grave no va primero</a></li><li><a href="../modulo-6/5.html">5. Un pedido de una línea, si el rigor vive en otro sitio</a></li><li><a href="../modulo-6/6.html">6. Ejercicio: prioriza una auditoría de verdad</a></li><li><a href="../modulo-6/7.html">7. Dónde profundizar</a></li></ol></details>
+<details><summary>Módulo 7</summary><ol><li><a href="../modulo-7/1.html">1. El mapa: qué regla se aplica cuando hay varios repositorios</a></li><li><a href="../modulo-7/2.html">2. Qué decide dónde acaba un repositorio</a></li><li><a href="../modulo-7/3.html">3. El agente solo ve su directorio de trabajo</a></li><li><a href="../modulo-7/4.html">4. Dónde vive la spec cuando el sistema son tres repositorios</a></li><li><a href="../modulo-7/5.html">5. Un cambio que cruza dos repositorios no es un solo cambio</a></li><li><a href="../modulo-7/6.html">6. Lo que se comparte, lo que se versiona y lo que no se puede fundir</a></li><li><a href="../modulo-7/7.html">7. Herramientas de esta sesión</a></li><li><a href="../modulo-7/8.html">8. Ejercicio: haz que una regla se cumpla en el otro repositorio</a></li><li><a href="../modulo-7/9.html">9. Dónde profundizar</a></li></ol></details>
+<details><summary>Módulo 8</summary><ol><li><a href="../modulo-8/1.html">1. El mapa: de escribir reglas a comprobar si funcionan</a></li><li><a href="../modulo-8/2.html">2. Una regla escrita no es una regla cumplida</a></li><li><a href="../modulo-8/3.html">3. Un eval da una tasa, no un verde</a></li><li><a href="../modulo-8/4.html">4. Sin línea base, un número no significa nada</a></li><li><a href="../modulo-8/5.html">5. Quién puntúa un ensayo, y en qué orden</a></li><li><a href="../modulo-8/6.html">6. Un verde que nunca estuvo en rojo no prueba nada</a></li><li><a href="../modulo-8/7.html">7. Dónde profundizar</a></li><li><a href="../modulo-8/8.html">8. Fuentes sobre sistemas repartidos en varios repositorios</a></li></ol></details></nav>
+    <div class="lectura">
+      <article><h1>Módulo 3 · Lección 5 — Que el agente lea la spec, y cuándo no usar OpenSpec</h1>
+<p class="origen">Texto original: <code>original/modulo-3/5.md</code><br>Obligatoria.</p>
+
+<section class="bloque bloque-frase"><h2 id="en-una-frase">En una frase</h2>
+<p>Tener un change no garantiza que el agente lo respete. Hay tres formas de conectarlo, de menos control a más. Y hay cambios para los que OpenSpec sobra.</p>
+</section>
+<section class="bloque bloque-palabras"><h2 id="palabras-que-vas-a-escuchar">Palabras que vas a escuchar</h2>
+<ul>
+<li><strong>TDD rojo / verde.</strong> Primero escribes una prueba que falla. Eso es el rojo. Después, el código mínimo que la hace pasar. Eso es el verde. La prueba define el objetivo antes de que exista la solución.</li>
+<li><strong>Spike.</strong> Un trabajo corto para responder una pregunta. &quot;¿Esto se puede hacer con esta librería?&quot; No es para dejar código que se quede.</li>
+<li><strong>Pull request.</strong> La propuesta de integrar un conjunto de cambios. Otra persona la revisa antes de que entren. Es el lugar clásico de la discusión. Por eso importa discutir antes.</li>
+<li><strong>Invariante.</strong> Una condición que tiene que cumplirse siempre, sin excepciones. &quot;Nunca se sube una credencial al repositorio&quot; es una.</li>
+<li><strong>Gobernanza.</strong> Quién decide qué, y cómo se controla. Aquí, aplicada a tu configuración: quién puede cambiarla, cómo se revisa, y qué te pasa cuando la herramienta de abajo cambia.</li>
+</ul>
+</section>
+<section class="bloque bloque-caso"><h2 id="caso-real-la-fecha-prometida-otra-vez">Caso real: la fecha prometida, otra vez</h2>
+<p>Elena ya tiene el change de la fecha prometida en el Taller Rueda. Si abre un chat nuevo y dice &quot;implementa la fecha&quot;, el agente puede inventar una columna que el <code>design.md</code> prohibía.</p>
+<p>El change está en disco. Falta hacer que lo lea.</p>
+</section>
+<section class="bloque bloque-tema"><h2 id="tres-patrones-de-menos-control-a-mas">Tres patrones, de menos control a más</h2>
+<p><strong>Patrón A. Referencia explícita en el primer turno.</strong> Es el más usado.</p>
+<pre><code class="language-text">Implementa el change openspec/changes/add-task-due-date/.
+Lee primero proposal.md, specs/*.md, design.md y tasks.md.
+Sigue tasks.md paso a paso. Pregúntame antes de desviarte
+de cualquier requisito de specs/.
+</code></pre>
+<p>A favor: cero preparación. Funciona en cualquier herramienta. En contra: tienes que acordarte de la coletilla. Si abres una sesión nueva y se te olvida, el agente puede improvisar.</p>
+<p>Con el perfil <code>core</code>, <code>/opsx:apply</code> ya hace esto por ti. El patrón A sirve cuando trabajas el change a mano.</p>
+<p><strong>Patrón B. Una skill.</strong></p>
+<p>Lo conviertes en un archivo de instrucciones versionado en el repo. El agente lo carga cuando la tarea encaja. Por ejemplo, <code>.claude/skills/openspec-implement/SKILL.md</code>.</p>
+<p>Le dice: leer los cuatro archivos en orden, implementar tarea por tarea marcando la checklist, detenerse y preguntar ante cualquier desvío de <code>specs/</code>, y correr las pruebas al final.</p>
+<p>A favor: el flujo es explícito, se puede repetir y se puede auditar. En contra: hay que mantener la skill cuando OpenSpec cambia.</p>
+<p>Qué parte de <code>openspec/</code> es de solo lectura. <code>proposal.md</code>, <code>design.md</code> y <code>specs/</code> son entrada. El agente los lee y no los toca. <code>tasks.md</code> es la excepción. Es la checklist viva. Conforme avanza, el agente cambia <code>- [ ]</code> por <code>- [x]</code>. No es permiso para reescribir el change. Es el único archivo donde escribir forma parte del trabajo.</p>
+<p><strong>Patrón C. Skill más un hook que valida.</strong></p>
+<p>Agregas un hook Stop. Corre las pruebas que salen de los escenarios. Si fallan, el agente recibe el error y entra a corregir.</p>
+<p>A favor: el agente no cierra el turno con las pruebas en rojo sin que te enteres. En contra: hace falta infraestructura de validación. Y el bloqueo no es infinito. Claude Code ignora el hook y cierra el turno después de 8 bloqueos seguidos. Es para que un check mal escrito no deje al agente girando en vacío. Es un tope de seguridad, no un fallo. Significa que un hook que nunca puede pasar termina cediendo. Es para flujos de producción.</p>
+<p>Empieza con A, o directo con <code>/opsx:apply</code>. Cuando notes que copias la misma coletilla tres veces, pasa a B. C llega cuando el proyecto ya tiene validación automática y quieres que el agente entre en ella.</p>
+<p><code>/opsx:verify</code> cae entre B y C. No lo confundas con C. Verify es el agente releyendo tu código y opinando. Puede callarse. El hook de C corre las pruebas y falla. La misma intención, otra garantía. Uno interpreta. El otro se ejecuta. Si de verdad te importa que algo se cumpla, necesitas C aunque tengas verify. Y verify no viene en el perfil <code>core</code>. Ese perfil instala seis comandos: propose, explore, apply, update, sync y archive. Para tener verify hay que ampliar el perfil con <code>openspec config</code>.</p>
+</section>
+<section class="bloque bloque-tema"><h2 id="cuando-openspec-sobra-escribe-el-readme-antes">Cuando OpenSpec sobra, escribe el README antes</h2>
+<p>El nombre lo puso Tom Preston-Werner, cofundador de GitHub, en 2010. Sigue vivo. Simon Willison armó una herramienta entera así. Primero el README con detalle. Después se lo pasó a Claude Code para que lo implementara con TDD rojo / verde.</p>
+<p>La receta: escribe el README o la spec antes de pedir la implementación, con todo el detalle que puedas, incluidos los casos límite. Después pide implementar con TDD rojo / verde a partir de eso.</p>
+<p>Es spec-first informal. Sirve para cualquier tamaño. Un script de 50 líneas, no solo un change formal. Útil justo cuando OpenSpec sobra.</p>
+<p>No es la misma burocracia con otro nombre. El destinatario cambia. Un change formal produce artefactos que se archivan, se auditan y le sirven a alguien dentro de seis meses. Un README escrito antes solo tiene que servirle a quien implementa a continuación. Puede ser un agente, o puedes ser tú dentro de una hora. Se borra sin ceremonia. No deja un rastro que mantener.</p>
+</section>
+<section class="bloque bloque-tema"><h2 id="cuando-no-usar-openspec">Cuándo no usar OpenSpec</h2>
+<p>No lo uses para:</p>
+<ul>
+<li>Cambios acotados. Agregar un filtro por estado a un listado que ya existe. Ajustar un valor por defecto. Meter un log. Eso es delegación directa.</li>
+<li>Bugs donde el cambio es obvio.</li>
+<li>Spikes y prototipos que se van a tirar. Si vas a tirar el código, escribir su spec es desperdicio. Prototipos, scripts de un solo uso y spikes de menos de dos horas no pagan una spec.</li>
+</ul>
+<p>El costo de un change (preparación, más los minutos de proponer, revisar y archivar) solo se paga cuando el cambio perdura, toca varias capas o necesita rastro. Para lo demás, camino directo o README primero. Saber elegir es la habilidad. Usar OpenSpec no lo es.</p>
+<p>En el taller, el filtro del martes no paga un change. La regla de la orden atrasada, sí.</p>
+</section>
+<section class="bloque bloque-tema"><h2 id="tu-flujo-se-puede-llevar">Tu flujo se puede llevar</h2>
+<p>Las herramientas cambian. Planes, precios, versiones con bugs. Lo que está versionado en tu repo es tuyo y se mueve contigo.</p>
+<p><code>AGENTS.md</code>, <code>CLAUDE.md</code>, <code>.claude/skills/</code>, <code>.claude/agents/</code>, los hooks y <code>openspec/</code>.</p>
+<p>Trata esos archivos como código. Van en un pull request. Se revisan. Los hooks, siempre. Ejecutan código en las computadoras del equipo.</p>
+<p>Los comandos <code>/opsx:*</code> que OpenSpec genera también son archivos del repo, en <code>.claude/commands/</code> y <code>.claude/skills/</code>. Se clonan con él. Tu compañero los tiene sin instalar nada. Lo único que se queda en tu computadora es la configuración global. Solo decide el perfil por defecto de los proyectos nuevos.</p>
+<p>Lo que vive en <code>AGENTS.md</code> lo interpreta el modelo. Lo que vive en un hook lo ejecuta el código. Para invariantes de seguridad, siempre hooks.</p>
+<p>Tu seguridad no está en el plan que pagas. Está en que tu flujo se pueda llevar. Un <code>openspec/</code> versionado y un harness en <code>.claude/</code> valen más que cualquier prompt cuando la herramienta tiene un mal día.</p>
+</section>
+<section class="bloque bloque-tema"><h2 id="lidr-specboot">lidr-specboot</h2>
+<p>El curso mantiene <code>lidr-specboot</code>. Es una capa de convenciones sobre OpenSpec.</p>
+<p>El paso verificado es <code>/enrich-us</code>. Enriquece historias. Confirma que LIDR pone una capa de &quot;historias primero&quot; encima de OpenSpec.</p>
+<p>Por encima, specboot orquesta el resto: enriquecer, proponer, aplicar, verificar, revisar, archivar y hacer commit. Por debajo se apoya en los comandos reales: <code>/opsx:propose</code>, <code>/opsx:apply</code>, <code>/opsx:archive</code>.</p>
+<p>Entre el apply y el archive, specboot mete verificación y revisión adversarial propias. No da la implementación por buena solo porque las tareas estén marcadas.</p>
+<p>No te ocupes de specboot ahora. Basta saber que existe y que por debajo es OpenSpec.</p>
+</section>
+<section class="bloque bloque-preguntas"><h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>
+<p><strong>Si esta herramienta desaparece mañana, ¿qué me queda?</strong></p>
+<p>Sobrevive lo que es texto plano versionado en tu repositorio. Las specs, las instrucciones, las skills y los hooks. Y sobre todo el vocabulario: escribir el contrato antes que el código no es propiedad de nadie. No sobrevive la configuración global de tu computadora ni la memoria de unos comandos concretos. La atadura de verdad no es la herramienta. Es un flujo que solo existe en la cabeza de una persona.</p>
+<p><strong>Si el patrón C es el único que garantiza algo, ¿por qué no empezar ahí?</strong></p>
+<p>Porque un validador se escribe contra criterios que todavía no tienes. Hasta que no has hecho el ciclo a mano un par de veces, no sabes qué querías comprobar. Terminas con un check que falla por motivos que no entiendes. La escala A, B, C no mide tu nivel. Cada escalón se paga cuando el anterior empieza a doler. Antes de eso es costo sin contrapartida.</p>
+</section>
+<section class="bloque bloque-accion"><h2 id="que-hacer">Qué hacer</h2>
+<ul>
+<li>Asegura que el agente lea la spec. A, o <code>/opsx:apply</code>, para empezar. Skill cuando se repita. Hook que valida, para producción.</li>
+<li>README primero cuando OpenSpec sobra, pero igual quieres escribir el contrato antes.</li>
+<li>No uses OpenSpec para lo acotado o desechable.</li>
+<li>Versiona <code>openspec/</code> y <code>.claude/</code>. Los hooks se revisan siempre.</li>
+<li><code>lidr-specboot</code> es OpenSpec más orquestación. Agrega verificación y revisión entre el apply y el archive.</li>
+</ul>
+<p class="siguiente">Siguiente lección: los recursos, en <code>claro/modulo-3/7.md</code>, para volver cuando quieras profundizar. El ejercicio obligatorio está en <code>claro/modulo-3/6.md</code>.</p>
+</section></article>
+      <nav class="paso" aria-label="Lecciones vecinas">
+    <a href="4.html">← Módulo 3 · 4</a>
+    <a class="siguiente-paso" href="6.html">Módulo 3 · 6 →</a>
+  </nav>
+    </div>
+  </div>
+  <script src="../app.js"></script>
+</body>
+</html>

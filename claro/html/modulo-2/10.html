@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Módulo 2 · Lección 10 — Ejercicio: recorta el MVP hasta poder defenderlo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560&family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,460;8..60,620&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../estilos.css">
+</head>
+<body>
+  <div class="barra" aria-hidden="true"><span></span></div>
+  <header class="techo">
+    <button class="icono menu" type="button" data-menu>Lecciones</button>
+    <a class="marca" href="../index.html">En claro</a>
+    <span class="aqui-titulo">Módulo 2 · Lección 10 — Ejercicio: recorta el MVP hasta poder defenderlo</span>
+    <div class="acciones">
+      <button class="icono" type="button" data-letra="menos" aria-label="Texto más chico">A−</button>
+      <button class="icono" type="button" data-letra="mas" aria-label="Texto más grande">A+</button>
+      <button class="icono" type="button" data-tema-boton>Noche</button>
+    </div>
+  </header>
+  <div class="marco">
+    <nav class="indice" aria-label="Módulos"><details><summary>Módulo 1</summary><ol><li><a href="../modulo-1/1.html">1. El mapa: para qué sirve un harness</a></li><li><a href="../modulo-1/2.html">2. Los tres pilares importan lo mismo</a></li><li><a href="../modulo-1/3.html">3. El contexto: menos información, y más útil</a></li><li><a href="../modulo-1/4.html">4. Cómo pedir el trabajo, y cómo usar los tres pilares juntos</a></li><li><a href="../modulo-1/5.html">5. Deja la computadora y las cuentas listas</a></li><li><a href="../modulo-1/6.html">6. Ejercicio: el mismo pedido, con harness y sin él</a></li><li><a href="../modulo-1/7.html">7. Por qué una sesión larga sale cara</a></li><li><a href="../modulo-1/8.html">8. Comandos que sí vas a usar</a></li><li><a href="../modulo-1/9.html">9. Modelos en tu computadora, y cuándo no conviene</a></li><li><a href="../modulo-1/10.html">10. El original está vacío</a></li></ol></details>
+<details open><summary>Módulo 2</summary><ol><li><a href="1.html">1. El mapa: de una idea vaga a un plano que no hay que adivinar</a></li><li><a href="2.html">2. Planificar es ahora el trabajo caro</a></li><li><a href="3.html">3. Cada documento responde una sola pregunta</a></li><li><a href="4.html">4. Escribe el PRD por capas, no de un tirón</a></li><li><a href="5.html">5. La historia, el criterio y los huecos</a></li><li><a href="6.html">6. Dónde vive el backlog, y con qué permiso</a></li><li><a href="7.html">7. Estimar, ordenar y saber cuándo está terminado</a></li><li><a href="8.html">8. Hay varias herramientas. El orden no cambia</a></li><li><a href="9.html">9. Dónde profundizar, cuando haga falta</a></li><li><a href="10.html" class="actual">10. Ejercicio: recorta el MVP hasta poder defenderlo</a></li></ol></details>
+<details><summary>Módulo 3</summary><ol><li><a href="../modulo-3/1.html">1. El mapa: dos caminos, y cuándo usar cada uno</a></li><li><a href="../modulo-3/2.html">2. Dos caminos: directo o con contrato</a></li><li><a href="../modulo-3/3.html">3. Explorar, planear, ejecutar</a></li><li><a href="../modulo-3/4.html">4. OpenSpec por dentro</a></li><li><a href="../modulo-3/5.html">5. Que el agente lea la spec, y cuándo no usar OpenSpec</a></li><li><a href="../modulo-3/6.html">6. Ejercicio: escribe la spec de lo que ya funciona</a></li><li><a href="../modulo-3/7.html">7. Dónde profundizar</a></li></ol></details>
+<details><summary>Módulo 4</summary><ol><li><a href="../modulo-4/1.html">1. El mapa: de &quot;lo implementé&quot; a &quot;está listo&quot;</a></li><li><a href="../modulo-4/2.html">2. Verde no es lo mismo que correcto</a></li><li><a href="../modulo-4/3.html">3. Revisar para romper, no para aprobar</a></li><li><a href="../modulo-4/4.html">4. La documentación que se queda atrás</a></li><li><a href="../modulo-4/5.html">5. Cuatro documentos. Tres se generan. Uno se decide.</a></li><li><a href="../modulo-4/6.html">6. Ejercicio: mide qué está probado de verdad</a></li><li><a href="../modulo-4/7.html">7. Dónde profundizar</a></li></ol></details>
+<details><summary>Módulo 5</summary><ol><li><a href="../modulo-5/1.html">1. El mapa: de la costumbre al guardarraíl</a></li><li><a href="../modulo-5/2.html">2. De la regla escrita al guardarraíl que se ejecuta</a></li><li><a href="../modulo-5/3.html">3. Qué se automatiza, y qué solo lo parece</a></li><li><a href="../modulo-5/4.html">4. Un agente dentro del pipeline</a></li><li><a href="../modulo-5/5.html">5. Lo que cuesta, y por qué se apagan los guardarraíles</a></li><li><a href="../modulo-5/6.html">6. Ejercicio: audita las reglas que escribiste</a></li><li><a href="../modulo-5/7.html">7. Dónde profundizar</a></li></ol></details>
+<details><summary>Módulo 6</summary><ol><li><a href="../modulo-6/1.html">1. El mapa: auditar lo que no escribiste</a></li><li><a href="../modulo-6/2.html">2. Heredado no es viejo. Es lo que nadie puede explicar</a></li><li><a href="../modulo-6/3.html">3. El cuello no es encontrar. Es comprobar</a></li><li><a href="../modulo-6/4.html">4. Lo más grave no va primero</a></li><li><a href="../modulo-6/5.html">5. Un pedido de una línea, si el rigor vive en otro sitio</a></li><li><a href="../modulo-6/6.html">6. Ejercicio: prioriza una auditoría de verdad</a></li><li><a href="../modulo-6/7.html">7. Dónde profundizar</a></li></ol></details>
+<details><summary>Módulo 7</summary><ol><li><a href="../modulo-7/1.html">1. El mapa: qué regla se aplica cuando hay varios repositorios</a></li><li><a href="../modulo-7/2.html">2. Qué decide dónde acaba un repositorio</a></li><li><a href="../modulo-7/3.html">3. El agente solo ve su directorio de trabajo</a></li><li><a href="../modulo-7/4.html">4. Dónde vive la spec cuando el sistema son tres repositorios</a></li><li><a href="../modulo-7/5.html">5. Un cambio que cruza dos repositorios no es un solo cambio</a></li><li><a href="../modulo-7/6.html">6. Lo que se comparte, lo que se versiona y lo que no se puede fundir</a></li><li><a href="../modulo-7/7.html">7. Herramientas de esta sesión</a></li><li><a href="../modulo-7/8.html">8. Ejercicio: haz que una regla se cumpla en el otro repositorio</a></li><li><a href="../modulo-7/9.html">9. Dónde profundizar</a></li></ol></details>
+<details><summary>Módulo 8</summary><ol><li><a href="../modulo-8/1.html">1. El mapa: de escribir reglas a comprobar si funcionan</a></li><li><a href="../modulo-8/2.html">2. Una regla escrita no es una regla cumplida</a></li><li><a href="../modulo-8/3.html">3. Un eval da una tasa, no un verde</a></li><li><a href="../modulo-8/4.html">4. Sin línea base, un número no significa nada</a></li><li><a href="../modulo-8/5.html">5. Quién puntúa un ensayo, y en qué orden</a></li><li><a href="../modulo-8/6.html">6. Un verde que nunca estuvo en rojo no prueba nada</a></li><li><a href="../modulo-8/7.html">7. Dónde profundizar</a></li><li><a href="../modulo-8/8.html">8. Fuentes sobre sistemas repartidos en varios repositorios</a></li></ol></details></nav>
+    <div class="lectura">
+      <article><h1>Módulo 2 · Lección 10 — Ejercicio: recorta el MVP hasta poder defenderlo</h1>
+<p class="origen">Texto original: <code>original/modulo-2/10.md</code><br>Obligatoria. Fecha límite: lunes 28 de septiembre de 2026, al final del día.<br>Repositorio: FlowSync.</p>
+
+<section class="bloque bloque-frase"><h2 id="en-una-frase">En una frase</h2>
+<p>No se entrega un alcance largo. Se entrega lo que quedó afuera: qué dejaste fuera y por qué esa exclusión comprueba mejor la hipótesis.</p>
+<p>Leerla es poco. Hacerla toma bastante más. Todo lo que hay que traer está aquí, y solo aquí.</p>
+</section>
+<section class="bloque bloque-tema"><h2 id="el-mismo-gesto-en-la-inmobiliaria">El mismo gesto, en la inmobiliaria</h2>
+<p>A Luis, en Inmobiliaria Calle, la IA le mete en el primer entregable WhatsApp, chat con el plomero y estrellas. Un alcance largo lo escribe cualquiera. La IA lo escribe larguísimo.</p>
+<p>Lo que cuesta es decir &quot;esto no&quot; de algo que suena razonable, y sostener el porqué.</p>
+<p>&quot;No alcanza el tiempo&quot; no sirve. Mañana el calendario cambia y la excusa desaparece. El porqué que sí sirve: el WhatsApp no comprueba si el inquilino deja de llamar a la oficina. El reporte en la pantalla de recepción sí lo comprueba.</p>
+<p>El ejercicio del curso hace ese recorte sobre FlowSync. Tiene un párrafo de partida fijo y una ficha de hechos que no debes inventar.</p>
+</section>
+<section class="bloque bloque-tema"><h2 id="como-aprovechar-el-modulo">Cómo aprovechar el módulo</h2>
+<ol>
+<li><strong>Lo intentas tú</strong>, con reloj. Aunque quede a medias.</li>
+<li><strong>Lo ves en la clase en vivo</strong>, sin escribir. El mentor parte del mismo párrafo vago.</li>
+<li><strong>Lo repites</strong> con los prompts escritos. El agente no da siempre el mismo texto. Cambian la redacción, el orden de las preguntas y cuántas cosas propone. Se repite la forma, no el texto.</li>
+</ol>
+</section>
+<section class="bloque bloque-tema"><h2 id="deja-el-ambiente-listo-5-a-10-minutos">Deja el ambiente listo (5 a 10 minutos)</h2>
+<p>El proyecto funciona en macOS, en Linux y en Windows <strong>dentro de WSL</strong>. En PowerShell no. Los atajos del <code>Makefile</code> están escritos para una terminal de Linux o de Mac.</p>
+<p>Si trabajas en Windows, haz el clon, Node y <code>make</code> dentro de Ubuntu en WSL. Lo que instales en Windows no existe dentro de WSL, y al revés. Clona en tu carpeta de Linux (<code>~/…</code>), no en <code>/mnt/c</code>. Desde ahí, <code>npm install</code> va muy lento.</p>
+<p>Si no tienes WSL, instálalo con <code>wsl --install</code> desde PowerShell como administrador.</p>
+<ul>
+<li><input disabled="" type="checkbox"> Node <strong>24</strong> o superior. Con la 20, <code>make setup</code> se detiene con <code>Unknown file extension &quot;.ts&quot;</code>. Con la 22 arranca y avisa <code>EBADENGINE</code>. La versión LTS de <a href="https://nodejs.org/en/download" target="_blank" rel="noopener">nodejs.org</a> cumple.</li>
+<li><input disabled="" type="checkbox"> <code>make --version</code> responde. En macOS: <code>xcode-select --install</code>. En Linux y en Ubuntu dentro de WSL: <code>sudo apt install make</code>.</li>
+<li><input disabled="" type="checkbox"> Tu fork de <code>LIDR-academy/flowsync-ai4devs-202609-1</code>, rama <code>s2/start</code>. Ya trae el harness: <code>CLAUDE.md</code> / <code>AGENTS.md</code>, un skill, un subagente, un hook y el MCP de Jira.</li>
+</ul>
+<p>Si ya tienes el fork y <code>upstream</code> apunta al curso:</p>
+<pre><code class="language-bash">git fetch upstream
+git checkout -b s2/start upstream/s2/start
+</code></pre>
+<p>Si empiezas de cero, trabaja sobre un fork. En el repositorio del curso no puedes hacer push.</p>
+<pre><code class="language-bash"># 1. Fork en https://github.com/LIDR-academy/flowsync-ai4devs-202609-1
+# 2. Clona TU fork
+git clone git@github.com:&lt;tu-usuario&gt;/flowsync-ai4devs-202609-1.git
+cd flowsync-ai4devs-202609-1
+git remote add upstream git@github.com:LIDR-academy/flowsync-ai4devs-202609-1.git
+git remote -v
+
+git fetch upstream
+git checkout -b s2/start upstream/s2/start
+git push -u origin s2/start
+</code></pre>
+<p>Si ya habías clonado el del curso, haz esto: <code>git remote rename origin upstream</code> y <code>git remote add origin</code> hacia tu fork. Si SSH dice <code>Permission denied (publickey)</code>, sube la clave o usa HTTPS.</p>
+<ul>
+<li><input disabled="" type="checkbox"> Desde la raíz del proyecto:</li>
+</ul>
+<pre><code class="language-bash">make setup   # solo la primera vez
+make start   # backend en el puerto 3333 y frontend en el 5173
+</code></pre>
+<p><code>make start</code> ocupa la terminal. Ctrl-C detiene los dos. Revisa en otra terminal: <code>curl -s localhost:3333/</code> devuelve <code>{&quot;hello&quot;:&quot;world&quot;}</code>. <code>http://localhost:5173</code> muestra FlowSync.</p>
+<p>Si cambias el puerto del backend, cambia <code>VITE_API_URL</code> en <code>frontend/.env</code>.</p>
+<p>Fallas típicas: <code>make</code> no existe. Node es anterior a la 22. Te saltaste <code>make setup</code>. El puerto 3333 o el 5173 ya está ocupado.</p>
+<p>Sin make, los mismos pasos a mano. <code>npm install</code> en <code>backend/</code> y en <code>frontend/</code>. Copia cada <code>.env.example</code> a <code>.env</code>. En backend, corre <code>node ace generate:key</code> y <code>node ace migration:run</code>. Después, <code>npm run dev</code> en cada uno, en dos terminales.</p>
+<ul>
+<li><input disabled="" type="checkbox"> Claude Code arranca y ve <code>CLAUDE.md</code> / <code>AGENTS.md</code>. El MCP de Jira sigue conectado, para crear los tickets en el tablero FLOW.</li>
+<li><input disabled="" type="checkbox"> No instales ningún framework de specs. Hoy no se usan.</li>
+</ul>
+</section>
+<section class="bloque bloque-accion"><h2 id="la-tarea-unos-45-minutos">La tarea, unos 45 minutos</h2>
+<p>Guarda cada prompt tal como lo lanzaste, desde el primero. No sirven reconstruidos.</p>
+<p>El párrafo de partida es el mismo de la clase:</p>
+<blockquote>
+<p>Quiero que FlowSync sea una herramienta para que los equipos remotos sepan en qué está trabajando cada uno, sin tener que hacer reuniones de sincronización. Algo tipo tareas compartidas, pero más en tiempo real y con menos complicación que Jira.</p>
+</blockquote>
+<p>&quot;Más en tiempo real&quot; y &quot;con menos complicación que Jira&quot; son sensaciones, no requisitos. El trabajo es exprimirlas hasta un alcance que se pueda defender. Va en <code>docs/prd/alcance-mvp-&lt;tus-iniciales&gt;.md</code>, no en el chat.</p>
+<p>Cuando suene el reloj, paras. Tres exclusiones bien argumentadas dicen hasta dónde llegaste. Un documento completado de memoria diez minutos después no se distingue del bueno, y no sirve.</p>
+<h3>1. Lo que ya existe (3 a 5 líneas)</h3>
+<p>Antes de especificar, pídele al agente que te devuelva qué capacidades ya hay y cómo es el modelo de datos. Resume eso por escrito. Sirve para no volver a definir lo que ya está hecho.</p>
+<h3>2. Una sola ronda de preguntas</h3>
+<p>Pídele que pregunte antes de proponer. Que haga las cinco preguntas que más bajarían la incertidumbre sobre el problema, los usuarios y el alcance.</p>
+<p>Una sola ronda. Prohíbele bajar al modelo de datos o a las rutas. Si no lo limitas, abre tres rondas más y se te va la tarde.</p>
+<p>No inventes las respuestas. Copia y pega esta ficha completa, de una vez. Son las mismas decisiones que usa el mentor en la clase. Así tu recorte y el de la sesión hablan del mismo producto.</p>
+<p>Si pregunta algo que la ficha no cubre, que lo decida ella y lo marque como supuesto. Lee esos supuestos. Ahí se cuelan los huecos.</p>
+<ul>
+<li>Qué duele hoy: la daily de sincronización y el &quot;¿en qué estás?&quot; constante por Slack o por chat. Nadie ve el estado del equipo sin interrumpir a alguien.</li>
+<li>Quién recibe el valor: los compañeros, no un líder. No hay un reporte hacia arriba. Le duele a quien descubre tarde que iba a lo mismo que otra persona, y a quien interrumpe para preguntar.</li>
+<li>Episodio concreto: dos personas tocaron el mismo módulo la misma semana, porque una empezó sin que la otra lo supiera. Se perdieron dos días.</li>
+<li>Qué reunión desaparece, sin venderlo de más: la daily no desaparece completa. Desaparece la ronda de &quot;¿en qué estás?&quot;, que hoy se come la mitad de los 15 minutos. Los bloqueos siguen, y este MVP no los resuelve.</li>
+<li>Usuarios: equipos remotos pequeños, de 3 a 10 personas. En el MVP, todos ven y editan lo mismo. No hay jerarquía de permisos.</li>
+<li>Caso de estudio, no un cliente real: un equipo de 6 personas de producto en una empresa SaaS, en 3 zonas horarias. Hoy usa un administrador de tareas pesado y una daily de 15 minutos.</li>
+<li>Límites: un espacio único compartido, sin una entidad llamada &quot;equipo&quot;. Varios equipos, o una persona en más de uno, queda afuera. Se anota como supuesto. No se construye.</li>
+<li>&quot;Tiempo real&quot; es ver los cambios de estado de las tareas sin refrescar ni preguntar. No es chat, ni videollamada, ni editar el mismo documento al mismo tiempo.</li>
+<li>El estado es de la tarea, no de la persona. Nada de &quot;quién está conectado&quot;. Eso es vigilancia, y se rechaza a propósito.</li>
+<li>La señal espera. No interrumpe. El caso es llegar en la mañana y ver qué se movió. Sin notificaciones push.</li>
+<li>Qué decisión cambia: no empezar algo que otra persona ya está tocando, y elegir lo siguiente sabiendo qué está libre. &quot;Sentirse informado&quot; no justifica el costo.</li>
+<li>El estado lo escribe quien hace la tarea, en segundos. Sacarlo de Git, de los pull requests o del calendario queda afuera. Eso ya es otro producto.</li>
+<li>Se sostiene porque son dos clics sobre una lista que ya está abierta. Sin campos obligatorios, sin sprint y sin estimación. Quien lo escribe también lo usa como su propia lista de trabajo.</li>
+<li>Si la información se queda vieja, el producto pierde el sentido. Es el riesgo número uno, no un detalle. La forma de bajarlo es que actualizar cueste dos clics, no obligar a nadie.</li>
+<li>Reemplaza al administrador de tareas. No convive con él. Convivir exigiría anotar lo mismo en dos lugares.</li>
+<li>Se renuncia a sprints, estimaciones, épicas, backlog priorizado e informes. Un equipo que necesite eso no es el usuario.</li>
+<li>&quot;Con menos complicación que Jira&quot; significa crear una tarea y cambiarle el estado en segundos, sin configuración y sin campos obligatorios.</li>
+<li>Una tarea del MVP tiene título, responsable, estado y fecha de vencimiento.</li>
+<li>La lista se usa filtrando por estado.</li>
+<li>Éxito para el usuario: dejar de hacer la ronda de &quot;¿en qué estás?&quot;, porque el estado se ve de un vistazo.</li>
+<li>A la semana: el equipo cancela esa ronda y nadie pide que vuelva. Si la siguen haciendo igual, no funcionó.</li>
+<li>Se construye un corte delgado y usable de punta a punta. No tres capacidades a medias.</li>
+</ul>
+<p>Fuera del MVP, por si la IA empuja funcionalidades: notificaciones push, integración con Slack, roles y permisos avanzados, analítica y comentarios en las tareas.</p>
+<h3>3. Cinco bloques, y después recortas tú</h3>
+<p>Problema, usuarios, propuesta de valor, alcance y lo que queda afuera. Pídele que proponga recortando con fuerza, y que justifique cada exclusión.</p>
+<p>Después recorta otra vez. Va a proponer de más. Ese segundo recorte es tuyo, y es lo que se revisa.</p>
+<p>El error caro parece rigor. Si la dejas seguir, el alcance crece solo hacia el modelo de datos, los diagramas y los requisitos numerados. Eso ya es otro documento.</p>
+<p>Un documento de producto no lleva tablas, ni rutas, ni arquitectura. Ese detalle sale del código y se pone viejo enseguida. Si aparece, súbelo de nivel o quítalo, y anótalo.</p>
+<h3>Parte B. Tres líneas, debajo, en el mismo archivo</h3>
+<ol>
+<li>Dos números, sin redondear. Cuántas cosas propuso meter. Cuántas quedaron adentro después de tu recorte.</li>
+<li>Tres cosas que dejaste afuera, y por qué. El porqué dice qué hipótesis no ayudan a comprobar. &quot;No alcanza el tiempo&quot; no sirve.</li>
+<li>La exclusión de la que menos seguro estás, y qué tendría que pasar para que entrara. Mejor cuanto más incómoda. &quot;Lo tengo todo claro&quot; es la respuesta de quien aceptó la primera propuesta.</li>
+</ol>
+<p>Si la IA te discutió una decisión y tenía razón, anótalo aunque ninguna de las tres líneas lo pida. Por ejemplo: el documento pide algo que él mismo prohíbe, o promete algo que su propio alcance impide cumplir. Eso es un error tuyo, y es lo más útil de la sesión.</p>
+</section>
+<section class="bloque bloque-tema"><h2 id="como-saber-que-quedo-bien">Cómo saber que quedó bien</h2>
+<ul>
+<li>Lo que quedó afuera ocupa tanto como lo que quedó adentro, o más.</li>
+<li>Cada exclusión tiene su porqué al lado.</li>
+<li>Las tres líneas son concretas.</li>
+<li>No hay ni una tabla ni una ruta.</li>
+<li>Cabe en una pantalla larga. Un MVP de diez páginas no es un MVP.</li>
+</ul>
+<p>Entrégalo con lo que tenga.</p>
+</section>
+<section class="bloque bloque-accion"><h2 id="como-se-entrega">Cómo se entrega</h2>
+<p>El archivo va en <code>docs/prd/alcance-mvp-&lt;tus-iniciales&gt;.md</code>, con los tres tramos y las tres líneas. Si la carpeta no existe, créala.</p>
+<pre><code class="language-bash">git checkout -b alcance-&lt;tus-iniciales&gt;
+git add docs/prd prompts.md
+git commit -m &quot;alcance: MVP + prompts&quot;
+git push -u origin alcance-&lt;tus-iniciales&gt;
+</code></pre>
+<p>El pull request va contra el repositorio del curso. Lleva solo ese archivo y <code>prompts.md</code>. La rama de partida trae la plantilla. Pega los prompts tal cual, con el modelo y la herramienta. Incluye también los que fallaron.</p>
+<p>Sin ese archivo no se distingue un alcance flojo pedido bien de uno pedido mal.</p>
+<p>Antes de la clase hay comentarios de tu TA. Después se marca como recibido y no se revisa.</p>
+</section>
+<section class="bloque bloque-tema"><h2 id="antes-de-conectarte">Antes de conectarte</h2>
+<ul>
+<li><input disabled="" type="checkbox"> Estás en la rama de partida, sobre tu fork, y <code>git push</code> funciona.</li>
+<li><input disabled="" type="checkbox"> <code>make start</code> enciende el proyecto y el agente lee el contexto.</li>
+<li><input disabled="" type="checkbox"> Traes el archivo, aunque esté a medias, con las tres líneas.</li>
+<li><input disabled="" type="checkbox"> <code>prompts.md</code> está lleno.</li>
+<li><input disabled="" type="checkbox"> El pull request está abierto.</li>
+</ul>
+<p>Si el reloj aprieta, prioriza las tres líneas honestas. Valen más que un alcance largo sin recortar. De la teoría, prioriza las lecciones 2, 3 y 5.</p>
+</section>
+<section class="bloque bloque-tema"><h2 id="que-te-llevas-del-modulo">Qué te llevas del módulo</h2>
+<p>Una spec viva que manda. No es &quot;el análisis de siempre, con un chatbot encima&quot;. Una cadena en la que cada escalón responde una pregunta distinta. Un criterio del negocio, que se puede comprobar, distinto del escenario ejecutable. Y el hábito de usar la IA para encontrar huecos en lo escrito, no para redactarlo.</p>
+<p>En el proyecto queda el PRD con historial, con lo que quedó afuera escrito de forma explícita, y tu archivo de recorte con el argumento de lo que dejaste fuera.</p>
+</section></article>
+      <nav class="paso" aria-label="Lecciones vecinas">
+    <a href="9.html">← Módulo 2 · 9</a>
+    <a class="siguiente-paso" href="../modulo-3/1.html">Módulo 3 · 1 →</a>
+  </nav>
+    </div>
+  </div>
+  <script src="../app.js"></script>
+</body>
+</html>

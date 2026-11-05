@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Módulo 3 · Lección 6 — Ejercicio: escribe la spec de lo que ya funciona</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560&family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,460;8..60,620&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../estilos.css">
+</head>
+<body>
+  <div class="barra" aria-hidden="true"><span></span></div>
+  <header class="techo">
+    <button class="icono menu" type="button" data-menu>Lecciones</button>
+    <a class="marca" href="../index.html">En claro</a>
+    <span class="aqui-titulo">Módulo 3 · Lección 6 — Ejercicio: escribe la spec de lo que ya funciona</span>
+    <div class="acciones">
+      <button class="icono" type="button" data-letra="menos" aria-label="Texto más chico">A−</button>
+      <button class="icono" type="button" data-letra="mas" aria-label="Texto más grande">A+</button>
+      <button class="icono" type="button" data-tema-boton>Noche</button>
+    </div>
+  </header>
+  <div class="marco">
+    <nav class="indice" aria-label="Módulos"><details><summary>Módulo 1</summary><ol><li><a href="../modulo-1/1.html">1. El mapa: para qué sirve un harness</a></li><li><a href="../modulo-1/2.html">2. Los tres pilares importan lo mismo</a></li><li><a href="../modulo-1/3.html">3. El contexto: menos información, y más útil</a></li><li><a href="../modulo-1/4.html">4. Cómo pedir el trabajo, y cómo usar los tres pilares juntos</a></li><li><a href="../modulo-1/5.html">5. Deja la computadora y las cuentas listas</a></li><li><a href="../modulo-1/6.html">6. Ejercicio: el mismo pedido, con harness y sin él</a></li><li><a href="../modulo-1/7.html">7. Por qué una sesión larga sale cara</a></li><li><a href="../modulo-1/8.html">8. Comandos que sí vas a usar</a></li><li><a href="../modulo-1/9.html">9. Modelos en tu computadora, y cuándo no conviene</a></li><li><a href="../modulo-1/10.html">10. El original está vacío</a></li></ol></details>
+<details><summary>Módulo 2</summary><ol><li><a href="../modulo-2/1.html">1. El mapa: de una idea vaga a un plano que no hay que adivinar</a></li><li><a href="../modulo-2/2.html">2. Planificar es ahora el trabajo caro</a></li><li><a href="../modulo-2/3.html">3. Cada documento responde una sola pregunta</a></li><li><a href="../modulo-2/4.html">4. Escribe el PRD por capas, no de un tirón</a></li><li><a href="../modulo-2/5.html">5. La historia, el criterio y los huecos</a></li><li><a href="../modulo-2/6.html">6. Dónde vive el backlog, y con qué permiso</a></li><li><a href="../modulo-2/7.html">7. Estimar, ordenar y saber cuándo está terminado</a></li><li><a href="../modulo-2/8.html">8. Hay varias herramientas. El orden no cambia</a></li><li><a href="../modulo-2/9.html">9. Dónde profundizar, cuando haga falta</a></li><li><a href="../modulo-2/10.html">10. Ejercicio: recorta el MVP hasta poder defenderlo</a></li></ol></details>
+<details open><summary>Módulo 3</summary><ol><li><a href="1.html">1. El mapa: dos caminos, y cuándo usar cada uno</a></li><li><a href="2.html">2. Dos caminos: directo o con contrato</a></li><li><a href="3.html">3. Explorar, planear, ejecutar</a></li><li><a href="4.html">4. OpenSpec por dentro</a></li><li><a href="5.html">5. Que el agente lea la spec, y cuándo no usar OpenSpec</a></li><li><a href="6.html" class="actual">6. Ejercicio: escribe la spec de lo que ya funciona</a></li><li><a href="7.html">7. Dónde profundizar</a></li></ol></details>
+<details><summary>Módulo 4</summary><ol><li><a href="../modulo-4/1.html">1. El mapa: de &quot;lo implementé&quot; a &quot;está listo&quot;</a></li><li><a href="../modulo-4/2.html">2. Verde no es lo mismo que correcto</a></li><li><a href="../modulo-4/3.html">3. Revisar para romper, no para aprobar</a></li><li><a href="../modulo-4/4.html">4. La documentación que se queda atrás</a></li><li><a href="../modulo-4/5.html">5. Cuatro documentos. Tres se generan. Uno se decide.</a></li><li><a href="../modulo-4/6.html">6. Ejercicio: mide qué está probado de verdad</a></li><li><a href="../modulo-4/7.html">7. Dónde profundizar</a></li></ol></details>
+<details><summary>Módulo 5</summary><ol><li><a href="../modulo-5/1.html">1. El mapa: de la costumbre al guardarraíl</a></li><li><a href="../modulo-5/2.html">2. De la regla escrita al guardarraíl que se ejecuta</a></li><li><a href="../modulo-5/3.html">3. Qué se automatiza, y qué solo lo parece</a></li><li><a href="../modulo-5/4.html">4. Un agente dentro del pipeline</a></li><li><a href="../modulo-5/5.html">5. Lo que cuesta, y por qué se apagan los guardarraíles</a></li><li><a href="../modulo-5/6.html">6. Ejercicio: audita las reglas que escribiste</a></li><li><a href="../modulo-5/7.html">7. Dónde profundizar</a></li></ol></details>
+<details><summary>Módulo 6</summary><ol><li><a href="../modulo-6/1.html">1. El mapa: auditar lo que no escribiste</a></li><li><a href="../modulo-6/2.html">2. Heredado no es viejo. Es lo que nadie puede explicar</a></li><li><a href="../modulo-6/3.html">3. El cuello no es encontrar. Es comprobar</a></li><li><a href="../modulo-6/4.html">4. Lo más grave no va primero</a></li><li><a href="../modulo-6/5.html">5. Un pedido de una línea, si el rigor vive en otro sitio</a></li><li><a href="../modulo-6/6.html">6. Ejercicio: prioriza una auditoría de verdad</a></li><li><a href="../modulo-6/7.html">7. Dónde profundizar</a></li></ol></details>
+<details><summary>Módulo 7</summary><ol><li><a href="../modulo-7/1.html">1. El mapa: qué regla se aplica cuando hay varios repositorios</a></li><li><a href="../modulo-7/2.html">2. Qué decide dónde acaba un repositorio</a></li><li><a href="../modulo-7/3.html">3. El agente solo ve su directorio de trabajo</a></li><li><a href="../modulo-7/4.html">4. Dónde vive la spec cuando el sistema son tres repositorios</a></li><li><a href="../modulo-7/5.html">5. Un cambio que cruza dos repositorios no es un solo cambio</a></li><li><a href="../modulo-7/6.html">6. Lo que se comparte, lo que se versiona y lo que no se puede fundir</a></li><li><a href="../modulo-7/7.html">7. Herramientas de esta sesión</a></li><li><a href="../modulo-7/8.html">8. Ejercicio: haz que una regla se cumpla en el otro repositorio</a></li><li><a href="../modulo-7/9.html">9. Dónde profundizar</a></li></ol></details>
+<details><summary>Módulo 8</summary><ol><li><a href="../modulo-8/1.html">1. El mapa: de escribir reglas a comprobar si funcionan</a></li><li><a href="../modulo-8/2.html">2. Una regla escrita no es una regla cumplida</a></li><li><a href="../modulo-8/3.html">3. Un eval da una tasa, no un verde</a></li><li><a href="../modulo-8/4.html">4. Sin línea base, un número no significa nada</a></li><li><a href="../modulo-8/5.html">5. Quién puntúa un ensayo, y en qué orden</a></li><li><a href="../modulo-8/6.html">6. Un verde que nunca estuvo en rojo no prueba nada</a></li><li><a href="../modulo-8/7.html">7. Dónde profundizar</a></li><li><a href="../modulo-8/8.html">8. Fuentes sobre sistemas repartidos en varios repositorios</a></li></ol></details></nav>
+    <div class="lectura">
+      <article><h1>Módulo 3 · Lección 6 — Ejercicio: escribe la spec de lo que ya funciona</h1>
+<p class="origen">Texto original: <code>original/modulo-3/6.md</code><br>Obligatoria. Fecha límite: lunes 5 de octubre de 2026, al final del día.<br>Repositorio: FlowSync.</p>
+
+<section class="bloque bloque-frase"><h2 id="en-una-frase">En una frase</h2>
+<p>No propones nada y no cambias código. Lees cuentas y acceso, que ya funcionan, y escribes lo que el sistema hace hoy. El entregable que importa son tres listas, no la spec perfecta.</p>
+<p>Leerla son unos doce minutos. Hacerla, unos 70. Diez de ambiente, quince de instalación y sandbox, 45 de la tarea. No la abras la noche anterior.</p>
+<p>Este módulo instala una herramienta. Llega con OpenSpec instalado y funcionando. Si algo falla, avísale a tu TA antes. No lo dejes para el minuto 1 de la clase.</p>
+</section>
+<section class="bloque bloque-caso"><h2 id="caso-real-y-despues-el-proyecto-del-curso">Caso real, y después el proyecto del curso</h2>
+<p>En el Taller Rueda, Elena ya vio la diferencia. Una spec de la lista de órdenes no es lo mismo que un delta de la fecha prometida. Este ejercicio es el otro gesto. Decir, en WHEN / THEN, lo que un código que ya funciona hace hoy.</p>
+<p>Lo vas a hacer sobre FlowSync, no sobre el taller. La superficie es cuentas y acceso. Registro, inicio de sesión, sesión y perfil.</p>
+</section>
+<section class="bloque bloque-tema"><h2 id="como-aprovechar-el-modulo">Cómo aprovechar el módulo</h2>
+<ol>
+<li><strong>Lo intentas tú</strong>, con reloj. Entregas lo que salga, aunque esté a medias. Este paso no se califica por terminarlo.</li>
+<li><strong>Lo ves en la clase en vivo</strong>, sin escribir. El mentor hace este mismo ejercicio, sobre este mismo proyecto y sobre la misma superficie.</li>
+<li><strong>Lo repites</strong> con los prompts escritos. El agente no da siempre el mismo texto. Cambian la redacción, el orden y hasta cuántos requisitos escribe. Se repite la forma, no el texto.</li>
+</ol>
+</section>
+<section class="bloque bloque-tema"><h2 id="deja-el-ambiente-listo">Deja el ambiente listo</h2>
+<p>Aquí dejas el ambiente y te familiarizas con OpenSpec en una carpeta desechable. No en el repo del proyecto. La tarea de más abajo no necesita OpenSpec instalado. La clase sí. Este paso no se salta.</p>
+<h3>1. Ambiente base (10 minutos)</h3>
+<p>El proyecto funciona en macOS, en Linux y en Windows dentro de WSL. En PowerShell no. Los atajos del Makefile están escritos para una terminal de Linux o de Mac.</p>
+<p>Si trabajas en Windows, haz el clon, Node y <code>make</code> dentro de la terminal de Ubuntu de WSL. Lo que instales en Windows no existe dentro de WSL, y al revés. Clona en tu carpeta de Linux (<code>~/…</code>), no en <code>/mnt/c</code>. Desde ahí <code>npm install</code> va muy lento. Si no tienes WSL: <code>wsl --install</code> desde PowerShell como administrador.</p>
+<ul>
+<li><input disabled="" type="checkbox"> Node.js 24 o superior. <code>node -v</code> responde <code>v24</code> o más. Con la 20 el proyecto no arranca. <code>make setup</code> se detiene con <code>Unknown file extension &quot;.ts&quot;</code>. Con la 22 arranca y avisa <code>EBADENGINE</code>, porque el proyecto pide la 24. La LTS de <a href="https://nodejs.org/en/download" target="_blank" rel="noopener">nodejs.org/en/download</a> cumple. OpenSpec, que instalas en el paso 2, pide la 20.19. Con la 24 alcanzas para los dos.</li>
+<li><input disabled="" type="checkbox"> <code>make --version</code> responde con un número. En macOS: <code>xcode-select --install</code>. En Linux y en Ubuntu dentro de WSL: <code>sudo apt install make</code>.</li>
+<li><input disabled="" type="checkbox"> Trabaja sobre tu propio fork. Si GitHub te rechazó un push, no es un fallo tuyo. No tienes permiso de escritura sobre el repo del curso, y no deberías tenerlo.</li>
+</ul>
+<pre><code class="language-bash"># 1. Fork en https://github.com/LIDR-academy/flowsync-ai4devs-202609-1
+
+# 2a. Si AÚN NO has clonado: clona tu fork
+git clone git@github.com:&lt;tu-usuario&gt;/flowsync-ai4devs-202609-1.git
+cd flowsync-ai4devs
+git remote add upstream git@github.com:LIDR-academy/flowsync-ai4devs-202609-1.git
+
+# 2b. Si YA clonaste el del curso: no vuelvas a clonar, solo recoloca los remotos
+git remote rename origin upstream
+git remote add origin git@github.com:&lt;tu-usuario&gt;/flowsync-ai4devs-202609-1.git
+
+# 2c. Si YA clonaste tu propio fork: solo te falta el upstream
+git remote add upstream git@github.com:LIDR-academy/flowsync-ai4devs-202609-1.git
+
+# Comprueba: origin = tu fork, upstream = el del curso
+git remote -v
+
+# 3. Trae las ramas del curso y colócate en la de hoy
+git fetch upstream
+git checkout -b s3/start upstream/s3/start
+
+# 4. A partir de aquí tus cambios van a TU fork
+git push -u origin s3/start
+</code></pre>
+<p>Si sale <code>Permission denied (publickey)</code>, es SSH, no el fork. Los comandos de arriba usan direcciones <code>git@github.com:…</code>. Necesitan una clave subida a tu cuenta. Súbela, o cambia las tres direcciones por HTTPS (<code>https://github.com/&lt;usuario&gt;/flowsync-ai4devs.git</code>). Lo que no sirve es descubrirlo el día de la clase.</p>
+<p>Un fork es una foto del momento. El curso sigue publicando ramas. Las que todavía no se publicaron no existen en tu fork, y tu fork no se entera solo. Antes del trabajo de cada módulo, corre <code>git fetch upstream</code> y saca la rama nueva desde ahí (<code>git checkout -b sN/start upstream/sN/start</code>). Si un checkout responde <code>pathspec did not match</code>, casi siempre es esto. Se arregla con un fetch.</p>
+<ul>
+<li><input disabled="" type="checkbox"> Rama <code>s3/start</code> en tu fork. Trae el harness del proyecto, el PRD y el backlog del equipo.</li>
+<li><input disabled="" type="checkbox"> Abre <code>docs/backlog/</code>. Están las historias del equipo, repartidas en épicas, con sus criterios. Algunas traen además los tickets. Es el artefacto que dirige la implementación. Lo tienes entero en el repo.</li>
+<li><input disabled="" type="checkbox"> Abre también <code>docs/backlog/README.md</code> y busca el orden priorizado. Mira cuál va primera y qué razón da el propio README para ponerla ahí.</li>
+</ul>
+<p>El backlog trae más historias de las que se afinan en una clase. No te falta nada. Una demo enseña que algo es posible y cómo se hace. No produce delante de ti el inventario completo. Afinar un backlog entero en vivo serían horas de repetir el mismo gesto.</p>
+<ul>
+<li><input disabled="" type="checkbox"> Claude Code arranca y lee tu contexto.</li>
+<li><input disabled="" type="checkbox"> El proyecto enciende entero, backend y frontend, y puedes iniciar sesión en la interfaz. Desde la raíz. Compruébalo ahora.</li>
+</ul>
+<pre><code class="language-bash">make setup   # solo la primera vez
+make start   # backend en el puerto 3333 y frontend en el 5173
+</code></pre>
+<p><code>make start</code> ocupa la terminal. Ctrl-C detiene los dos. Si uno se cae, se lleva al otro. <code>make</code> solo lista los atajos. En otra terminal, <code>curl -s localhost:3333/</code> devuelve <code>{&quot;hello&quot;:&quot;world&quot;}</code>. <code>http://localhost:5173</code> muestra FlowSync. El frontend busca el backend en <code>http://localhost:3333</code>. Si lo levantas en otro puerto, cambia <code>VITE_API_URL</code> en <code>frontend/.env</code>.</p>
+<p>Fallas típicas: <code>make</code> no existe. Node anterior a la 22 (<code>Unknown file extension &quot;.ts&quot;</code>). Te saltaste <code>make setup</code>. El puerto 3333 o el 5173 ya está ocupado.</p>
+<p>Sin make, a mano: <code>npm install</code> en <code>backend/</code> y en <code>frontend/</code>. Copia cada <code>.env.example</code> a <code>.env</code>. En backend, <code>node ace generate:key</code> y <code>node ace migration:run</code>. Después, <code>npm run dev</code> en cada uno, en dos terminales.</p>
+<p>Si vas a buscar las historias en un tablero, no las busques. Manda el repositorio. Las historias y sus tickets se crearon en su momento como issues en el tablero FLOW. Un tablero compartido se limpia entre sesiones. El propio backlog lo deja escrito en <code>docs/backlog/README.md</code>: las issues y subtareas vienen marcadas como &quot;hay que recrearlas&quot;. Si el tablero y el repositorio se contradicen, manda el repositorio. Un tablero sirve para seguir el trabajo. Los criterios viven en el repo. Si quieres tu propio seguimiento en Jira, recréalos tú con el MCP que ya tienes conectado.</p>
+<h3>2. Instalar OpenSpec y mirarlo en un sandbox (15 minutos)</h3>
+<p>No lo inicialices en FlowSync. Crea una carpeta desechable, fuera del repo.</p>
+<pre><code class="language-bash"># 1. Instalar la CLI
+npm install -g @fission-ai/openspec@latest
+openspec --version          # debe responder con un número de versión
+
+# 2. Sandbox desechable, FUERA de cualquier proyecto
+cd ~                        # imprescindible: vienes de dentro de flowsync-ai4devs
+mkdir openspec-sandbox &amp;&amp; cd openspec-sandbox
+openspec init               # elige &quot;Claude Code&quot;. Acepta el resto.
+
+# 3. Mira la estructura que creó
+ls -R openspec/             # dos carpetas (specs/ y changes/) y un config.yaml
+</code></pre>
+<p>El <code>cd ~</code> no es adorno. Vienes del paso 1, dentro de <code>flowsync-ai4devs</code>. Sin salir, <code>openspec init</code> inicializaría el repo del proyecto. Escribiría <code>openspec/</code> y <code>.claude/commands/opsx/</code> adentro. Es justo lo que este paso dice que no hagas todavía. Si ya te pasó, borra esas dos carpetas del repo y vuelve a empezar en <code>~</code>.</p>
+<ul>
+<li><input disabled="" type="checkbox"> Abre Claude Code dentro de <code>openspec-sandbox/</code>. Escribe <code>/</code> y confirma que aparecen <code>/opsx:propose</code>, <code>/opsx:apply</code> y <code>/opsx:archive</code>. Tiene que ser dentro del sandbox. <code>openspec init</code> instala los comandos en el <code>.claude/</code> de ese proyecto, no en tu computadora. Si abres Claude Code en otra carpeta no vas a ver ninguno, y no será un fallo de instalación. Si estás dentro y aun así no aparecen, reinicia Claude Code por completo. Los comandos de barra se cargan al arrancar.</li>
+<li><input disabled="" type="checkbox"> Fíjate en las dos carpetas y en que <code>specs/</code> nace vacía. <code>specs/</code> es la verdad de cómo se comporta el sistema. <code>changes/</code> es lo que está en curso. Esa separación sostiene el vocabulario propose, apply, archive. Junto a ellas hay un <code>config.yaml</code>. Ahí después se le cuenta a OpenSpec el stack y las convenciones. Si un tutorial habla de <code>openspec/project.md</code>, ya no existe. Se retiró en la 1.0. No es un fallo de tu instalación.</li>
+</ul>
+<h3>3. Crea tu rama</h3>
+<p>Sal del sandbox y vuelve a tu fork de FlowSync. La rama va en el proyecto, no en el sandbox.</p>
+<pre><code class="language-bash">git checkout -b spec-viva-&lt;tus-iniciales&gt;
+</code></pre>
+<p>Ahí va todo lo que produzcas.</p>
+</section>
+<section class="bloque bloque-accion"><h2 id="la-tarea">La tarea</h2>
+<p>Guarda cada prompt tal como lo lanzaste, desde el primero. Se entregan junto con la spec. No sirven reconstruidos.</p>
+<p>Vas a escribir la spec de un código que ya está escrito y ya funciona. No propones nada. No cambias una línea. Lees lo que hay y escribes lo que hace hoy.</p>
+<p>Suena a documentación. No lo es. Intentar decir en WHEN / THEN lo que hace un código es la forma más barata de auditarlo. Te obliga a decidir, requisito a requisito, qué es contrato y qué es casualidad. Unas cuantas veces no vas a poder decidir. Esas veces son el ejercicio.</p>
+<p>El entregable no es la spec. Son las tres listas de la parte B. Se escriben igual de bien con la spec a medias.</p>
+<p>El reloj existe porque la spec de un sistema entero no cabe en una tarde. El ejercicio va sobre una superficie pequeña. Lo que sale en 45 minutos es la parte que depende del criterio, no de tener una herramienta mejor.</p>
+<p>Para la tarea no hace falta OpenSpec. No lo inicialices en el proyecto. No se lanza ningún comando de la herramienta y no se toca la configuración. Solo se lee código que ya está ahí y se escribe un archivo con el formato de una spec viva. El <code>openspec init</code> sobre el proyecto de verdad llega en la clase. Hacerlo antes te deja carpetas a medias que después estorban.</p>
+<p>La superficie es el vertical de cuentas y acceso. Registro, inicio de sesión, sesión y perfil. Entero, en las dos capas, igual que lo hace el mentor. En el backend: rutas, controladores, el modelo de usuario, validadores y middlewares. En el frontend: las pantallas de acceso, el estado de sesión y la protección de rutas. Los prompts los escribes tú.</p>
+<p>Se deja en <code>docs/spec-viva/&lt;tus-iniciales&gt;.md</code>. La carpeta todavía no existe. La crea tu archivo.</p>
+<p>Son unos 45 minutos y hay que pararlos.</p>
+<h3>Parte A. La spec, con reloj</h3>
+<p>Con un agente, escribe la spec de lo que el sistema hace hoy. Déjala en un archivo del proyecto, no en el chat.</p>
+<p>Las dos capas, y solo ese vertical. Lo que pasa por la API y lo que se ve en pantalla. Nada que no sea cuentas y acceso, aunque el agente se ofrezca a seguir. Que el agente escriba las dos capas es rápido. Lo que no cabe en el reloj es comprobarlo todo después. Ahí está el ejercicio. Cuenta con no llegar a comprobar cada requisito. La parte B existe para decir hasta dónde llegaste.</p>
+<p>El formato no se negocia.</p>
+<ul>
+<li>Arriba, un <code>## Purpose</code> de una o dos frases. Para qué existe esta capability.</li>
+<li>Debajo, <code>## Requirements</code>. Colgando, <code>### Requirement:</code> en los que el sistema SHALL hacer algo.</li>
+<li>Bajo cada requisito, al menos un <code>#### Scenario:</code> de cuatro almohadillas, con dos viñetas: <code>**WHEN**</code> y <code>**THEN**</code>. No hay casilla para el GIVEN. La condición previa va dentro del WHEN.</li>
+<li>En español, salvo las mayúsculas de la RFC.</li>
+</ul>
+<p>Tres reglas duras:</p>
+<ul>
+<li>Nada de ADDED, MODIFIED ni REMOVED. Eso es el vocabulario de un delta. Esto no es un delta. Es la verdad actual del sistema. Si tu archivo tiene una de esas secciones, escribiste otra cosa.</li>
+<li>Solo comportamiento que se puede ver desde afuera. Ni un nombre de clase, ni un nombre de archivo, ni una ruta de código. En la API, observable es la petición y la respuesta. En la pantalla, observable es lo que una persona ve y puede hacer.</li>
+<li>No toques el código. Ni siquiera para arreglar lo que encuentres. Sobre todo para eso. Lo que encuentres es material de la parte B.</li>
+</ul>
+<p>Cuando suene el reloj, paras. Aunque esté a medias. Aunque falten requisitos, aunque haya escenarios sin THEN, aunque justo ibas a comprobar una cosa.</p>
+<p>Una spec en la que comprobaste seis requisitos y dejaste dos a medias es información. Dice hasta dónde llegaste. Una spec completada de memoria diez minutos después no se distingue de la buena, y no sirve.</p>
+<h3>Parte B. Las tres listas</h3>
+<p>Debajo de la spec, en el mismo archivo. Esta parte hay que traerla sí o sí.</p>
+<ol>
+<li>Cuántos requisitos escribió el agente, y cuántos comprobaste tú abriendo el código. Los dos números, tal cual. No los redondees ni los expliques. Comprobar significa haber ido a mirar si el código hace eso. Leer el requisito y que suene razonable no cuenta.</li>
+<li>Las incoherencias que aparecieron al escribirla. Una línea cada una, con dónde se ve. No las busques a propósito. Aparecen solas. Una regla que se cumple en casi todas partes canta en cuanto intentas escribirla como si se cumpliera siempre.</li>
+<li>Lo que no supiste decidir si era un bug o el contrato. Al menos una. En una frase, qué dos lecturas se contradecían. Esta es la lista que importa. No es lo que estaba mal. Es lo que podría estar bien o mal según a quién le preguntes, y no había forma de decidirlo leyendo el código.</li>
+</ol>
+<p>La tercera lista siempre tiene algo adentro, y eso no es un fallo tuyo. Una spec dice lo que el sistema hace visto desde afuera. Hay comportamiento que desde afuera no se distingue. Dos sistemas que por dentro tratan el mismo dato de formas distintas pueden responder igual. Hay otro que no se puede confirmar sin ejecutarlo y esperar, porque solo aparece al cabo de un rato o cuando algo se llena. Y hay un tercer grupo, el interesante. Se ve perfecto y aun así no sabes si alguien lo decidió o simplemente salió así.</p>
+<p>Dejar eso marcado es la respuesta correcta. Un contrato que se calla donde no sabe sirve más que uno que rellena con seguridad fingida.</p>
+<p>Ninguna de las tres tiene respuesta correcta. La segunda y la tercera son mejores cuanto más incómodas.</p>
+</section>
+<section class="bloque bloque-tema"><h2 id="como-saber-que-quedo-bien">Cómo saber que quedó bien</h2>
+<ul>
+<li>Las tres listas están escritas y son concretas. Si la tercera está vacía, vuelve a mirar. Es la respuesta de quien aceptó la spec en lugar de contrastarla contra el código.</li>
+<li>El número de comprobados es menor que el de escritos. Casi siempre lo es. No es un fallo. Es el dato.</li>
+<li>En la spec no aparece ni un nombre de archivo ni un nombre de clase. Si aparecen, describiste la implementación, no el comportamiento. Esa spec no sobrevive al primer refactor.</li>
+<li>La spec es del acceso y de nada más. Si aparecen requisitos de las tareas o de cualquier otra parte, te saliste del vertical.</li>
+</ul>
+<p>Entrégalo con lo que tenga.</p>
+</section>
+<section class="bloque bloque-accion"><h2 id="como-se-entrega">Cómo se entrega</h2>
+<p>Todo va en la rama que creaste, <code>spec-viva-&lt;tus-iniciales&gt;</code>.</p>
+<p>Un pull request desde tu fork, con dos cosas y nada más:</p>
+<ul>
+<li>Tu archivo en <code>docs/spec-viva/</code>, con los requisitos y las tres listas.</li>
+<li><code>prompts.md</code>, en la raíz. Ya está ahí con la plantilla. Pega los prompts tal cual, con el modelo y la herramienta. Incluye también los que no funcionaron.</li>
+</ul>
+<pre><code class="language-bash">git add docs/spec-viva prompts.md
+git commit -m &quot;spec viva: cuentas y acceso + prompts&quot;
+git push -u origin spec-viva-&lt;tus-iniciales&gt;
+</code></pre>
+<p>El pull request va contra el repositorio del curso, no contra tu fork.</p>
+<p><code>prompts.md</code> es la mitad de lo que se revisa. Un resultado flojo con un prompt bueno y uno flojo con un prompt vago se corrigen distinto. Sin ese archivo no se distinguen.</p>
+<p>Lo que llegue antes de la clase recibe comentarios de tu TA. Ahí es cuando te sirve. Lo que llegue después se marca como recibido y ya no se revisa.</p>
+</section>
+<section class="bloque bloque-tema"><h2 id="si-vas-justo-de-tiempo">Si vas justo de tiempo</h2>
+<p>Repasa las lecciones de los dos caminos y de OpenSpec por dentro.</p>
+<p>OpenSpec, Getting started, unos 10 minutos, en el repo oficial.</p>
+<p>Telemetría: OpenSpec envía estadísticas anónimas. Nombres de comandos y versión. Para apagarla en la terminal actual:</p>
+<pre><code class="language-bash">export OPENSPEC_TELEMETRY=0
+</code></pre>
+<p>o</p>
+<pre><code class="language-bash">export DO_NOT_TRACK=1
+</code></pre>
+<p>Eso dura lo que dure la terminal. Para apagarla de forma permanente, mete ese <code>export</code> en tu <code>.zshrc</code> o <code>.bashrc</code>, o agrega <code>&quot;telemetry&quot;: { &quot;enabled&quot;: false }</code> al config global de OpenSpec (<code>~/.config/openspec/config.json</code>). No hay un subcomando de la CLI que lo haga por ti.</p>
+</section>
+<section class="bloque bloque-tema"><h2 id="antes-de-conectarte">Antes de conectarte</h2>
+<ul>
+<li><input disabled="" type="checkbox"> Estás en la rama de partida, sobre tu fork, y <code>git push</code> funciona.</li>
+<li><input disabled="" type="checkbox"> El proyecto enciende entero, backend y frontend, y puedes iniciar sesión.</li>
+<li><input disabled="" type="checkbox"> <code>openspec --version</code> responde, y los comandos aparecen dentro del sandbox.</li>
+<li><input disabled="" type="checkbox"> Traes el archivo de la tarea, con su spec, aunque esté a medias, y sus tres listas.</li>
+<li><input disabled="" type="checkbox"> <code>prompts.md</code> está lleno, con modelo y herramienta en cada bloque.</li>
+<li><input disabled="" type="checkbox"> El pull request está abierto.</li>
+</ul>
+<p>Trae el archivo tal como quedó. Lo que le falta es la mitad de lo interesante.</p>
+</section>
+<section class="bloque bloque-tema"><h2 id="que-te-llevas-del-modulo">Qué te llevas del módulo</h2>
+<p>Dos caminos, directo o OpenSpec, y el criterio para elegir, sobre tres casos. El loop explorar, planear, ejecutar, con el freno humano en el plan. OpenSpec como spec viva más delta, como Git para requisitos. El momento humano es revisar el contrato antes del código.</p>
+<p>Y una lección de backlog. Un trabajo fácil que todavía no puedes construir no es lo primero. El orden real lo fijan el valor y la dependencia.</p>
+<p>En el proyecto queda una spec viva en <code>openspec/specs/</code>, con sus changes archivados. Se puede leer qué se decidió, cuándo y por qué.</p>
+</section></article>
+      <nav class="paso" aria-label="Lecciones vecinas">
+    <a href="5.html">← Módulo 3 · 5</a>
+    <a class="siguiente-paso" href="7.html">Módulo 3 · 7 →</a>
+  </nav>
+    </div>
+  </div>
+  <script src="../app.js"></script>
+</body>
+</html>

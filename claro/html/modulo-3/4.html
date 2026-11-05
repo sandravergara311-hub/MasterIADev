@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Módulo 3 · Lección 4 — OpenSpec por dentro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560&family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,460;8..60,620&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../estilos.css">
+</head>
+<body>
+  <div class="barra" aria-hidden="true"><span></span></div>
+  <header class="techo">
+    <button class="icono menu" type="button" data-menu>Lecciones</button>
+    <a class="marca" href="../index.html">En claro</a>
+    <span class="aqui-titulo">Módulo 3 · Lección 4 — OpenSpec por dentro</span>
+    <div class="acciones">
+      <button class="icono" type="button" data-letra="menos" aria-label="Texto más chico">A−</button>
+      <button class="icono" type="button" data-letra="mas" aria-label="Texto más grande">A+</button>
+      <button class="icono" type="button" data-tema-boton>Noche</button>
+    </div>
+  </header>
+  <div class="marco">
+    <nav class="indice" aria-label="Módulos"><details><summary>Módulo 1</summary><ol><li><a href="../modulo-1/1.html">1. El mapa: para qué sirve un harness</a></li><li><a href="../modulo-1/2.html">2. Los tres pilares importan lo mismo</a></li><li><a href="../modulo-1/3.html">3. El contexto: menos información, y más útil</a></li><li><a href="../modulo-1/4.html">4. Cómo pedir el trabajo, y cómo usar los tres pilares juntos</a></li><li><a href="../modulo-1/5.html">5. Deja la computadora y las cuentas listas</a></li><li><a href="../modulo-1/6.html">6. Ejercicio: el mismo pedido, con harness y sin él</a></li><li><a href="../modulo-1/7.html">7. Por qué una sesión larga sale cara</a></li><li><a href="../modulo-1/8.html">8. Comandos que sí vas a usar</a></li><li><a href="../modulo-1/9.html">9. Modelos en tu computadora, y cuándo no conviene</a></li><li><a href="../modulo-1/10.html">10. El original está vacío</a></li></ol></details>
+<details><summary>Módulo 2</summary><ol><li><a href="../modulo-2/1.html">1. El mapa: de una idea vaga a un plano que no hay que adivinar</a></li><li><a href="../modulo-2/2.html">2. Planificar es ahora el trabajo caro</a></li><li><a href="../modulo-2/3.html">3. Cada documento responde una sola pregunta</a></li><li><a href="../modulo-2/4.html">4. Escribe el PRD por capas, no de un tirón</a></li><li><a href="../modulo-2/5.html">5. La historia, el criterio y los huecos</a></li><li><a href="../modulo-2/6.html">6. Dónde vive el backlog, y con qué permiso</a></li><li><a href="../modulo-2/7.html">7. Estimar, ordenar y saber cuándo está terminado</a></li><li><a href="../modulo-2/8.html">8. Hay varias herramientas. El orden no cambia</a></li><li><a href="../modulo-2/9.html">9. Dónde profundizar, cuando haga falta</a></li><li><a href="../modulo-2/10.html">10. Ejercicio: recorta el MVP hasta poder defenderlo</a></li></ol></details>
+<details open><summary>Módulo 3</summary><ol><li><a href="1.html">1. El mapa: dos caminos, y cuándo usar cada uno</a></li><li><a href="2.html">2. Dos caminos: directo o con contrato</a></li><li><a href="3.html">3. Explorar, planear, ejecutar</a></li><li><a href="4.html" class="actual">4. OpenSpec por dentro</a></li><li><a href="5.html">5. Que el agente lea la spec, y cuándo no usar OpenSpec</a></li><li><a href="6.html">6. Ejercicio: escribe la spec de lo que ya funciona</a></li><li><a href="7.html">7. Dónde profundizar</a></li></ol></details>
+<details><summary>Módulo 4</summary><ol><li><a href="../modulo-4/1.html">1. El mapa: de &quot;lo implementé&quot; a &quot;está listo&quot;</a></li><li><a href="../modulo-4/2.html">2. Verde no es lo mismo que correcto</a></li><li><a href="../modulo-4/3.html">3. Revisar para romper, no para aprobar</a></li><li><a href="../modulo-4/4.html">4. La documentación que se queda atrás</a></li><li><a href="../modulo-4/5.html">5. Cuatro documentos. Tres se generan. Uno se decide.</a></li><li><a href="../modulo-4/6.html">6. Ejercicio: mide qué está probado de verdad</a></li><li><a href="../modulo-4/7.html">7. Dónde profundizar</a></li></ol></details>
+<details><summary>Módulo 5</summary><ol><li><a href="../modulo-5/1.html">1. El mapa: de la costumbre al guardarraíl</a></li><li><a href="../modulo-5/2.html">2. De la regla escrita al guardarraíl que se ejecuta</a></li><li><a href="../modulo-5/3.html">3. Qué se automatiza, y qué solo lo parece</a></li><li><a href="../modulo-5/4.html">4. Un agente dentro del pipeline</a></li><li><a href="../modulo-5/5.html">5. Lo que cuesta, y por qué se apagan los guardarraíles</a></li><li><a href="../modulo-5/6.html">6. Ejercicio: audita las reglas que escribiste</a></li><li><a href="../modulo-5/7.html">7. Dónde profundizar</a></li></ol></details>
+<details><summary>Módulo 6</summary><ol><li><a href="../modulo-6/1.html">1. El mapa: auditar lo que no escribiste</a></li><li><a href="../modulo-6/2.html">2. Heredado no es viejo. Es lo que nadie puede explicar</a></li><li><a href="../modulo-6/3.html">3. El cuello no es encontrar. Es comprobar</a></li><li><a href="../modulo-6/4.html">4. Lo más grave no va primero</a></li><li><a href="../modulo-6/5.html">5. Un pedido de una línea, si el rigor vive en otro sitio</a></li><li><a href="../modulo-6/6.html">6. Ejercicio: prioriza una auditoría de verdad</a></li><li><a href="../modulo-6/7.html">7. Dónde profundizar</a></li></ol></details>
+<details><summary>Módulo 7</summary><ol><li><a href="../modulo-7/1.html">1. El mapa: qué regla se aplica cuando hay varios repositorios</a></li><li><a href="../modulo-7/2.html">2. Qué decide dónde acaba un repositorio</a></li><li><a href="../modulo-7/3.html">3. El agente solo ve su directorio de trabajo</a></li><li><a href="../modulo-7/4.html">4. Dónde vive la spec cuando el sistema son tres repositorios</a></li><li><a href="../modulo-7/5.html">5. Un cambio que cruza dos repositorios no es un solo cambio</a></li><li><a href="../modulo-7/6.html">6. Lo que se comparte, lo que se versiona y lo que no se puede fundir</a></li><li><a href="../modulo-7/7.html">7. Herramientas de esta sesión</a></li><li><a href="../modulo-7/8.html">8. Ejercicio: haz que una regla se cumpla en el otro repositorio</a></li><li><a href="../modulo-7/9.html">9. Dónde profundizar</a></li></ol></details>
+<details><summary>Módulo 8</summary><ol><li><a href="../modulo-8/1.html">1. El mapa: de escribir reglas a comprobar si funcionan</a></li><li><a href="../modulo-8/2.html">2. Una regla escrita no es una regla cumplida</a></li><li><a href="../modulo-8/3.html">3. Un eval da una tasa, no un verde</a></li><li><a href="../modulo-8/4.html">4. Sin línea base, un número no significa nada</a></li><li><a href="../modulo-8/5.html">5. Quién puntúa un ensayo, y en qué orden</a></li><li><a href="../modulo-8/6.html">6. Un verde que nunca estuvo en rojo no prueba nada</a></li><li><a href="../modulo-8/7.html">7. Dónde profundizar</a></li><li><a href="../modulo-8/8.html">8. Fuentes sobre sistemas repartidos en varios repositorios</a></li></ol></details></nav>
+    <div class="lectura">
+      <article><h1>Módulo 3 · Lección 4 — OpenSpec por dentro</h1>
+<p class="origen">Texto original: <code>original/modulo-3/4.md</code><br>Obligatoria. Es la lección más larga. La instalación va en el ejercicio, al final del módulo.</p>
+<p>Verificado contra OpenSpec 1.8, en agosto de 2026. La herramienta publica cada pocas semanas. Si algo no coincide, confía en lo que ves en tu terminal y avisa. Por eso aquí se enseña la forma, no una lista cerrada de archivos.</p>
+
+<section class="bloque bloque-frase"><h2 id="en-una-frase">En una frase</h2>
+<p>OpenSpec guarda lo que el sistema hace hoy, y cada cambio llega como un diff sobre eso. Al archivar, el diff se fusiona solo. Nada de lo que está dentro de <code>openspec/</code> se ejecuta. Todo se interpreta.</p>
+</section>
+<section class="bloque bloque-palabras"><h2 id="palabras-que-vas-a-escuchar">Palabras que vas a escuchar</h2>
+<ul>
+<li><strong>Brownfield.</strong> Trabajar sobre un sistema que ya existe y ya tiene usuarios. Lo contrario, empezar de cero, es greenfield.</li>
+<li><strong>Capability.</strong> Una unidad de comportamiento con nombre propio. &quot;Órdenes&quot;, &quot;acceso&quot;. No es un archivo ni una pantalla.</li>
+<li><strong>Harness.</strong> Los archivos con los que configuras al copiloto: instrucciones, skills, subagentes y hooks. Viven en el repositorio y se versionan con el código.</li>
+<li><strong>BDD.</strong> Escribir el comportamiento esperado como escenarios casi en lenguaje natural. &quot;Cuando pasa esto, el sistema hace aquello.&quot; No como una lista abstracta.</li>
+<li><strong>RFC-2119.</strong> La convención que fija qué significan MUST, SHALL y SHOULD. Así &quot;debe&quot; no depende de quién lo lea.</li>
+<li><strong>CI.</strong> El servicio que, cada vez que subes un cambio, corre solo lo que le hayas dicho. Compilar, pruebas, linters. Lo marca en rojo o en verde. Se ejecuta. No opina.</li>
+</ul>
+<p>Si programas, léela con la terminal al lado. Las dos secciones que más tiempo ahorran son el perfil y la verificación. No salen en los tutoriales cortos.</p>
+<p>Si lideras un equipo, fíjate en que el perfil no viaja con el repositorio. Parece un detalle de instalación. Cuando explota, parece que se equivocó quien clonó.</p>
+<p>Si vienes de producto, o no programas, quédate con dos cosas y salta el resto sin culpa. Hay una descripción viva de lo que el sistema hace hoy. Cada cambio llega como un diff sobre ella. La negociación es antes de que exista el código, no en la revisión de después. Los bloques de terminal y de YAML se pueden saltar.</p>
+</section>
+<section class="bloque bloque-caso"><h2 id="caso-real-la-fecha-prometida">Caso real: la fecha prometida</h2>
+<p>En el Taller Rueda, la lista de órdenes ya existe. Andrés pide una fecha prometida, opcional. Una orden con fecha pasada y ya terminada no está atrasada.</p>
+<p>Elena no le pide al agente que programe. Primero propone el cambio. Revisa el contrato mientras no hay código. Recién ahí se implementa. Al archivar, la spec de &quot;órdenes&quot; queda actualizada sola.</p>
+<p>El ejemplo de archivos de más abajo usa el escenario de tareas del curso, el que vas a ver en la clase. La forma es la misma. En el taller, &quot;tarea&quot; es la orden y &quot;vencida&quot; es atrasada.</p>
+</section>
+<section class="bloque bloque-tema"><h2 id="spec-viva-mas-delta">Spec viva más delta</h2>
+<p>OpenSpec separa dos cosas.</p>
+<p>La spec viva, en <code>openspec/specs/</code>, describe lo que el sistema hace hoy.</p>
+<p>Un change, en <code>openspec/changes/</code>, es una propuesta. Adentro lleva un delta: qué se agrega, qué se modifica y qué se elimina respecto a la spec viva.</p>
+<p>Es la idea de un commit de Git. No guardas el proyecto entero en cada commit. Guardas el diff. OpenSpec guarda el diff de la spec. Al archivar, ese delta se fusiona en la spec viva. La fuente de verdad se actualiza sola. Por eso estas specs no se vuelven documentos de kilómetros. Cada cambio es pequeño y se puede rastrear.</p>
+<p>OpenSpec está pensado para sistemas que ya existen y evolucionan. No para arrancar de cero.</p>
+</section>
+<section class="bloque bloque-tema"><h2 id="que-crea-openspec-init">Qué crea <code>openspec init</code></h2>
+<p><code>openspec init</code> pregunta para qué herramienta configurar. Claude Code, Cursor, Copilot y otras. No arranca sin elegir:</p>
+<pre><code class="language-bash">openspec init --tools claude
+</code></pre>
+<pre><code class="language-text">mi-proyecto/
+├── openspec/
+│   ├── specs/            # specs vivas, por capability. Nace vacía.
+│   ├── changes/          # propuestas activas
+│   ├── changes/archive/  # changes ya aplicados
+│   └── config.yaml       # lo que el agente lee antes de escribir
+└── .claude/
+    ├── commands/opsx/    # los comandos /opsx:*
+    └── skills/           # las skills gemelas openspec-*
+</code></pre>
+<p>OpenSpec instala cada flujo dos veces. Como comando, lo invocas tú con <code>/opsx:propose</code>. Como skill, el agente puede usarla solo cuando le encaja. No es un sistema aparte. Son las mismas carpetas de <code>.claude/</code> que usa cualquier extensión. Lo que instala se lee y se versiona como el resto del harness.</p>
+<p>Si un tutorial viejo habla de <code>openspec/project.md</code>, ya no existe. Que no te aparezca no es un fallo. Desde la versión 1.0, OpenSpec dejó de generar archivos de instrucciones (<code>project.md</code>, <code>CLAUDE.md</code>, <code>.cursorrules</code>, <code>AGENTS.md</code>). Por eso el curso enseña la forma, no el inventario. El inventario caduca en semanas.</p>
+<p><code>specs/</code> arranca vacía, y no es un fallo. OpenSpec no lee tu código para inventarse la spec de todo el sistema. Eso es justo lo que evita. La spec viva nace del primer archive. A partir de ahí crece un cambio a la vez. Por eso el orden de los cambios importa.</p>
+<p>Desde OpenSpec 1.x, las reglas se copian a <code>.claude/</code> y ya no genera <code>AGENTS.md</code> ni <code>CLAUDE.md</code>. Que no lo genere no significa que te sobre el tuyo. Tu <code>AGENTS.md</code> sigue siendo donde vive el contexto que tú eliges. Solo cambia dónde pone OpenSpec lo suyo.</p>
+</section>
+<section class="bloque bloque-tema"><h2 id="dos-changes-distintos">Dos changes distintos</h2>
+<p>Elena hace el ciclo dos veces. No son iguales.</p>
+<p>La lista de órdenes es el primer escenario. El delta es casi todo requisitos nuevos, porque antes no había nada. Al archivarlo, <code>openspec/specs/</code> tiene por primera vez la spec de esa capability. Este change da de alta la capability.</p>
+<p>La fecha prometida es el tercer escenario. Ya hay contra qué hacer diff. El delta trae lo nuevo y también modifica requisitos que ya estaban escritos. Es un delta de verdad, con rastro de lo que había antes.</p>
+<p>Si te suena a <code>git init</code> y después un commit encima, es eso.</p>
+<p>Cuando el change da de alta una capability nueva, el delta abre con <code>## Purpose:</code>. Una o dos frases de para qué existe. El archive la copia a la spec viva. Sin ella, te deja un TBD para llenar a mano. En un delta sobre una capability que ya existe no se pone. Esa spec ya tiene la suya, y la del delta se ignora.</p>
+</section>
+<section class="bloque bloque-tema"><h2 id="el-perfil-decide-que-comandos-tienes-y-vive-fuera-del-proyecto">El perfil decide qué comandos tienes, y vive fuera del proyecto</h2>
+<p>Esta es la confusión número uno. La herramienta no te avisa.</p>
+<p>Los flujos que se instalan dependen de un perfil. El de fábrica se llama <code>core</code> y trae seis:</p>
+<pre><code class="language-text">/opsx:propose    crea el change (proposal + delta + design + tasks)
+/opsx:explore    lee tu código antes de proponer
+/opsx:apply      implementa las tasks
+/opsx:update     retoca un change ya propuesto
+/opsx:sync       realinea specs y change
+/opsx:archive    fusiona el delta en la spec viva
+</code></pre>
+<p>Hay más (<code>verify</code>, <code>new</code>, <code>continue</code>, <code>ff</code>, <code>bulk-archive</code>, <code>onboard</code>). No se instalan hasta que amplías el perfil:</p>
+<pre><code class="language-bash">openspec config profile      # selector de workflows
+openspec config list         # qué perfil tienes ahora
+</code></pre>
+<p>Esa configuración es global de tu computadora. No es del proyecto. Vive en <code>~/.config/openspec/config.json</code>, fuera de cualquier repo.</p>
+<p>Tres consecuencias:</p>
+<ul>
+<li>Se arrastra. Amplías el perfil una vez y todos los <code>openspec init</code> siguientes, en cualquier proyecto, salen con esos comandos.</li>
+<li>No viaja con el repo. Quien clona no hereda tu perfil. Va a ver los seis de <code>core</code> aunque tú tengas once. Si el README dice &quot;corre <code>/opsx:verify</code>&quot;, a esa persona no le existe.</li>
+<li>No es lo mismo que <code>openspec/config.yaml</code>. El perfil decide qué comandos existen, y es global. <code>config.yaml</code> decide cómo se escriben los artefactos, y sí va en el repo. Se confunden porque los dos se llaman config.</li>
+</ul>
+<p>Es la excepción a &quot;tu flujo viaja en el repo&quot;. Anótalo en el README o en <code>AGENTS.md</code>. Si no, la próxima persona no puede repetir lo que tú haces.</p>
+</section>
+<section class="bloque bloque-tema"><h2 id="anatomia-de-un-change">Anatomía de un change</h2>
+<p>Los bloques de esta sección salen de un change real, generado con OpenSpec 1.8 sobre este escenario, en un proyecto AdonisJS. Si al reproducirlo no cuadra, gana tu terminal. El único retoque del curso: el campo calculado se llama <code>isOverdue</code>.</p>
+<p>Cuando corres <code>/opsx:propose</code>, OpenSpec deja el change armado. Todavía no hay código. Solo la propuesta.</p>
+<pre><code class="language-text">openspec/changes/add-task-due-dates/
+├── .openspec.yaml      # metadatos del change. Lo escribe la CLI.
+├── proposal.md         # por qué y qué. Lo lee la persona y el agente.
+├── specs/tasks/spec.md # el delta: ADDED y MODIFIED, con escenarios
+├── design.md           # decisiones técnicas. Condicional. Ver abajo.
+└── tasks.md            # checklist por capas
+</code></pre>
+<p><code>design.md</code> solo se escribe si el cambio toca varias capas, agrega una dependencia, mueve el modelo de datos, o trae una ambigüedad que conviene cerrar antes de teclear. Si tu change es pequeño y no aparece, no falló nada. Si crees que lo necesita, pídelo.</p>
+<p>El delta describe el comportamiento con secciones ADDED, MODIFIED y REMOVED, y escenarios. Para el vencimiento:</p>
+<pre><code class="language-markdown">## ADDED Requirements
+### Requirement: Una tarea está vencida si su fecha límite ya pasó y no está hecha
+El sistema SHALL considerar vencida una tarea si y solo si tiene fecha límite anterior
+a la fecha actual y su estado no es `hecho`. Una tarea sin fecha límite SHALL no estar
+vencida nunca.
+
+#### Scenario: Fecha pasada y tarea sin terminar
+- **WHEN** un usuario lee una tarea en estado `pendiente` cuya fecha límite fue ayer
+- **THEN** el sistema la señala como vencida
+
+#### Scenario: Fecha pasada pero tarea hecha
+- **WHEN** un usuario lee una tarea en estado `hecho` cuya fecha límite fue ayer
+- **THEN** el sistema no la señala como vencida
+
+#### Scenario: Tarea sin fecha límite
+- **WHEN** un usuario lee una tarea sin fecha límite en estado `pendiente`
+- **THEN** el sistema no la señala como vencida
+
+## MODIFIED Requirements
+### Requirement: Crear una tarea
+El sistema SHALL permitir crear una tarea con un título y, opcionalmente, un responsable,
+un estado inicial y una fecha límite. La respuesta SHALL incluir su fecha límite y si
+está vencida.
+
+#### Scenario: Creación con título válido
+- **WHEN** un usuario autenticado crea una tarea con el título &quot;Redactar el informe&quot;
+- **THEN** el sistema persiste la tarea y responde `201` con la tarea creada
+
+#### Scenario: Creación con fecha límite
+- **WHEN** un usuario crea una tarea con el título &quot;Preparar la demo&quot; y una fecha futura
+- **THEN** el sistema responde `201` con la tarea, que lleva esa fecha y no está vencida
+</code></pre>
+<p>Mira el MODIFIED. Lleva el requisito entero, con los escenarios anteriores copiados tal cual. Incluido &quot;Creación con título válido&quot;, que no habla de fechas. No es redundancia. Al archivar, un MODIFIED reemplaza el requisito anterior. Lo que no copies se pierde. Tampoco hay una nota de &quot;antes&quot;. El historial lo guarda el change archivado, no el texto.</p>
+<p>Todo requisito necesita al menos un <code>#### Scenario:</code>. Sin él, <code>openspec validate</code> falla. Como archive valida antes de fusionar, el ciclo se detiene ahí.</p>
+<p><code>design.md</code> es el cómo. Patrones, esquema, trade-offs. Ahí evitas que el agente improvise la arquitectura. Para el vencimiento, las decisiones del ejemplo son estas. Guardar un día, no un instante, porque si guardas la hora hay que inventar a qué hora vence y en qué zona. Y calcular <code>isOverdue</code> al leer, no guardarlo. Una columna booleana exigiría un trabajo de medianoche y abriría un rato en el que la base miente.</p>
+<p>Las cabeceras no son fijas. <code>## Migration Plan</code> y <code>## Open Questions</code> aparecen solo si hacen falta. La instrucción del artefacto dice omitirlas si no hay nada.</p>
+<p>El momento humano está aquí. Si prefieres guardar <code>isOverdue</code> en una columna en lugar de calcularlo al leer, editas el <code>design.md</code> ahora, antes del apply. El agente lo respeta. Se negocia en la spec, no en el pull request. Si el cambio es pequeño y no hay <code>design.md</code>, el momento humano es el delta.</p>
+<p><code>tasks.md</code> es la checklist. Cada tarea cabe en un turno. El agente la marca <code>[x]</code> durante el apply.</p>
+<pre><code class="language-markdown">## 1. Database
+- [ ] 1.1 Migración add_due_date_to_tasks (nullable)
+## 2. Model
+- [ ] 2.1 Columna dueDate + getter computado isOverdue
+## 3. Validation
+- [ ] 3.1 Aceptar dueDate opcional en el validator
+## 4. Endpoint
+- [ ] 4.1 Serializar isOverdue en GET /tasks
+## 5. Tests
+- [ ] 5.1 Unit isOverdue (pasado/futuro/null/done)
+- [ ] 5.2 Integración GET /tasks
+</code></pre>
+<p>Una tarea es una línea <code>- [ ]</code>. El apply sigue el avance leyendo esos cuadros. Dos tareas en la misma línea cuentan como una, y el trabajo de la segunda desaparece del conteo. <code>validate</code> no lo detecta. Se ve cuando el apply se salta trabajo.</p>
+</section>
+<section class="bloque bloque-tema"><h2 id="el-ciclo">El ciclo</h2>
+<p><code>/opsx:propose</code> arma el change. No escribe código.</p>
+<p><code>/opsx:apply</code> implementa las tareas. En el vencimiento genera la migración <code>add_due_date_to_tasks</code>. Recuerda: <code>schema.ts</code> se regenera con <code>node ace migration:run</code>. No se edita a mano. También genera el getter <code>isOverdue</code>, la validación, la serialización y las pruebas. El hook de formato acomoda cada archivo.</p>
+<p><code>/opsx:archive</code> es el cierre. Abre <code>openspec/specs/tasks/spec.md</code>, el mismo archivo que nació con el change de la lista, y ahora ya contiene el requisito de la tarea vencida junto a crear, listar y cambiar de estado. Nadie los copió a mano. La próxima persona, o el próximo agente, lee el comportamiento nuevo como si siempre hubiera estado.</p>
+<p>OpenSpec rinde mejor con contexto limpio. Si antes del apply la ventana está a la mitad o más, haz <code>/clear</code> primero. El agente relee la propuesta del disco. No necesita la conversación previa. Archiva en cuanto el cambio esté unido. Si dejas changes activos sin archivar, las próximas propuestas no saben qué ya existe.</p>
+</section>
+<section class="bloque bloque-tema"><h2 id="opsx-verify"><code>/opsx:verify</code></h2>
+<p>Entre apply y archive no hay nada, en el perfil <code>core</code>, que compruebe que lo implementado es lo que la spec pedía. Ese hueco lo cubre <code>/opsx:verify</code>. No viene en <code>core</code>. Hay que activarlo.</p>
+<p>Lee el código contra los artefactos del change. Informa en tres ejes.</p>
+<ul>
+<li><strong>Completeness.</strong> ¿Quedan tareas sin marcar? ¿Hay requisitos del delta sin rastro en el código?</li>
+<li><strong>Correctness.</strong> ¿Lo implementado hace lo que el escenario decía?</li>
+<li><strong>Coherence.</strong> ¿Respeta las decisiones del <code>design.md</code>?</li>
+</ul>
+<p>Cada hallazgo sale como CRITICAL, WARNING o SUGGESTION. Sobre el vencimiento, un verify útil se ve así:</p>
+<pre><code class="language-text">CRITICAL  Scenario &quot;Tarea sin fecha límite&quot;: el serializador
+          devuelve isOverdue: null cuando dueDate es null, no false.
+WARNING   design.md dice &quot;no se almacena&quot;; el modelo añadió una columna
+          is_overdue en la migración.
+</code></pre>
+<p>El primero es el caso típico. La implementación funciona. Las pruebas pasan. Y aun así incumple el contrato. <code>null</code> no es <code>false</code>. Quien consuma la API se come un bug que nadie escribió a propósito.</p>
+<p>Tres honestidades. Venderlo como red de seguridad sería mentirte.</p>
+<ul>
+<li>No es un linter. Es el agente releyendo tu código. Estima si la implementación existe. Puede pasar por alto un incumplimiento real. Puede inventar uno que no lo es.</li>
+<li>Está sesgado a callarse. Ante la duda, prefiere SUGGESTION antes que WARNING, y WARNING antes que CRITICAL. Un verificador que grita todo el tiempo se ignora en dos días. Su silencio no prueba nada.</li>
+<li>No bloquea. Recomienda corregir antes de archivar. Nada te impide correr <code>/opsx:archive</code> después. La disciplina la pones tú.</li>
+</ul>
+<p>Aun así, activarlo cambia el resultado. Encuentra desajustes reales que un apply deja pasar. Es una segunda opinión, no una puerta.</p>
+</section>
+<section class="bloque bloque-tema"><h2 id="config-yaml-lo-que-el-agente-lee-antes-de-escribir"><code>config.yaml</code>: lo que el agente lee antes de escribir</h2>
+<p>El <code>openspec/config.yaml</code> del proyecto nace casi vacío, con todo comentado. No es el perfil. El perfil era global. Esto sí va en el repo. Quien clona, lo hereda.</p>
+<p>Tiene tres bloques. El ejemplo, lleno con el taller:</p>
+<pre><code class="language-yaml">schema: spec-driven
+
+# 1. Contexto: sirve para todos los artefactos
+context: |
+  Stack: AdonisJS + SQLite. Pruebas con Japa.
+  Dominio: órdenes de reparación del Taller Rueda.
+  Una orden terminada, aunque la fecha ya pasó, no está atrasada.
+  La fecha se guarda como día, no como hora.
+
+# 2. Reglas: por tipo de artefacto
+rules:
+  proposal:
+    - Incluye siempre una sección &quot;Fuera de alcance&quot;.
+  design:
+    - Si el cambio toca fechas, di si se guarda el día o el instante.
+  tasks:
+    - La última tarea de cada capa es correr las pruebas de esa capa.
+    - Ninguna tarea puede durar más de dos horas.
+
+# 3. Operaciones: cómo conducir el trabajo
+operations:
+  apply:
+    guidance:
+      - Corre la suite después de cada capa, no solo al final.
+</code></pre>
+<p>El <code>context</code> es el que más rinde y el que casi nadie llena. Sin él, el agente propone guardar la hora, porque nadie le dijo que la fecha es un día. Con él, esa regla entra en cada propose sin que la repitas.</p>
+</section>
+<section class="bloque bloque-tema"><h2 id="dos-preguntas-que-siempre-salen">Dos preguntas que siempre salen</h2>
+<p><strong>¿Cómo hago que OpenSpec use los subagentes que ya configuré?</strong></p>
+<p>No se puede. No es un olvido. OpenSpec no maneja la ejecución. En la versión actual no hay un lugar donde declarar un subagente.</p>
+<p>OpenSpec configura qué se escribe. Tu harness configura quién lo ejecuta.</p>
+<p>Son dos capas. Si quieres un subagente revisor después del apply, eso se arma en tu <code>.claude/</code>. Una skill, un hook o un subagente. No en <code>openspec/</code>. OpenSpec produce el contrato. Tu harness decide la cadena.</p>
+<p><strong>¿Cómo hago que corra las pruebas?</strong></p>
+<p>Pidiéndolo en <code>tasks</code>, como en el ejemplo. Es la mejor palanca que hay ahí dentro. La tarea queda escrita en <code>tasks.md</code>. Se ve en la revisión y deja rastro de si se marcó.</p>
+<p>Hay un techo. Nada de lo que vive dentro de <code>openspec/</code> se ejecuta. Todo se interpreta.</p>
+<p>El propio archivo lo dice en sus comentarios. El contexto se le muestra al agente. Las operaciones son una guía. Son instrucciones, no comprobaciones. Un agente que se salte tu regla de pruebas no rompe nada. No hay nada que romper.</p>
+<p>Si necesitas una garantía, tiene que vivir afuera. Un hook que corra la suite y falle, o el CI. Eso es código ejecutándose. No es un texto pidiendo por favor.</p>
+</section>
+<section class="bloque bloque-tema"><h2 id="si-el-proyecto-ya-existe">Si el proyecto ya existe</h2>
+<p>Casi nunca empiezas de cero. La respuesta oficial de OpenSpec es que no generes primero las specs de todo lo que hay. Lo dice así: no documentas todo el código para empezar. Escribes specs solo de lo que estás a punto de cambiar.</p>
+<p>La spec de una parte se vuelve completa después de varios cambios sobre ella. Documentar de antemano produce páginas que nadie contrastó contra un cambio real.</p>
+<p>Hay un caso donde desviarse sirve, sobre todo mientras aprendes. Pedirle al agente la spec de una parte pequeña y ya estable, el login por ejemplo, antes de tu primer propose. No para documentar. Para ver la diferencia. Primero una spec plana de lo que hay. Después un delta con ADDED y MODIFIED encima.</p>
+<p>El costo: esa spec inicial no está validada contra ningún cambio. Puede describir mal el sistema con toda la seguridad. A partir de ahí, todos los deltas se apoyan en ella. Si lo haces, hazlo sobre algo pequeño que puedas revisar entero. Trátalo como material de aprendizaje, no como fuente de verdad.</p>
+<p>El perfil ampliado trae además <code>/opsx:onboard</code>. Es la versión que sí recomienda OpenSpec. Busca una mejora pequeña y segura en tu código y te lleva por el ciclo entero.</p>
+</section>
+<section class="bloque bloque-tema"><h2 id="comandos">Comandos</h2>
+<pre><code class="language-text">openspec --version              # verificar instalación
+openspec init --tools claude    # inicializar. Hay que elegir herramienta.
+openspec list                   # changes activos
+openspec show &lt;change&gt;          # detalle de un change
+openspec validate &lt;change&gt;      # valida el FORMATO del delta, no su contenido
+openspec config list            # qué perfil tienes. Es global.
+openspec config profile         # ampliar el perfil. Activa verify y el resto.
+/opsx:propose &lt;descripción&gt;     # crea el change, sin escribir código
+/opsx:explore                   # lee el código antes de proponer
+/opsx:apply                     # implementa las tasks
+/opsx:update                    # retoca un change ya propuesto
+/opsx:sync                      # realinea specs y change
+/opsx:archive                   # fusiona el delta en la spec viva
+/opsx:verify                    # NO viene en core. Hay que activarlo.
+</code></pre>
+</section>
+<section class="bloque bloque-preguntas"><h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>
+<p><strong>Si el agente escribe la spec, ¿qué garantiza que sea correcta?</strong></p>
+<p>Nada. Por eso tu revisión va antes del código. Una spec propuesta puede malinterpretar la regla con toda la seguridad. Corregirla ahí cuesta editar un párrafo. Es el único punto donde un malentendido es barato.</p>
+<p><strong>¿No se van a desfasar la descripción y el código?</strong></p>
+<p>Se ataca por dos vías. Ninguna es infalible. La spec viva se actualiza al archivar, así que nadie la copia a mano. El paso de verificación compara el código contra el contrato, pero interpreta y está sesgado a callarse. La garantía dura sigue siendo una prueba que se ejecuta.</p>
+<p><strong>Un MODIFIED obliga a copiar el requisito entero. ¿Eso no se vuelve un documento gigante?</strong></p>
+<p>La copia vive dentro del change. Es temporal y termina archivado. No vive dentro de la spec viva. Al archivar, el requisito modificado reemplaza al anterior. La fuente de verdad crece por reemplazo, no por acumulación. Lo que sí se acumula es el historial de changes. Ahí queda el &quot;antes&quot;.</p>
+</section>
+<section class="bloque bloque-accion"><h2 id="que-hacer">Qué hacer</h2>
+<ul>
+<li>Spec viva más delta. El change guarda el diff. Archive lo fusiona.</li>
+<li>Propose no escribe código. El momento humano es revisar el change. <code>design.md</code> solo si hace falta.</li>
+<li>Negocia en el <code>design.md</code> o en el delta, antes del apply. No en el pull request de después.</li>
+<li>El perfil es global y no viaja con el repo. Si el equipo tiene que usar verify, escríbelo. No lo heredan al clonar.</li>
+<li>Activa verify sabiendo que es una segunda opinión sesgada a callarse. No es una puerta.</li>
+<li>Llena el <code>context</code> de <code>config.yaml</code>.</li>
+<li>Nada dentro de <code>openspec/</code> se ejecuta. Si necesitas una garantía, ponla en un hook o en el CI.</li>
+</ul>
+<p class="siguiente">Siguiente lección: cómo hacer que el agente lea la spec, cuándo no usar OpenSpec, y la capa que el curso monta encima.</p>
+</section></article>
+      <nav class="paso" aria-label="Lecciones vecinas">
+    <a href="3.html">← Módulo 3 · 3</a>
+    <a class="siguiente-paso" href="5.html">Módulo 3 · 5 →</a>
+  </nav>
+    </div>
+  </div>
+  <script src="../app.js"></script>
+</body>
+</html>
