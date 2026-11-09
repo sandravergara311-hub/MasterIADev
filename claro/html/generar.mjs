@@ -2,7 +2,8 @@ import fs from "node:fs";
 import path from "node:path";
 import { Marked } from "marked";
 
-const claro = path.resolve("g:/Cursos/AI4Devs/MasterIADev/claro");
+const repo = path.resolve("g:/Cursos/AI4Devs/MasterIADev");
+const claro = path.join(repo, "claro");
 const salida = path.join(claro, "html");
 
 const marked = new Marked({ gfm: true, breaks: false });
@@ -102,6 +103,21 @@ function nombreCorto(titulo) {
   return partes.length > 1 ? partes.slice(1).join(" — ") : titulo;
 }
 
+function sesionDe(numero) {
+  const archivo = path.join(repo, "original", `modulo-${numero}`, "sesion-en-vivo.md");
+  if (!fs.existsSync(archivo)) return null;
+  const texto = fs.readFileSync(archivo, "utf8");
+  const titulo = (texto.match(/^Sesión .+$/m)?.[0] ?? `Sesión ${numero}`).replace(/\.$/, "");
+  const url = texto.match(/https?:\/\/\S+/)?.[0]?.split("?")[0];
+  if (!url) return null;
+  return { titulo, url };
+}
+
+function enlaceSesion(sesion) {
+  if (!sesion) return "";
+  return `<a class="sesion" href="${escapar(sesion.url)}" target="_blank" rel="noopener">${escapar(sesion.titulo)}</a>`;
+}
+
 function listar() {
   const modulos = fs
     .readdirSync(claro, { withFileTypes: true })
@@ -121,7 +137,7 @@ function listar() {
         const titulo = tituloDe(markdown, `${n}.md`);
         return { n, titulo, corto: nombreCorto(titulo), markdown, frase: n === 1 ? fraseDe(markdown) : "" };
       });
-    return { numero, lecciones };
+    return { numero, lecciones, sesion: sesionDe(numero) };
   });
 }
 
@@ -143,7 +159,7 @@ function indiceHtml(modulos, actual) {
     .join("\n");
 }
 
-function pagina({ titulo, cuerpo, indice, anterior, siguiente, css }) {
+function pagina({ titulo, cuerpo, indice, anterior, siguiente, css, sesion }) {
   const paso = `<nav class="paso" aria-label="Lecciones vecinas">
     ${anterior ? `<a href="${anterior.href}">← ${escapar(anterior.texto)}</a>` : "<span></span>"}
     ${siguiente ? `<a class="siguiente-paso" href="${siguiente.href}">${escapar(siguiente.texto)} →</a>` : ""}
@@ -175,6 +191,7 @@ function pagina({ titulo, cuerpo, indice, anterior, siguiente, css }) {
   <div class="marco">
     <nav class="indice" aria-label="Módulos">${indice}</nav>
     <div class="lectura">
+      ${enlaceSesion(sesion)}
       <article>${cuerpo}</article>
       ${paso}
     </div>
@@ -197,6 +214,7 @@ function portada(modulos) {
         .join("");
       return `<section class="modulo">
         <h2>Módulo ${modulo.numero}</h2>
+        ${enlaceSesion(modulo.sesion)}
         ${frase ? `<p class="frase">${escapar(frase)}</p>` : ""}
         <ol>${items}</ol>
       </section>`;
@@ -265,6 +283,7 @@ for (let i = 0; i < planas.length; i += 1) {
     anterior: hrefDe(anterior),
     siguiente: hrefDe(siguiente),
     css: "../estilos.css",
+    sesion: modulos.find((modulo) => modulo.numero === actual.modulo)?.sesion,
   });
   fs.writeFileSync(path.join(carpeta, `${actual.n}.html`), html, "utf8");
 }
