@@ -89,9 +89,13 @@ if (articulo && "speechSynthesis" in window) {
     </label>
     <label>Velocidad
       <select data-escuchar-ritmo aria-label="Velocidad de la lectura">
-        <option value="0.9">Lenta</option>
-        <option value="1" selected>Normal</option>
-        <option value="1.15">Rápida</option>
+        <option value="0.9">0.9×</option>
+        <option value="1" selected>1×</option>
+        <option value="1.2">1.2×</option>
+        <option value="1.4">1.4×</option>
+        <option value="1.6">1.6×</option>
+        <option value="1.8">1.8×</option>
+        <option value="2">2×</option>
       </select>
     </label>`;
   const lectura = articulo.closest(".lectura") || articulo.parentElement;
@@ -102,7 +106,7 @@ if (articulo && "speechSynthesis" in window) {
   const desde = caja.querySelector("[data-escuchar-desde]");
   const vozSelect = caja.querySelector("[data-escuchar-voz]");
   const ritmo = caja.querySelector("[data-escuchar-ritmo]");
-  const ritmoGuardado = localStorage.getItem("ritmo");
+  const ritmoGuardado = { "1.15": "1.2" }[localStorage.getItem("ritmo")] || localStorage.getItem("ritmo");
   if (ritmoGuardado && [...ritmo.options].some((opcion) => opcion.value === ritmoGuardado)) {
     ritmo.value = ritmoGuardado;
   }
