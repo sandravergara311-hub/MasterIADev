@@ -1,0 +1,23 @@
+es la misma historia, solo que con artefactos distintos. Entonces, en el demo uno, Cloud podía editar, bloqueé, pero no significa que tuviera el gobierno de bloqueé.
+
+01:53:11
+En la demo dos, productor, test y el build estaban verdes, pero el sistema perdió un dato y el verde, que me aparecía en un repo, me generó un error en otro repo que
+
+01:53:24
+no toqué en ese momento. Y OpenSpec pudo completar exactamente el "scope" que yo le di, pero la "capability" de la que hablaba seguía incompleta.
+
+01:53:33
+Entonces, la pregunta que quiero que se lleven para finalizar es: cuando ustedes estén trabajando en Polirepo, ¿qué es lo que tienen que preguntarse?
+
+01:53:44
+¿Esto se cumple porque existe un mecanismo que lo ejecuta y que me deja evidencia, o porque hoy el sistema tuvo la suerte de leer, inferir o conservar algo?
+
+01:53:53
+A veces vamos a tener esa suerte que el sistema lo lea. Y eso es suerte y muy bien, y puede que ahí no falle el error, pero probablemente
+
+01:54:04
+no. Si no podemos señalar el mecanismo, el "scope" o la evidencia, todavía no tenemos gobierno. Tenemos una expectativa. Importante tener claro mecanismos, gobiernos y evidencias cuando trabajemos en
+
+01:54:11
+temas Polirepo. Me pasé ocho minutos. Muchas gracias. Sé que hay una pregunta adicional de Emma. Yo te la respondo, Emma, por medio de chat, ¿listo?
+

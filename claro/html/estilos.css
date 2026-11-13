@@ -177,6 +177,46 @@ button.icono:hover { border-color: var(--acento); }
 
 .lectura { min-width: 0; }
 
+.escuchar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 0.85rem;
+}
+
+.escuchar button,
+.escuchar select {
+  font-family: var(--ui);
+  font-size: 0.95rem;
+  font-weight: 700;
+  border: 1px solid var(--linea);
+  background: var(--papel-2);
+  color: var(--tinta);
+  border-radius: 999px;
+  padding: 0.4rem 0.85rem;
+  cursor: pointer;
+  max-width: min(22rem, 100%);
+}
+
+.escuchar button:hover,
+.escuchar select:hover { border-color: var(--acento); }
+
+.escuchar[data-estado="leyendo"] [data-escuchar-ir] {
+  background: var(--acento);
+  border-color: var(--acento);
+  color: #fff;
+}
+
+.escuchar label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--ui);
+  font-size: 0.92rem;
+  color: var(--tinta-suave);
+}
+
 article {
   background: var(--papel-2);
   border: 1px solid var(--linea);
@@ -393,9 +433,36 @@ a.sesion::before {
   font-size: 0.72rem;
 }
 
-.lectura > a.sesion {
+.accesos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.55rem 0 0.35rem;
+}
+
+.lectura > .accesos {
   margin: 0 0 0.85rem;
 }
+
+.accesos a.sesion { margin: 0; }
+
+a.resumen-clase {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  max-width: 100%;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  background: var(--acento-suave);
+  color: var(--acento);
+  font-family: var(--ui);
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-decoration: none;
+}
+
+a.resumen-clase:hover { text-decoration: underline; }
 
 a.sesion:hover {
   text-decoration: underline;

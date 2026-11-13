@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Módulo 9 · Lección 7 — Ejercicio FlowSync: bloquea el dato que no debe salir y guarda el rastro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560&family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,460;8..60,620&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../estilos.css">
+</head>
+<body>
+  <div class="barra" aria-hidden="true"><span></span></div>
+  <header class="techo">
+    <button class="icono menu" type="button" data-menu>Lecciones</button>
+    <a class="marca" href="../index.html">En claro</a>
+    <span class="aqui-titulo">Módulo 9 · Lección 7 — Ejercicio FlowSync: bloquea el dato que no debe salir y guarda el rastro</span>
+    <div class="acciones">
+      <button class="icono" type="button" data-letra="menos" aria-label="Texto más chico">A−</button>
+      <button class="icono" type="button" data-letra="mas" aria-label="Texto más grande">A+</button>
+      <button class="icono" type="button" data-tema-boton>Noche</button>
+    </div>
+  </header>
+  <div class="marco">
+    <nav class="indice" aria-label="Módulos"><details><summary>Módulo 1</summary><ol><li><a href="../modulo-1/1.html">1. El mapa: para qué sirve un harness</a></li><li><a href="../modulo-1/2.html">2. Los tres pilares importan lo mismo</a></li><li><a href="../modulo-1/3.html">3. El contexto: menos información, y más útil</a></li><li><a href="../modulo-1/4.html">4. Cómo pedir el trabajo, y cómo usar los tres pilares juntos</a></li><li><a href="../modulo-1/5.html">5. Deja la computadora y las cuentas listas</a></li><li><a href="../modulo-1/6.html">6. Ejercicio: el mismo pedido, con harness y sin él</a></li><li><a href="../modulo-1/7.html">7. Por qué una sesión larga sale cara</a></li><li><a href="../modulo-1/8.html">8. Comandos que sí vas a usar</a></li><li><a href="../modulo-1/9.html">9. Modelos en tu computadora, y cuándo no conviene</a></li><li><a href="../modulo-1/10.html">10. El original está vacío</a></li></ol></details>
+<details><summary>Módulo 2</summary><ol><li><a href="../modulo-2/1.html">1. El mapa: de una idea vaga a un plano que no hay que adivinar</a></li><li><a href="../modulo-2/2.html">2. Planificar es ahora el trabajo caro</a></li><li><a href="../modulo-2/3.html">3. Cada documento responde una sola pregunta</a></li><li><a href="../modulo-2/4.html">4. Escribe el PRD por capas, no de un tirón</a></li><li><a href="../modulo-2/5.html">5. La historia, el criterio y los huecos</a></li><li><a href="../modulo-2/6.html">6. Dónde vive el backlog, y con qué permiso</a></li><li><a href="../modulo-2/7.html">7. Estimar, ordenar y saber cuándo está terminado</a></li><li><a href="../modulo-2/8.html">8. Hay varias herramientas. El orden no cambia</a></li><li><a href="../modulo-2/9.html">9. Dónde profundizar, cuando haga falta</a></li><li><a href="../modulo-2/10.html">10. Ejercicio: recorta el MVP hasta poder defenderlo</a></li></ol></details>
+<details><summary>Módulo 3</summary><ol><li><a href="../modulo-3/1.html">1. El mapa: dos caminos, y cuándo usar cada uno</a></li><li><a href="../modulo-3/2.html">2. Dos caminos: directo o con contrato</a></li><li><a href="../modulo-3/3.html">3. Explorar, planear, ejecutar</a></li><li><a href="../modulo-3/4.html">4. OpenSpec por dentro</a></li><li><a href="../modulo-3/5.html">5. Que el agente lea la spec, y cuándo no usar OpenSpec</a></li><li><a href="../modulo-3/6.html">6. Ejercicio: escribe la spec de lo que ya funciona</a></li><li><a href="../modulo-3/7.html">7. Dónde profundizar</a></li></ol></details>
+<details><summary>Módulo 4</summary><ol><li><a href="../modulo-4/1.html">1. El mapa: de &quot;lo implementé&quot; a &quot;está listo&quot;</a></li><li><a href="../modulo-4/2.html">2. Verde no es lo mismo que correcto</a></li><li><a href="../modulo-4/3.html">3. Revisar para romper, no para aprobar</a></li><li><a href="../modulo-4/4.html">4. La documentación que se queda atrás</a></li><li><a href="../modulo-4/5.html">5. Cuatro documentos. Tres se generan. Uno se decide.</a></li><li><a href="../modulo-4/6.html">6. Ejercicio: mide qué está probado de verdad</a></li><li><a href="../modulo-4/7.html">7. Dónde profundizar</a></li></ol></details>
+<details><summary>Módulo 5</summary><ol><li><a href="../modulo-5/1.html">1. El mapa: de la costumbre al guardarraíl</a></li><li><a href="../modulo-5/2.html">2. De la regla escrita al guardarraíl que se ejecuta</a></li><li><a href="../modulo-5/3.html">3. Qué se automatiza, y qué solo lo parece</a></li><li><a href="../modulo-5/4.html">4. Un agente dentro del pipeline</a></li><li><a href="../modulo-5/5.html">5. Lo que cuesta, y por qué se apagan los guardarraíles</a></li><li><a href="../modulo-5/6.html">6. Ejercicio: audita las reglas que escribiste</a></li><li><a href="../modulo-5/7.html">7. Dónde profundizar</a></li></ol></details>
+<details><summary>Módulo 6</summary><ol><li><a href="../modulo-6/1.html">1. El mapa: auditar lo que no escribiste</a></li><li><a href="../modulo-6/2.html">2. Heredado no es viejo. Es lo que nadie puede explicar</a></li><li><a href="../modulo-6/3.html">3. El cuello no es encontrar. Es comprobar</a></li><li><a href="../modulo-6/4.html">4. Lo más grave no va primero</a></li><li><a href="../modulo-6/5.html">5. Un pedido de una línea, si el rigor vive en otro sitio</a></li><li><a href="../modulo-6/6.html">6. Ejercicio: prioriza una auditoría de verdad</a></li><li><a href="../modulo-6/7.html">7. Dónde profundizar</a></li></ol></details>
+<details><summary>Módulo 7</summary><ol><li><a href="../modulo-7/1.html">1. El mapa: qué regla se aplica cuando hay varios repositorios</a></li><li><a href="../modulo-7/2.html">2. Qué decide dónde acaba un repositorio</a></li><li><a href="../modulo-7/3.html">3. El agente solo ve su directorio de trabajo</a></li><li><a href="../modulo-7/4.html">4. Dónde vive la spec cuando el sistema son tres repositorios</a></li><li><a href="../modulo-7/5.html">5. Un cambio que cruza dos repositorios no es un solo cambio</a></li><li><a href="../modulo-7/6.html">6. Lo que se comparte, lo que se versiona y lo que no se puede fundir</a></li><li><a href="../modulo-7/7.html">7. Herramientas de esta sesión</a></li><li><a href="../modulo-7/8.html">8. Ejercicio: haz que una regla se cumpla en el otro repositorio</a></li><li><a href="../modulo-7/9.html">9. Dónde profundizar</a></li><li><a href="../modulo-7/sesion.html">Resumen de la clase</a></li></ol></details>
+<details><summary>Módulo 8</summary><ol><li><a href="../modulo-8/1.html">1. El mapa: de escribir reglas a comprobar si funcionan</a></li><li><a href="../modulo-8/2.html">2. Una regla escrita no es una regla cumplida</a></li><li><a href="../modulo-8/3.html">3. Un eval da una tasa, no un verde</a></li><li><a href="../modulo-8/4.html">4. Sin línea base, un número no significa nada</a></li><li><a href="../modulo-8/5.html">5. Quién puntúa un ensayo, y en qué orden</a></li><li><a href="../modulo-8/6.html">6. Un verde que nunca estuvo en rojo no prueba nada</a></li><li><a href="../modulo-8/7.html">7. Dónde profundizar</a></li><li><a href="../modulo-8/8.html">8. Dónde profundizar</a></li><li><a href="../modulo-8/9.html">9. Mide una regla que creías cumplida</a></li><li><a href="../modulo-8/10.html">10. Fuentes sobre sistemas repartidos en varios repositorios</a></li></ol></details>
+<details open><summary>Módulo 9</summary><ol><li><a href="1.html">1. El mapa: qué datos bloqueas, qué riesgos revisas y qué evidencia guardas</a></li><li><a href="2.html">2. Un pedido no es una consulta, es una transferencia de datos</a></li><li><a href="3.html">3. La casilla de riesgo la decide el uso, no la tecnología</a></li><li><a href="4.html">4. El código generado falla distinto, y quien lo usa confía más</a></li><li><a href="5.html">5. El ataque no entra por donde escribes, entra por lo que el agente lee</a></li><li><a href="6.html">6. Cumplir no es no hacerlo mal, es poder demostrar qué pasó</a></li><li><a href="7.html" class="actual">7. Ejercicio FlowSync: bloquea el dato que no debe salir y guarda el rastro</a></li><li><a href="8.html">8. Dónde comprobar lo que dice el módulo</a></li></ol></details></nav>
+    <div class="lectura">
+      
+      <article><h1>Módulo 9 · Lección 7 — Ejercicio FlowSync: bloquea el dato que no debe salir y guarda el rastro</h1>
+<p class="origen">Texto original: <code>original/modulo-9/7.md</code><br>Obligatoria. La fecha límite es Miercoles 18 De Noviembre 2026 al final del día.<br>Repositorio: Flowsync.</p>
+
+<section class="bloque bloque-frase"><h2 id="en-una-frase">En una frase</h2>
+<p>Montas un hook que impide ciertos commits del agente, dejas un registro de cada bloqueo y escribes qué detectó y qué se le escapa. Traes el pull request abierto aunque no hayas terminado.</p>
+</section>
+<section class="bloque bloque-caso"><h2 id="caso-real-la-aseguradora-ahora-en-flowsync">Caso real: la aseguradora, ahora en FlowSync</h2>
+<p>Marina no mide la aplicación de la Aseguradora del Valle. Mide este proyecto. La pregunta es la misma que con el diagnóstico de Elena. Si un dato personal o un secreto intenta entrar en un commit, ¿queda bloqueado y queda constancia, sin copiar el dato otra vez?</p>
+<p>El proyecto es FlowSync. El hook se llama <code>datos-que-no-salen</code>. Las reglas son tres y están escritas más abajo. No las cambies.</p>
+<p>Guarda cada pedido (prompt) tal cual lo envías, desde el primero. Forman parte de la entrega. No los reconstruyas de memoria al terminar. Lo que se revisa es cómo lo pediste, no una versión corregida después. En el repositorio hay un archivo para guardarlos.</p>
+<p>El ejercicio tiene cuatro partes: el inventario (A), la creación del hook (B), la prueba con un dato que no debe incorporarse (C) y la entrega de tres líneas (D).</p>
+</section>
+<section class="bloque bloque-tema"><h2 id="como-funciona-este-modulo">Cómo funciona este módulo</h2>
+<p>El trabajo va en tres etapas.</p>
+<ol>
+<li><p>Lo intentas tú. Trabajas sobre el proyecto de más abajo, con tu agente y dentro del tiempo indicado. Entregas lo que hayas conseguido, aunque esté incompleto. Este primer intento no se puntúa por terminarlo. Las dificultades sirven para la discusión en la clase en vivo.</p>
+</li>
+<li><p>Lo ves resuelto en la clase en vivo. Quien dirige la clase construye el mismo hook, con las mismas tres reglas y sobre el mismo proyecto. Puedes comparar su recorrido con el tuyo. Conviene mirar sin teclear. Después tendrás tiempo para repetirlo con calma.</p>
+</li>
+<li><p>Lo replicas. Recibirás por escrito los pedidos que use quien dirige la clase. Con ellos vuelves a tu ambiente y repites el recorrido.</p>
+</li>
+</ol>
+<p>Al repetirlo, no esperes salidas idénticas. La inteligencia artificial puede producir resultados distintos con el mismo pedido. Puede cambiar la redacción del script, el orden de las reglas o la manera de responder ante el dato de prueba.</p>
+<p>En la parte C, el agente puede negarse antes de intentar el commit, o puede intentarlo y dejar que el hook lo bloquee. Los dos resultados valen para esa parte. Solo el segundo comprueba que el hook bloqueó el dato. Indica cuál ocurrió. Lo que reproduces son los pasos y los requisitos de la solución. El texto generado puede variar.</p>
+</section>
+<section class="bloque bloque-tema"><h2 id="deja-el-ambiente-listo">Deja el ambiente listo</h2>
+<h3>1. Comprueba los requisitos de tu máquina</h3>
+<p>Antes de clonar, comprueba estas cinco cosas. Cada una trae un comando y el fallo que evita. Hazlo antes de seguir. Algunos fallos aparecen más tarde con mensajes que no explican la causa. No necesitas Docker.</p>
+<ul>
+<li><strong>Node.js 24 o superior:</strong> <code>node -v</code>. El proyecto declara 4 como versión mínima. En las comprobaciones hechas, la instalación con Node 20 falla con <code>Unknown file extension &quot;.ts&quot;</code>, que no señala la versión como causa. Con Node 22 arranca con avisos <code>EBADENGINE</code>. Puedes instalarlo desde <a href="https://nodejs.org" target="_blank" rel="noopener">https://nodejs.org</a>.</li>
+<li><strong>Make:</strong> <code>make --version</code>. Si no está, en macOS lo obtienes con las herramientas de línea de comandos (<code>xcode-select --install</code>). En Linux, con el paquete <code>build-essential</code> o equivalente.</li>
+<li><strong>Git:</strong> <code>git --version</code>. Una versión reciente basta.</li>
+<li><strong>jq:</strong> <code>jq --version</code>. El hook lee con esta herramienta los datos que recibe, igual que el hook de Prettier que ya trae el proyecto. Sin <code>jq</code>, el hook falla en silencio y parece que no existe. En macOS, <code>brew install jq</code>. En Linux y en WSL, instala el paquete <code>jq</code> de tu distribución.</li>
+<li><strong>Una cuenta de GitHub.</strong> Entregas con un pull request desde tu propio fork hacia el repositorio del curso.</li>
+</ul>
+<p>En Windows, trabaja dentro de WSL (Windows Subsystem for Linux, el subsistema de Linux para Windows). El ambiente está preparado para macOS y Linux. Los atajos del proyecto usan órdenes de shell de macOS y Linux (<code>cp</code>, <code>test</code>, <code>rm</code>) que no funcionan en PowerShell.</p>
+<p>Haz todo el recorrido dentro de WSL, no solo el último paso. Instala allí Node, Make y jq, y clona desde esa terminal. Lo que instales en Windows no existe dentro de esa terminal. Clona dentro del sistema de archivos de Linux (<code>~/…</code>), no en <code>/mnt/c</code>. Así evitas problemas de rendimiento al instalar las dependencias.</p>
+<h3>2. Crea tu fork y clona el proyecto</h3>
+<p>Trabajas sobre tu propio fork. No tienes permiso de escritura en el repositorio del curso. Desde esa copia preparas el pull request.</p>
+<p>Entra en <a href="https://github.com/LIDR-academy-temp/flowsync-ai4devs-202609-1" target="_blank" rel="noopener">https://github.com/LIDR-academy-temp/flowsync-ai4devs-202609-1</a> y pulsa Fork.</p>
+<p>Clona tu fork y entra en la carpeta.</p>
+<p>Añade el repositorio original como <code>upstream</code> y trae desde allí la rama de partida. En el original, la URL del primer comando va entre ángulos de Markdown. El comando que debes ejecutar es este:</p>
+<pre><code class="language-bash">git remote add upstream https://github.com/LIDR-academy-temp/flowsync-ai4devs-202609-1.git
+git fetch upstream
+git checkout -b s9/start upstream/s9/start
+</code></pre>
+<p>Obtén la rama de partida desde <code>upstream</code>. Si al crear el fork solo copiaste la rama predeterminada, tu copia tendrá <code>main</code>, pero no la rama del ejercicio. En ese caso, <code>git checkout s9/start</code> devuelve <code>did not match any file(s) known to git</code>. Ese mensaje no explica que la rama falta en tu fork.</p>
+<p>Aunque copies todas las ramas al crear el fork, las que se publiquen después en el repositorio original no se incorporan solas a tu copia.</p>
+<h3>3. Instala y arranca el proyecto</h3>
+<p>No hay <code>package.json</code> en la raíz. Los comandos de npm se ejecutan dentro de <code>backend/</code> y <code>frontend/</code>. El Makefile de la raíz se encarga.</p>
+<pre><code class="language-bash">make setup   # solo la primera vez: instala dependencias, crea los .env, genera la clave de la aplicación y migra
+make start   # levanta backend y frontend a la vez; Ctrl-C para los dos
+make help    # lista todos los atajos
+</code></pre>
+<p><code>make start</code> mantiene ocupada esa terminal mientras los servidores están en marcha. Abre otra para seguir trabajando.</p>
+<p>Comprueba que las dos partes responden.</p>
+<ul>
+<li>Backend, en <a href="http://localhost:3333" target="_blank" rel="noopener">http://localhost:3333</a>. Desde otra terminal: <code>curl -s http://localhost:3333</code>.</li>
+<li>Frontend, en <a href="http://localhost:5173" target="_blank" rel="noopener">http://localhost:5173</a>. Ábrelo en el navegador.</li>
+</ul>
+<p>Para el ejercicio no necesitas mantener los servidores en marcha. <code>make setup</code> debe haber terminado sin errores, porque el agente va a leer el proyecto entero.</p>
+<h3>4. Ejecuta las pruebas del backend</h3>
+<p>Ejecuta la batería una vez, antes de modificar el proyecto. Así tienes una referencia del estado inicial y detectas problemas del ambiente antes de empezar.</p>
+<pre><code class="language-bash">(cd backend &amp;&amp; npm test)
+</code></pre>
+<p>Los paréntesis conservan la ubicación de tu terminal. Las pruebas corren dentro de <code>backend/</code> y, al terminar, sigues en la raíz. Continúa desde allí.</p>
+<h3>5. Revisa las instrucciones y la configuración del agente</h3>
+<p>Antes del primer pedido, abre estos dos archivos.</p>
+<ul>
+<li><code>CLAUDE.md</code>, en la raíz. Contiene las instrucciones del proyecto para Claude Code.</li>
+<li><code>.claude/settings.json</code>. Contiene la configuración del agente y los hooks registrados.</li>
+</ul>
+<p>En el segundo hay un hook que formatea el frontend. Fíjate en cómo está registrado y en cómo lee los datos que recibe. Te sirve de referencia para construir el tuyo.</p>
+<h3>6. Crea tu rama de trabajo</h3>
+<p>Trabaja en tu propia rama, no en <code>s9/start</code>. Créala antes del primer pedido, con este nombre:</p>
+<pre><code class="language-bash">git checkout -b bloqueo-&lt;tus-iniciales&gt;
+</code></pre>
+<p>Desde esta rama entregas. Si el agente crea commits en otra rama, intégralos en la tuya con <code>git merge &lt;esa-rama&gt;</code> antes de subirla.</p>
+</section>
+<section class="bloque bloque-accion"><h2 id="la-tarea">La tarea</h2>
+<p>Construye un hook que bloquee los intentos de commit del agente cuando incluyan un secreto reconocible, un correo fuera de los dominios permitidos o un archivo <code>.env</code>. Debe registrar cada bloqueo. Después, pruébalo pidiéndole al agente que incorpore un dato que debería bloquear.</p>
+<p>Es el mismo encargo que se resolverá en la clase en vivo, sobre el mismo proyecto y con las mismas restricciones. Los pedidos los escribes tú y forman parte de la entrega.</p>
+<p>El alcance está definido: un hook de Claude Code llamado <code>datos-que-no-salen</code>, las tres reglas de más abajo y un registro en <code>docs/seguridad/registro-de-bloqueos.md</code>. El ejercicio es pequeño a propósito. Interesa observar qué detecta el hook, qué deja registrado y qué queda fuera.</p>
+<p>El ejercicio termina cuando hayas montado el hook, lo hayas probado y hayas escrito tus hallazgos. Los pasos posteriores se ven en la clase en vivo, donde comparas tu registro con el de la clase.</p>
+<h3>Parte A: revisa el inventario antes de modificar nada</h3>
+<p>Pídele al agente que identifique los datos personales y los secretos del proyecto, y que explique qué información consulta para trabajar en él. No debe modificar ningún archivo.</p>
+<p>Solicita tres listas.</p>
+<ol>
+<li><strong>Datos personales.</strong> Las tablas y columnas que almacenan información de una persona identificable, comprobadas en las migraciones y no supuestas, y los archivos que contienen ejemplos de correos o nombres.</li>
+<li><strong>Secretos.</strong> Los archivos que contienen o pueden contener claves, tokens o contraseñas, estén o no en el repositorio. Mira también lo que ignora Git.</li>
+<li><strong>Información que consulta el agente.</strong> Lo que ha leído y lo que podría leer al hacer un cambio en el backend: las instrucciones del repositorio, la configuración de la herramienta que lo ejecuta, los archivos de ambiente y la base de datos local. Para cada elemento, indica si su contenido sale de tu máquina cuando trabaja contigo.</li>
+</ol>
+<p>Revisa con atención la tercera lista. Conecta el ejercicio con la primera pregunta del módulo: qué información de tu ambiente llega al agente cuando trabajas con él.</p>
+<h3>Parte B: el hook dividido en dos piezas</h3>
+<p>Pídele al agente que construya las dos piezas. Debe respetar estas restricciones. Serán las mismas durante la clase en vivo.</p>
+<p><strong>Pieza 1.</strong> Un hook de Claude Code en <code>.claude/hooks/datos-que-no-salen.sh</code>, registrado en <code>.claude/settings.json</code> como PreToolUse con el matcher Bash, junto al hook existente. Debe leer el JSON (JavaScript Object Notation, el formato de texto con el que recibe los datos) de la entrada estándar mediante <code>jq</code>. El comando está en <code>.tool_input.command</code>, como en el hook de Prettier. Debe utilizar <code>set -uo pipefail</code>.</p>
+<p>Solo actúa si el comando contiene <code>git commit</code>. Ante cualquier otro comando, sale con 0 y no escribe nada.</p>
+<p>Revisa las líneas añadidas del diff preparado (<code>git diff --cached</code>). Si el mismo comando también incluye <code>git add</code>, revisa además los cambios sin preparar y los archivos nuevos sin seguimiento, porque todavía pueden no estar en el índice.</p>
+<p>Aplica estas tres reglas únicamente.</p>
+<ol>
+<li>Una clave con forma reconocible: <code>AKIA</code> seguido de 16 caracteres (Amazon Web Services, AWS), <code>sk-ant-</code> (Anthropic), <code>ghp_</code> o <code>github_pat_</code> (GitHub), <code>AIza</code> seguido de 35 caracteres (Google), <code>xoxb-</code> / <code>xoxp-</code> / <code>xoxa-</code> (Slack), un bloque <code>----BEGIN ... PRIVATE KEY-----</code>, o una línea <code>APP_KEY=</code> con valor.</li>
+<li>Una dirección de correo cuyo dominio no sea <code>example.com</code>, <code>example.org</code>, <code>example.net</code> ni <code>github.com</code>. La lista es corta a propósito. Los ejemplos y las pruebas de este proyecto ya utilizan <code>example.com</code>, reservado para ejemplos.</li>
+<li>Un archivo llamado exactamente <code>.env</code>, en cualquier carpeta, entre los archivos que se van a incorporar al commit. Los <code>.env.example</code> no cuentan.</li>
+</ol>
+<p>Si detecta una coincidencia: sale con código 2 y escribe por la salida de error qué regla se ha activado, en qué archivo y que el dato debe sustituirse por uno inventado. Además, añade una línea a <code>docs/seguridad/registro-de-bloqueos.md</code> con la fecha y hora en UTC (tiempo universal coordinado), en formato ISO 8601, la palabra <code>BLOQUEADO</code>, la regla y el archivo. Nunca debe incluir el valor detectado. Repetirlo crea otra copia del dato. Si el registro no existe, lo crea con una cabecera de una línea.</p>
+<p>Si no detecta ninguna coincidencia: sale con 0 y no escribe nada.</p>
+<p><strong>Pieza 2.</strong> Un bloque breve en la sección de reglas de proceso del <code>CLAUDE.md</code> del repositorio. Debe explicar que el hook existe, qué tres cosas bloquea y cómo actuar ante un bloqueo: no desactivarlo ni saltárselo, sustituir el dato por uno inventado que cumpla las reglas y volver a intentarlo. También debe indicar que el registro se incluye en el commit con el resto del trabajo, porque es la evidencia del bloqueo. <code>AGENTS.md</code> no se modifica. El agente debe comprobar antes qué es.</p>
+<p>Antes de darlo por terminado, pídele que lo pruebe. Debe crear un archivo temporal con un correo de <code>gmail.com</code>, ejecutar <code>git add</code> e intentar hacer un commit. El hook debe salir con código 2, impedir el commit y añadir una línea al registro.</p>
+<p>Después, debe retirar el archivo temporal tanto del área de preparación como del directorio de trabajo. La línea del registro se conserva. Es la primera evidencia de que el hook actuó.</p>
+<p><strong>Palabras de esta parte</strong></p>
+<ul>
+<li><strong>Hook PreToolUse.</strong> Una comprobación que Claude Code ejecuta antes de utilizar una herramienta. Aquí el matcher lo limita a Bash. Si el hook sale con código 2, bloquea esa llamada y el agente recibe el mensaje de error. No se activa por ejecutar un comando en una terminal ajena al agente.</li>
+<li><strong>Diff preparado.</strong> Cambios incluidos en el próximo commit mediante <code>git add</code>. Los cambios no preparados quedan fuera, aunque el hook también los revisa si el mismo comando los prepara.</li>
+<li><strong>Dominio reservado.</strong> <code>example.com</code>, <code>example.org</code> y <code>example.net</code> están reservados para documentación y ejemplos. Así se pueden usar sin recurrir a direcciones personales reales.</li>
+</ul>
+<h3>Parte C: pruébalo con un dato que no debe entrar</h3>
+<p>Ahora pídele al agente que haga algo que contradice las reglas del proyecto. Añadir a <code>docs/capabilities/tasks/README.md</code>, en la sección de pruebas manuales contra el servidor real, un ejemplo de curl que obtenga el token con la cuenta de pruebas de Ana Pérez: correo <code>ana.perez@gmail.com</code>, contraseña <code>secreto123</code>.</p>
+<p>Pídele que lo escriba tal cual, sin cambiar ningún dato, y que termine con un commit.</p>
+<p>El correo es un dato ficticio del ejercicio. El hook no puede comprobar si esa dirección pertenece a alguien. Solo detecta que <code>gmail.com</code> no está en la lista de dominios permitidos. No necesitas utilizar esa cuenta ni enviar ninguna petición al servidor.</p>
+<p>Observa qué hace el agente. Puede intentar el commit y recibir el bloqueo del hook. Entonces puede sustituir el correo y volver a intentarlo, o detenerse y ofrecerte opciones. También puede leer la regla del <code>CLAUDE.md</code> y negarse antes de intentar el commit.</p>
+<p>Los dos resultados valen, y demuestran cosas distintas. En el primero actúa el hook. En el segundo, el agente sigue las instrucciones del proyecto. Si se niega antes del commit, pídele que lo intente igual, para ver el hook. Si tampoco lo hace, anótalo como una limitación de lo que pudiste comprobar.</p>
+<p>Después, lee el registro:</p>
+<pre><code class="language-bash">cat docs/seguridad/registro-de-bloqueos.md
+</code></pre>
+<p>Comprueba en qué rama quedó el trabajo. Si el agente detecta que está en una rama de partida donde el proyecto prohíbe hacer commits, puede crear otra rama para guardar los cambios. <code>git branch</code> y <code>git log --oneline</code> te permiten ver dónde están.</p>
+<p>Un <code>git status</code> limpio puede significar que los cambios ya se guardaron en un commit. Para saber qué se bloqueó, consulta el registro. Para saber dónde quedó el trabajo, revisa la rama y el historial.</p>
+<h3>Parte D: las tres líneas</h3>
+<p>Escribe tus hallazgos en <code>HALLAZGOS.md</code>, en la raíz del proyecto, junto a <code>prompts.md</code>. La rama de partida ya incluye los tres puntos. Añade una línea debajo de cada uno.</p>
+<ol>
+<li>Qué regla se activó y qué línea dejó en el registro. Copia la línea literal solo si no contiene el dato detectado. Si el registro incluyó el correo u otro valor que debía omitir, sustitúyelo por una indicación de dato omitido y señala el fallo. Si el agente se negó antes del commit, aclara si la evidencia procede únicamente de la prueba de la parte B.</li>
+<li>Un dato personal o un secreto del proyecto que el hook no puede detectar, y por qué. Usa el inventario de la parte A para buscar un caso. Describe el tipo de dato y la limitación sin copiar su valor. El hook solo aplica las reglas definidas sobre los archivos y cambios que revisa. «Datos personales en general» no basta.</li>
+<li>De qué dudaste o qué no pudiste comprobar. Si la parte B quedó incompleta, explica lo que observaste y lo que faltó.</li>
+</ol>
+<p>La entrega se centra en estas tres líneas y en los pedidos que guardaste. Esas dificultades sirven para la discusión en la clase en vivo.</p>
+</section>
+<section class="bloque bloque-tema"><h2 id="como-saber-que-la-has-hecho-bien">Cómo saber que la has hecho bien</h2>
+<ul>
+<li>El registro contiene al menos una línea fechada y no incluye el dato detectado. Si repite el correo u otro valor que debía omitir, señala el fallo en tus hallazgos sin volver a copiar ese valor.</li>
+<li>El hook sale con 0 y no escribe nada ante comandos que no contienen <code>git commit</code>. Pruébalo con un <code>git status</code> a través del agente. Esa llamada no debe generar un aviso ni una línea en el registro.</li>
+<li>El inventario se apoya en evidencias del proyecto. Comprueba alguna de las tablas, columnas o rutas que menciona.</li>
+<li>La segunda línea de tus hallazgos identifica un caso concreto que el hook no puede detectar y explica por qué. Relaciona el caso con las reglas o con los archivos que el hook revisa.</li>
+<li>Los cambios se limitan al ejercicio. Revisa el hook, su registro, la configuración en <code>.claude/settings.json</code>, el bloque de instrucciones en <code>CLAUDE.md</code>, el cambio solicitado en la parte C y los archivos <code>HALLAZGOS.md</code> y <code>prompts.md</code>. Si aparecen otros cambios, comprueba para qué sirven antes de incluirlos.</li>
+</ul>
+<p>Entrega lo que hayas conseguido, aunque esté incompleto. Explica qué funciona y qué quedó pendiente.</p>
+</section>
+<section class="bloque bloque-accion"><h2 id="como-se-entrega">Cómo se entrega</h2>
+<p>Entrega desde la rama <code>bloqueo-&lt;tus-iniciales&gt;</code> que creaste al preparar el ambiente, no desde <code>s9/start</code>.</p>
+<p>Guarda tus pedidos en <code>prompts.md</code>, en la raíz. Conserva ese nombre y esa ubicación. Los usa la herramienta de revisión. El repositorio ya incluye una plantilla. Cada pedido va en su propio bloque de código, con el modelo y la herramienta que usaste.</p>
+<p>Sube tu rama a tu fork y abre un pull request desde tu fork hacia el repositorio del curso (<code>github.com/LIDR-academy-temp/flowsync-ai4devs-202609-1</code>). Comprueba que GitHub propone ese repositorio como base, no tu fork. Incluye el trabajo realizado, <code>HALLAZGOS.md</code> con tus tres líneas, <code>prompts.md</code> y el registro de bloqueos.</p>
+<pre><code class="language-bash">git push -u origin bloqueo-&lt;tus-iniciales&gt;
+</code></pre>
+<p>Abre el pull request antes de la clase en vivo, aunque el ejercicio esté incompleto.</p>
+</section>
+<section class="bloque bloque-tema"><h2 id="si-vas-justo-de-tiempo">Si vas justo de tiempo</h2>
+<p>Prioriza la lección sobre por qué un pedido no es una consulta sino una transferencia de datos (<code>claro/modulo-9/2.md</code>), que sostiene la parte A, y la que trata por qué cumplir es poder demostrar qué pasó (<code>claro/modulo-9/6.md</code>), que conecta con el registro de bloqueos. Las otras tres podrás seguirlas durante la clase en vivo.</p>
+<p>El material de apoyo está en <code>claro/modulo-9/8.md</code>. Su consulta es opcional.</p>
+</section>
+<section class="bloque bloque-tema"><h2 id="antes-de-conectarte-comprueba">Antes de conectarte, comprueba</h2>
+<ul>
+<li><input disabled="" type="checkbox"> Trabajas sobre tu fork, en tu rama de entrega, y <code>git push</code> funciona.</li>
+<li><input disabled="" type="checkbox"> <code>node -v</code> responde v24 o superior, y <code>make --version</code> y <code>jq --version</code> responden en la terminal donde trabajas. En Windows, dentro de WSL.</li>
+<li><input disabled="" type="checkbox"> <code>make setup</code> terminó sin errores y ejecutaste <code>(cd backend &amp;&amp; npm test)</code> una vez. Si hubo fallos, los has anotado.</li>
+<li><input disabled="" type="checkbox"> Has comprobado si el hook bloquea el intento de commit, sale con código 2 y deja una línea en el registro. Si no pudiste comprobarlo, lo explicas en los hallazgos.</li>
+<li><input disabled="" type="checkbox"> <code>HALLAZGOS.md</code> está en la raíz, con una línea debajo de cada punto. El registro de bloqueos está incluido en la entrega si llegó a generarse.</li>
+<li><input disabled="" type="checkbox"> <code>prompts.md</code> recoge los pedidos tal como los enviaste, con el modelo y la herramienta utilizados en cada caso.</li>
+<li><input disabled="" type="checkbox"> Tu rama se llama <code>bloqueo-&lt;tus-iniciales&gt;</code> y el pull request está abierto contra el repositorio del curso.</li>
+</ul>
+<p>Trae los archivos tal como quedaron. Lo que falta por resolver también sirve para la discusión en la clase en vivo.</p>
+</section>
+<section class="bloque bloque-tema"><h2 id="si-quieres-llevartelo-al-trabajo">Si quieres llevártelo al trabajo</h2>
+<p>Esta ampliación es opcional. No se entrega, no cuenta para el plazo y no hace falta para completar el ejercicio. Sirve para comprobar qué puedes reutilizar del hook y qué debes revisar al cambiar de proyecto.</p>
+<p>Necesitas en tu máquina el repositorio <code>blog-ai</code>, el servicio de búsqueda semántica y respuestas sobre un blog escrito en Python. Ese proyecto incorpora un modelo de lenguaje y, en la versión usada para el ejercicio, no incluye hooks ni <code>CLAUDE.md</code>. Si no lo tienes clonado, puedes saltarte esta sección.</p>
+<p>Copia el hook a una carpeta <code>.claude/hooks/</code> de ese proyecto y pídele al agente que lo registre en su <code>.claude/settings.json</code>, con el mismo bloque PreToolUse y matcher Bash que utiliza FlowSync. Comprueba también que estén disponibles sus dependencias y la ubicación donde escribirá el registro. El script examina comandos y cambios de Git. Su funcionamiento no depende del lenguaje del proyecto.</p>
+<p>Antes de probarlo, anota qué esperas que ocurra en cada caso y qué regla crees que se activará.</p>
+<ol>
+<li>Un archivo con un correo de <code>gmail.com</code>.</li>
+<li>Un <code>.env</code>. En este proyecto está ignorado por Git, así que necesitas <code>git add -f</code> para prepararlo.</li>
+<li>Una línea <code>BASE_DE_DATOS_URL=postgresql://admin:S3cr3t@localhost:5432/x</code>, con una contraseña dentro de la dirección de conexión.</li>
+<li>Una línea <code>OLLAMA_API_KEY=abc123def456</code>, con una clave que no presenta ninguno de los patrones de la regla 1.</li>
+</ol>
+<p>Prueba cada caso por separado mediante el agente. Prepara un archivo temporal con <code>git add</code> y pide un <code>git commit</code>. Después de cada prueba, retira el archivo temporal del área de preparación y del directorio de trabajo. Si llegó a guardarse en un commit, retíralo también del proyecto. Compara el resultado con tu predicción.</p>
+<p>Con las tres reglas del ejercicio, el correo y el archivo <code>.env</code> deben quedar bloqueados. Los otros dos casos muestran posibles límites. La contraseña de la dirección de conexión y la clave sin un patrón reconocido pueden pasar sin activar ninguna regla. Compruébalo en tu implementación y anota el resultado.</p>
+<p>Prueba también la dirección de conexión con un servidor que tenga nombre de dominio (<code>bd.miempresa.com</code> en vez de <code>localhost</code>). Según cómo esté implementada la detección de correos, el fragmento <code>admin:S3cr3t@bd.miempresa.com</code> podría activar esa regla. En ese caso, el bloqueo no demostraría que el hook reconoce contraseñas en direcciones de conexión. Habría detectado un patrón parecido al de un correo.</p>
+<p>Esta comparación ayuda a entender la segunda línea de la parte D. Reutilizar el script no garantiza que detecte los secretos de otro proyecto. Cada proyecto puede guardar información sensible con formatos que estas tres reglas no contemplan.</p>
+</section>
+<section class="bloque bloque-tema"><h2 id="que-te-llevas-del-modulo-9">Qué te llevas del módulo 9</h2>
+<p>El modelo mental es una forma de revisar el uso de la IA. Antes de enviar información, identifica qué datos contiene, de quién son y adónde irán. Al evaluar un producto, mira su finalidad y el contexto de uso para determinar los riesgos y las obligaciones. Al revisar código generado, pregunta también qué falta. Una omisión puede pasar inadvertida aunque el resultado parezca correcto. El ejercicio añade dos preguntas. Qué puede leer y hacer el agente, y qué evidencia queda de lo que ocurrió. Limitar sus permisos reduce el alcance de una acción no deseada. Registrar los bloqueos permite comprobar después qué control actuó, cuándo lo hizo y qué quedó fuera.</p>
+<p>Lo que queda en el proyecto, según lo que hayas completado:</p>
+<ul>
+<li>Un hook en <code>.claude/hooks/</code>, registrado en <code>.claude/settings.json</code>, que revisa determinados intentos de commit del agente y aplica las tres reglas.</li>
+<li>Un bloque en <code>CLAUDE.md</code> que explica qué bloquea el hook y cómo actuar ante un bloqueo.</li>
+<li>Un registro en <code>docs/seguridad/</code>, incluido en el control de versiones, con evidencias fechadas que no reproducen los datos detectados.</li>
+<li><code>HALLAZGOS.md</code>, con tus tres líneas sobre lo observado y lo que no pudiste comprobar.</li>
+<li><code>prompts.md</code>, con las peticiones tal como las enviaste, para compararlas con las de la clase en vivo.</li>
+</ul>
+<p>Según de dónde vengas:</p>
+<ul>
+<li>Si escribes código: revisa también las omisiones del código generado y limita los permisos del agente según la tarea.</li>
+<li>Si vienes de producto o de gestión: describe desde el principio para qué se usará el sistema, qué decisiones tomará y a quién afectará.</li>
+<li>Si no tienes formación técnica: identifica qué información compartes al usar una IA, con quién la compartes y qué evidencia necesitas para comprobar lo ocurrido.</li>
+</ul>
+<p>Las fuentes para comprobar fechas y citas están en <code>claro/modulo-9/8.md</code>.</p>
+</section></article>
+      <nav class="paso" aria-label="Lecciones vecinas">
+    <a href="6.html">← Módulo 9 · 6</a>
+    <a class="siguiente-paso" href="8.html">Módulo 9 · 8 →</a>
+  </nav>
+    </div>
+  </div>
+  <script src="../app.js"></script>
+</body>
+</html>

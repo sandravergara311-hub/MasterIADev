@@ -118,6 +118,22 @@ function enlaceSesion(sesion) {
   return `<a class="sesion" href="${escapar(sesion.url)}" target="_blank" rel="noopener">${escapar(sesion.titulo)}</a>`;
 }
 
+function hrefResumen(modulo, actual) {
+  if (!actual) return `modulo-${modulo.numero}/sesion.html`;
+  if (actual.modulo === modulo.numero) return "sesion.html";
+  return `../modulo-${modulo.numero}/sesion.html`;
+}
+
+function enlaceResumen(modulo, actual) {
+  if (!modulo.resumen || actual?.resumen) return "";
+  return `<a class="resumen-clase" href="${hrefResumen(modulo, actual)}">Resumen de la clase</a>`;
+}
+
+function accesos(modulo, actual) {
+  const html = `${enlaceSesion(modulo?.sesion)}${enlaceResumen(modulo, actual)}`;
+  return html ? `<div class="accesos">${html}</div>` : "";
+}
+
 function listar() {
   const modulos = fs
     .readdirSync(claro, { withFileTypes: true })
@@ -137,7 +153,12 @@ function listar() {
         const titulo = tituloDe(markdown, `${n}.md`);
         return { n, titulo, corto: nombreCorto(titulo), markdown, frase: n === 1 ? fraseDe(markdown) : "" };
       });
-    return { numero, lecciones, sesion: sesionDe(numero) };
+    return {
+      numero,
+      lecciones,
+      sesion: sesionDe(numero),
+      resumen: fs.existsSync(path.join(carpeta, "sesion.md")),
+    };
   });
 }
 
@@ -154,12 +175,15 @@ function indiceHtml(modulos, actual) {
           return `<li><a href="${href}"${clase}>${leccion.n}. ${escapar(leccion.corto)}</a></li>`;
         })
         .join("");
-      return `<details${abierto}><summary>Módulo ${modulo.numero}</summary><ol>${items}</ol></details>`;
+      const resumen = modulo.resumen
+        ? `<li><a href="${hrefResumen(modulo, actual)}"${actual?.resumen && actual.modulo === modulo.numero ? ' class="actual"' : ""}>Resumen de la clase</a></li>`
+        : "";
+      return `<details${abierto}><summary>Módulo ${modulo.numero}</summary><ol>${items}${resumen}</ol></details>`;
     })
     .join("\n");
 }
 
-function pagina({ titulo, cuerpo, indice, anterior, siguiente, css, sesion }) {
+function pagina({ titulo, cuerpo, indice, anterior, siguiente, css, accesosHtml }) {
   const paso = `<nav class="paso" aria-label="Lecciones vecinas">
     ${anterior ? `<a href="${anterior.href}">← ${escapar(anterior.texto)}</a>` : "<span></span>"}
     ${siguiente ? `<a class="siguiente-paso" href="${siguiente.href}">${escapar(siguiente.texto)} →</a>` : ""}
@@ -191,7 +215,7 @@ function pagina({ titulo, cuerpo, indice, anterior, siguiente, css, sesion }) {
   <div class="marco">
     <nav class="indice" aria-label="Módulos">${indice}</nav>
     <div class="lectura">
-      ${enlaceSesion(sesion)}
+      ${accesosHtml || ""}
       <article>${cuerpo}</article>
       ${paso}
     </div>
@@ -214,7 +238,7 @@ function portada(modulos) {
         .join("");
       return `<section class="modulo">
         <h2>Módulo ${modulo.numero}</h2>
-        ${enlaceSesion(modulo.sesion)}
+        ${accesos(modulo, null)}
         ${frase ? `<p class="frase">${escapar(frase)}</p>` : ""}
         <ol>${items}</ol>
       </section>`;
@@ -283,9 +307,27 @@ for (let i = 0; i < planas.length; i += 1) {
     anterior: hrefDe(anterior),
     siguiente: hrefDe(siguiente),
     css: "../estilos.css",
-    sesion: modulos.find((modulo) => modulo.numero === actual.modulo)?.sesion,
+    accesosHtml: accesos(
+      modulos.find((modulo) => modulo.numero === actual.modulo),
+      actual,
+    ),
   });
   fs.writeFileSync(path.join(carpeta, `${actual.n}.html`), html, "utf8");
+}
+
+for (const modulo of modulos.filter((item) => item.resumen)) {
+  const markdown = fs.readFileSync(path.join(claro, `modulo-${modulo.numero}`, "sesion.md"), "utf8");
+  const actual = { modulo: modulo.numero, resumen: true, titulo: tituloDe(markdown, "sesion.md") };
+  const html = pagina({
+    titulo: actual.titulo,
+    cuerpo: aHtml(markdown),
+    indice: indiceHtml(modulos, actual),
+    anterior: null,
+    siguiente: null,
+    css: "../estilos.css",
+    accesosHtml: accesos(modulo, actual),
+  });
+  fs.writeFileSync(path.join(salida, `modulo-${modulo.numero}`, "sesion.html"), html, "utf8");
 }
 
 console.log(`Listas ${planas.length} lecciones en ${salida}`);
