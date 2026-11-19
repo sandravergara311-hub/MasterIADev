@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Módulo 10 · Lección 5 — Numerar sin juntar las filas, y decidir tú qué pasa cuando hay empate</title>
+  <title>Módulo 10 · Lección 5 — Agrupar por mes es decidir qué es un mes</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560&family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,460;8..60,620&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
   <header class="techo">
     <button class="icono menu" type="button" data-menu>Lecciones</button>
     <a class="marca" href="../index.html">En claro</a>
-    <span class="aqui-titulo">Módulo 10 · Lección 5 — Numerar sin juntar las filas, y decidir tú qué pasa cuando hay empate</span>
+    <span class="aqui-titulo">Módulo 10 · Lección 5 — Agrupar por mes es decidir qué es un mes</span>
     <div class="acciones">
       <button class="icono" type="button" data-letra="menos" aria-label="Texto más chico">A−</button>
       <button class="icono" type="button" data-letra="mas" aria-label="Texto más grande">A+</button>
@@ -31,322 +31,211 @@
 <details><summary>Módulo 7</summary><ol><li><a href="../modulo-7/1.html">1. El mapa: qué regla se aplica cuando hay varios repositorios</a></li><li><a href="../modulo-7/2.html">2. Qué decide dónde acaba un repositorio</a></li><li><a href="../modulo-7/3.html">3. El agente solo ve su directorio de trabajo</a></li><li><a href="../modulo-7/4.html">4. Dónde vive la spec cuando el sistema son tres repositorios</a></li><li><a href="../modulo-7/5.html">5. Un cambio que cruza dos repositorios no es un solo cambio</a></li><li><a href="../modulo-7/6.html">6. Lo que se comparte, lo que se versiona y lo que no se puede fundir</a></li><li><a href="../modulo-7/7.html">7. Herramientas de esta sesión</a></li><li><a href="../modulo-7/8.html">8. Ejercicio: haz que una regla se cumpla en el otro repositorio</a></li><li><a href="../modulo-7/9.html">9. Dónde profundizar</a></li><li><a href="../modulo-7/sesion.html">Resumen de la clase</a></li></ol></details>
 <details><summary>Módulo 8</summary><ol><li><a href="../modulo-8/1.html">1. El mapa: de escribir reglas a comprobar si funcionan</a></li><li><a href="../modulo-8/2.html">2. Una regla escrita no es una regla cumplida</a></li><li><a href="../modulo-8/3.html">3. Un eval da una tasa, no un verde</a></li><li><a href="../modulo-8/4.html">4. Sin línea base, un número no significa nada</a></li><li><a href="../modulo-8/5.html">5. Quién puntúa un ensayo, y en qué orden</a></li><li><a href="../modulo-8/6.html">6. Un verde que nunca estuvo en rojo no prueba nada</a></li><li><a href="../modulo-8/7.html">7. Dónde profundizar</a></li><li><a href="../modulo-8/8.html">8. Dónde profundizar</a></li><li><a href="../modulo-8/9.html">9. Mide una regla que creías cumplida</a></li><li><a href="../modulo-8/10.html">10. Fuentes sobre sistemas repartidos en varios repositorios</a></li></ol></details>
 <details><summary>Módulo 9</summary><ol><li><a href="../modulo-9/1.html">1. El mapa: qué datos bloqueas, qué riesgos revisas y qué evidencia guardas</a></li><li><a href="../modulo-9/2.html">2. Un pedido no es una consulta, es una transferencia de datos</a></li><li><a href="../modulo-9/3.html">3. La casilla de riesgo la decide el uso, no la tecnología</a></li><li><a href="../modulo-9/4.html">4. El código generado falla distinto, y quien lo usa confía más</a></li><li><a href="../modulo-9/5.html">5. El ataque no entra por donde escribes, entra por lo que el agente lee</a></li><li><a href="../modulo-9/6.html">6. Cumplir no es no hacerlo mal, es poder demostrar qué pasó</a></li><li><a href="../modulo-9/7.html">7. Ejercicio FlowSync: bloquea el dato que no debe salir y guarda el rastro</a></li><li><a href="../modulo-9/8.html">8. Dónde comprobar lo que dice el módulo</a></li></ol></details>
-<details open><summary>Módulo 10</summary><ol><li><a href="1.html">1. El mapa: no te fíes de un resultado solo porque no salió un error</a></li><li><a href="2.html">2. Un cambio en la forma de guardar los datos es lo más difícil de deshacer</a></li><li><a href="3.html">3. Juntar listas puede multiplicar filas, o perderlas, sin dar ningún error</a></li><li><a href="4.html">4. Agrupar por mes es decidir qué es un mes</a></li><li><a href="5.html" class="actual">5. Numerar sin juntar las filas, y decidir tú qué pasa cuando hay empate</a></li><li><a href="6.html">6. Una consulta puede estar bien y ser lenta, y el plan lo avisa antes</a></li><li><a href="7.html">7. Una consulta puede estar bien y ser lenta, y el plan lo avisa antes</a></li></ol></details></nav>
+<details open><summary>Módulo 10</summary><ol><li><a href="1.html">1. El mapa: un resultado sin error puede estar mal</a></li><li><a href="2.html">2. El asistente no inventa columnas, inventa valores</a></li><li><a href="3.html">3. Una migración es el cambio que peor se deshace</a></li><li><a href="4.html">4. Una unión puede multiplicar filas o perderlas sin dar error</a></li><li><a href="5.html" class="actual">5. Agrupar por mes es decidir qué es un mes</a></li><li><a href="6.html">6. Una función de ventana calcula sin agrupar, y los empates los decides tú</a></li><li><a href="7.html">7. Una consulta puede ser correcta y lenta, y el plan lo avisa antes que producción</a></li></ol></details></nav>
     <div class="lectura">
       
-      <article><h1>Módulo 10 · Lección 5 — Numerar sin juntar las filas, y decidir tú qué pasa cuando hay empate</h1>
-<p class="origen">Texto original: <code>original/modulo-10/5.md</code><br>Obligatoria. Lectura de unos 30 minutos.</p>
+      <article><h1>Módulo 10 · Lección 5 — Agrupar por mes es decidir qué es un mes</h1>
+<p class="origen">Texto original: <code>original/modulo-10/5.md</code><br>Obligatoria. Lectura de unos 29 minutos.</p>
 
 <section class="bloque bloque-frase"><h2 id="en-una-frase">En una frase</h2>
-<p>«Las dos más vendidas» y «el envío gratis a partir de 300 €» no están completos hasta que alguien dice qué pasa cuando dos piezas venden lo mismo o dos pedidos son del mismo día. Si no lo escribes, la base elige por su cuenta.</p>
-</section>
-<section class="bloque bloque-palabras"><h2 id="palabras-que-vas-a-escuchar">Palabras que vas a escuchar</h2>
-<ul>
-<li><strong>Función de ventana.</strong> Un cálculo sobre un grupo de filas que no las junta en una sola. Se reconoce por la palabra <code>OVER</code>. El grupo se llama partición.</li>
-<li><strong>Empatadas.</strong> Filas que el orden de la ventana no distingue. Por ejemplo, dos piezas con las mismas unidades.</li>
-<li><strong>Marco.</strong> Las filas de la partición sobre las que se calcula cada fila. Por defecto, con un orden, llega hasta la fila actual y también incluye a las que empatan con ella.</li>
-<li><strong>CTE.</strong> Common Table Expression. Un paso con nombre dentro de una consulta: <code>WITH nombre AS (…)</code>. Solo existe mientras dura esa consulta.</li>
-<li><strong>CTE recursiva.</strong> Un paso con <code>WITH RECURSIVE</code> que se usa a sí mismo hasta no encontrar filas nuevas. Sirve para recorrer un árbol de categorías.</li>
-<li><strong>Vista.</strong> Una consulta guardada con nombre. Se usa como si fuera una tabla.</li>
-</ul>
+<p>«Las ventas de agosto» no es un dato: es una definición. Dónde acaba el mes, en qué reloj y qué pasa con un mes sin pedidos cambian el informe sin dar error.</p>
 </section>
 <section class="bloque bloque-caso"><h2 id="caso-real-la-bicicleteria">Caso real: la bicicletería</h2>
-<p>Bicicletas del Parque prepara la campaña de septiembre. Marta escribe tres reglas.</p>
-<ol>
-<li>La portada enseña las dos piezas más vendidas en agosto de cada categoría. Una pieza que empata en unidades con otra que entra, entra también.</li>
-<li>El envío es gratis a partir del pedido con el que un cliente supera los 300 € en el mes, no antes.</li>
-<li>El 10 % de descuento aplica a toda la Transmisión, subcategorías incluidas.</li>
-</ol>
-<p>Salen tres consultas. Se revisan, tienen buena pinta y se aprueban. Ninguna da error. La portada enseña dos piezas de frenos donde tocaban tres. Ana, la clienta 1, tiene envío gratis en un pedido de 150 € que no le tocaba. El descuento llega a tres de las siete piezas de Transmisión.</p>
-<p>Ninguna tiene una errata. Las tres usan la herramienta que toca: una función de ventana en las dos primeras y una consulta recursiva en la tercera. A las tres les falta una decisión que nadie escribió y que el motor tomó por su cuenta. Qué hacer con dos piezas que venden lo mismo. Qué hacer con dos pedidos del mismo día. Qué hacer con una categoría que cuelga de otra que cuelga de otra.</p>
+<p>El almacén y la contabilidad de Bicicletas del Parque están en Madrid. Cada pedido guarda <code>creado_en</code>, el momento exacto, el total en euros y <code>dias_entrega</code>, vacío mientras no se entrega. La base corre en hora universal.</p>
+<p>La gestoría pide el tercer trimestre con dos reglas. Un pedido cuenta en el mes según el reloj de Madrid. El informe lleva una fila por julio, agosto y septiembre, aunque alguno no haya vendido nada, porque pegan las tres filas en su plantilla por orden. En julio la web estuvo cerrada por el traslado del almacén.</p>
+<p>La consulta se envía. El informe tiene dos filas. Agosto lleva un pedido de septiembre, septiembre lleva uno de octubre, y el trimestre se pasa en 18,50 euros. Cada total es la suma exacta de algo. Lo que está mal es qué se sumó.</p>
 </section>
-<section class="bloque bloque-tema"><h2 id="como-leerla-segun-de-donde-vengas">Cómo leerla según de dónde vengas</h2>
-<p>Si escribes el programa, aquí están los comportamientos por defecto de las funciones de ventana y de <code>WITH</code> que devuelven un resultado bien formado y equivocado. También cómo revisar una consulta larga por pasos.</p>
-<p>Si vienes de producto o de gestión, quédate con esto. «Las dos más vendidas» o «a partir del pedido que supera 300 €» no están completas hasta que alguien dice qué pasa con los empates. Esa decisión es tuya, no de quien escribe la consulta.</p>
-<p>Si no tienes formación técnica, cuando dos filas empatan la base no aplica un criterio sensato. Elige una, o trata a las dos igual, según una regla que casi nadie conoce.</p>
-</section>
-<section class="bloque bloque-tema"><h2 id="puedes-practicar-mientras-lees">Puedes practicar mientras lees</h2>
-<p>En la práctica de ventanas del repositorio <code>consultas-sql-ai4devs</code> están los datos de esta lección, en una base PostgreSQL que se levanta con un comando, y unos retos. Le pides la consulta al asistente y compruebas tú si el resultado es el correcto.</p>
-<p>Cada reto va al final de la sección que practica. Para tenerla lista, clona el repositorio y ejecuta <code>make cargar</code>. Necesitas Docker, make y git. En Windows, dentro de WSL.</p>
+<section class="bloque bloque-tema"><h2 id="como-leerla">Cómo leerla</h2>
+<p>Si escribes el programa: cinco sitios donde un total por fechas da un número creíble y falso, con la consulta que lo produce, la que lo arregla y la comprobación.</p>
+<p>Si vienes de producto o de gestión: dos informes correctos pueden no cuadrar porque cada uno tomó otra definición de «agosto».</p>
+<p>Si no tienes formación técnica: la base guarda los momentos en un reloj universal. A las 00:40 del 1 de septiembre en Madrid, en Londres todavía es agosto.</p>
 </section>
 <section class="bloque bloque-desarrollo"><h2 id="el-desarrollo">El desarrollo</h2>
-<h3>Las tablas del ejemplo</h3>
-<p>Las consultas son de PostgreSQL, ejecutadas tal cual sobre datos de juguete: once piezas, cinco categorías y diez pedidos. Lo justo para que haya empates.</p>
-<pre><code class="language-text">categorias     (id, nombre, padre_id)      -- padre_id: la categoría de la que cuelga
-piezas         (id, nombre, categoria_id)
-clientes       (id, nombre)
-pedidos        (id, cliente_id, fecha, importe, direccion)
-lineas_pedido  (pedido_id, pieza_id, cantidad)
+<p>La práctica de fechas está en <code>consultas-sql-ai4devs</code>. Clona el repositorio y ejecuta <code>make cargar</code>. Necesitas Docker, make y git. En Windows, dentro de WSL. Cada reto está al final de su sección.</p>
+<p>Todas las consultas se ejecutaron en PostgreSQL 17, sobre esta tabla, con las horas en hora de Madrid:</p>
+<pre><code class="language-text"> id |       creado_en        | total  | dias_entrega
+----+------------------------+--------+--------------
+  1 | 2026-08-03 10:15:00+02 |  45.00 |            2
+  2 | 2026-08-14 18:20:00+02 | 120.50 |            3
+  3 | 2026-08-31 09:10:00+02 |  30.00 |            4
+  4 | 2026-08-31 23:59:00+02 |  64.90 |            5
+  5 | 2026-09-01 00:40:00+02 |  89.99 |            3
+  6 | 2026-09-12 12:00:00+02 |  75.00 |            2
+  7 | 2026-09-29 19:45:00+02 | 210.00 |
+  8 | 2026-10-01 00:30:00+02 |  18.50 |
 </code></pre>
-<p><code>padre_id</code> vacío significa que la categoría no cuelga de ninguna. En SQL ese vacío se escribe <code>NULL</code>.</p>
-<p>Las unidades vendidas en agosto por pieza están en una vista, <code>ventas</code>. Tiene las columnas <code>categoria</code>, <code>pieza</code> y <code>unidades</code>.</p>
-<h3>Una función de ventana calcula sobre un grupo sin juntar las filas</h3>
-<p>La herramienta clásica para calcular por grupos es <code>GROUP BY</code>. Junta todas las filas de cada grupo en una sola.</p>
-<pre><code class="language-sql">SELECT categoria, sum(unidades) AS total_categoria
-FROM ventas
-GROUP BY categoria;
-</code></pre>
-<pre><code class="language-text">  categoria  | total_categoria
--------------+-----------------
- Frenos      |             100
- Transmisión |             105
-</code></pre>
-<p>Entran siete piezas y salen dos filas. Para enseñar cada pieza con el total de su categoría al lado, hace falta otra cosa.</p>
-<pre><code class="language-sql">SELECT categoria, pieza, unidades,
-       sum(unidades) OVER (PARTITION BY categoria) AS total_categoria
-FROM ventas
-ORDER BY categoria, unidades DESC;
-</code></pre>
-<pre><code class="language-text">  categoria  |         pieza          | unidades | total_categoria
--------------+------------------------+----------+-----------------
- Frenos      | Pastillas orgánicas    |       40 |             100
- Frenos      | Pastillas sinterizadas |       25 |             100
- Frenos      | Disco 160 mm           |       25 |             100
- Frenos      | Latiguillo             |       10 |             100
- Transmisión | Maneta de cambio       |       40 |             105
- Transmisión | Cambio trasero 12v     |       40 |             105
- Transmisión | Cable de cambio        |       25 |             105
-</code></pre>
-<p>La misma suma, y las siete filas siguen ahí. <code>OVER</code> convierte <code>sum</code> en una función de ventana. <code>PARTITION BY categoria</code> dice qué filas forman el grupo de cada una: su partición.</p>
-<p>La documentación de PostgreSQL lo explica así. Una función de ventana no junta las filas en una sola fila de salida como haría un agregado normal. Cada fila conserva su identidad.</p>
-<p>En el original: «window functions do not cause rows to become grouped into a single output row like non-window aggregate calls would. Instead, the rows retain their separate identities». Fuente: Window Functions (Funciones de ventana), del tutorial oficial.</p>
-<p>Dentro de <code>OVER</code> caben dos cosas más, y las dos traen un valor por defecto. Un <code>ORDER BY</code>, que ordena las filas de cada partición. Un marco, que dice sobre qué filas de la partición se calcula. Lo que hacen los dos cuando hay filas empatadas es lo que rompe las dos primeras consultas del escenario.</p>
-<h3>Para quedarte con los primeros de cada grupo hace falta un paso con nombre</h3>
-<p>La portada necesita numerar las piezas dentro de cada categoría y quedarse con los dos primeros puestos. Lo que sale primero es poner la numeración en el filtro. El motor lo rechaza en alto.</p>
-<pre><code class="language-sql">SELECT categoria, pieza, unidades
-FROM ventas
-WHERE row_number() OVER (PARTITION BY categoria ORDER BY unidades DESC) &lt;= 2;
-</code></pre>
-<pre><code class="language-text">ERROR:  window functions are not allowed in WHERE
-</code></pre>
-<p>La función de ventana se calcula después del <code>WHERE</code>. Hay que numerar en un paso y filtrar en otro. La forma legible es con <code>WITH</code>. La consulta de la portada llegó así.</p>
-<pre><code class="language-sql">WITH clasificadas AS (
-  SELECT categoria, pieza, unidades,
-         row_number() OVER (PARTITION BY categoria ORDER BY unidades DESC) AS puesto
-  FROM ventas
-)
-SELECT categoria, pieza, unidades
-FROM clasificadas
-WHERE puesto &lt;= 2;
-</code></pre>
-<pre><code class="language-text">  categoria  |         pieza          | unidades
--------------+------------------------+----------
- Frenos      | Pastillas orgánicas    |       40
- Frenos      | Pastillas sinterizadas |       25
- Transmisión | Maneta de cambio       |       40
- Transmisión | Cambio trasero 12v     |       40
-</code></pre>
-<p><code>clasificadas</code> es una CTE, un paso con nombre. Una consulta larga encadena varios, separados por comas. La documentación las describe como tablas temporales que solo existen durante una consulta.</p>
-<p>En el original: «These statements, which are often referred to as Common Table Expressions or CTEs, can be thought of as defining temporary tables that exist just for one query». Fuente: WITH Queries (Common Table Expressions) (Consultas WITH).</p>
-<p>Lo que las hace útiles para revisar es que cada paso se puede ejecutar solo. Se deja el <code>WITH</code> como está y se cambia el último <code>SELECT</code> por <code>SELECT * FROM clasificadas</code>. Esto es lo que devuelve ese paso.</p>
-<pre><code class="language-text">  categoria  |         pieza          | unidades | puesto
--------------+------------------------+----------+--------
- Frenos      | Pastillas orgánicas    |       40 |      1
- Frenos      | Pastillas sinterizadas |       25 |      2
- Frenos      | Disco 160 mm           |       25 |      3
- Frenos      | Latiguillo             |       10 |      4
- Transmisión | Maneta de cambio       |       40 |      1
- Transmisión | Cambio trasero 12v     |       40 |      2
- Transmisión | Cable de cambio        |       25 |      3
-</code></pre>
-<p>Aquí está el fallo, a la vista. Dos piezas de frenos con 25 unidades cada una y puestos distintos. El resultado final no lo enseñaba, porque la tercera ya no aparece. Leyendo la consulta no se ve. Ejecutando el paso, salta.</p>
-<h3>Qué función numera es una regla de negocio, no un detalle de escritura</h3>
-<p>PostgreSQL tiene tres funciones para numerar dentro de una partición. Ante un empate hacen tres cosas distintas. Sobre las mismas siete piezas:</p>
-<pre><code class="language-sql">SELECT categoria, pieza, unidades,
-       row_number() OVER w AS row_number,
-       rank()       OVER w AS rank,
-       dense_rank() OVER w AS dense_rank
-FROM ventas
-WINDOW w AS (PARTITION BY categoria ORDER BY unidades DESC)
-ORDER BY categoria, unidades DESC, row_number;
-</code></pre>
-<p><code>WINDOW w AS</code> pone nombre al <code>OVER</code> para no repetirlo.</p>
-<pre><code class="language-text">  categoria  |         pieza          | unidades | row_number | rank | dense_rank
--------------+------------------------+----------+------------+------+------------
- Frenos      | Pastillas orgánicas    |       40 |          1 |    1 |          1
- Frenos      | Pastillas sinterizadas |       25 |          2 |    2 |          2
- Frenos      | Disco 160 mm           |       25 |          3 |    2 |          2
- Frenos      | Latiguillo             |       10 |          4 |    4 |          3
- Transmisión | Maneta de cambio       |       40 |          1 |    1 |          1
- Transmisión | Cambio trasero 12v     |       40 |          2 |    1 |          1
- Transmisión | Cable de cambio        |       25 |          3 |    3 |          2
-</code></pre>
-<p><code>row_number</code> numera 1, 2, 3, 4 pase lo que pase, también a dos piezas empatadas.</p>
-<p><code>rank</code> da el mismo puesto a las empatadas y se salta los siguientes: 1, 2, 2, 4. Es el puesto con huecos.</p>
-<p>En el original: «Returns the rank of the current row, with gaps».</p>
-<p><code>dense_rank</code> da el mismo puesto a las empatadas sin dejar huecos: 1, 2, 2, 3.</p>
-<p>En el original: «Returns the rank of the current row, without gaps». Fuente de las tres: Window Functions (Funciones de ventana).</p>
-<p>La regla del escenario decide cuál es la buena. Una pieza que empata con otra que entra, entra también. Con <code>puesto &lt;= 2</code>, en Frenos la segunda y la tercera empatan a 25 y entran las dos: tres piezas, como da <code>rank</code>. En Transmisión, la tercera, con 25, no empata con ninguna que entre: dos piezas, como da <code>rank</code>. <code>dense_rank</code> saca tres, porque responde a otra pregunta: los dos niveles de ventas más altos. <code>row_number</code> responde a exactamente dos, las que sean.</p>
-<p>El problema se llama top-N por grupo (top-N per group). La documentación de RisingWave, una base de datos, lo resume. En la cláusula de la función de numeración se puede incluir un <code>PARTITION BY</code> para sacar los N primeros de cada grupo.</p>
-<p>En el original: «In the ranking function clause, you can include a PARTITION BY clause to fetch top N rows per group». Fuente: Top-N by group (Los N primeros por grupo).</p>
-<h3>Sin desempate, row_number ordena las empatadas como le toca</h3>
-<p>La documentación llama empatadas (peers) a las filas que el <code>ORDER BY</code> de la ventana no distingue. Dice que las funciones de puesto les dan a todas la misma respuesta.</p>
-<p>En el original: «Rows that are not distinct when considering only the ORDER BY columns are said to be peers. The four ranking functions (including cume_dist) are defined so that they give the same answer for all rows of a peer group».</p>
-<p><code>row_number</code> no está entre esas cuatro. A las empatadas les reparte números en un orden que nadie ha fijado.</p>
-<p>Se ve en cuanto la consulta se usa en dos sitios. La portada, como arriba, enseña como segunda de frenos las pastillas sinterizadas. La página de Frenos usa la misma consulta con un filtro más, <code>AND categoria = &#39;Frenos&#39;</code>, sobre los mismos datos.</p>
-<pre><code class="language-text"> categoria |        pieza        | unidades
------------+---------------------+----------
- Frenos    | Pastillas orgánicas |       40
- Frenos    | Disco 160 mm        |       25
-</code></pre>
-<p>Cada página enseña una segunda pieza distinta. El filtro cambió el camino del motor, y con él, qué empatada llega antes. Con <code>rank</code>, las dos enseñan las tres piezas.</p>
-<p>Si la regla fuera exactamente dos, <code>row_number</code> sirve con un desempate al final del <code>ORDER BY</code>, como <code>ORDER BY unidades DESC, pieza</code>. Medido, las dos páginas enseñan entonces el disco, primero por orden alfabético. Qué desempate es el bueno (el nombre, el stock, el margen) lo decide el negocio.</p>
-<p>Pruébalo ahora con tu asistente. Reto «La portada: las dos más vendidas de cada categoría» de la práctica de ventanas.</p>
-<h3>El acumulado por defecto suma también los pedidos empatados en fecha</h3>
-<p>La segunda regla necesita, para cada pedido de septiembre, cuánto lleva gastado ese cliente en el mes hasta ese pedido incluido. Es un total acumulado. La consulta que sale sola, sobre los pedidos de Ana, la clienta 1:</p>
-<pre><code class="language-sql">SELECT id, fecha, importe,
-       sum(importe) OVER (PARTITION BY cliente_id ORDER BY fecha) AS acumulado
+<p>El <code>+02</code> es la diferencia con la hora universal en el verano de Madrid. El informe correcto: julio sin ventas, agosto con los pedidos 1 a 4 (260,40 €), septiembre con los 5 a 7 (374,99 €), y el 8 fuera, porque es de octubre. Los pedidos 3, 4, 5 y 8 caen al lado de un cambio de mes.</p>
+<h3>Un periodo que acaba «el 31 de agosto» acaba a las 00:00 del 31</h3>
+<p>Para aislar este fallo, la sesión está en hora de Madrid:</p>
+<pre><code class="language-sql">SELECT count(*) AS pedidos, sum(total) AS ventas_agosto
 FROM pedidos
-WHERE cliente_id = 1 AND fecha &gt;= &#39;2026-09-01&#39; AND fecha &lt; &#39;2026-10-01&#39;;
+WHERE creado_en BETWEEN &#39;2026-08-01&#39; AND &#39;2026-08-31&#39;;
 </code></pre>
-<pre><code class="language-text"> id |   fecha    | importe | acumulado
-----+------------+---------+-----------
- 11 | 2026-09-02 |  120.00 |    120.00
- 12 | 2026-09-05 |  150.00 |    360.00
- 13 | 2026-09-05 |   90.00 |    360.00
- 14 | 2026-09-12 |   60.00 |    420.00
+<pre><code class="language-text"> pedidos | ventas_agosto
+---------+---------------
+       2 |        165.50
 </code></pre>
-<p>Los dos pedidos del día 5, de 150 € y de 90 €, aparecen con 360 acumulados. Los dos superan los 300. El de 150 € sale con envío gratis y no le tocaba. Con él Ana llevaba 270 €. Fue el de 90 € el que pasó de 300.</p>
-<p>No es un error de suma. Es el marco por defecto, que incluye a las empatadas. Según la documentación, por defecto y con <code>ORDER BY</code>, el marco va del principio de la partición a la fila actual, más las siguientes que sean iguales a ella en ese orden.</p>
-<p>En el original: «By default, if ORDER BY is supplied then the frame consists of all rows from the start of the partition up through the current row, plus any following rows that are equal to the current row according to the ORDER BY clause». Fuente: Window Functions, el mismo tutorial.</p>
-<p>Por eso pasa la revisión. La última fila es correcta. Ana acaba el mes con 420 €, que es lo que da cualquier comprobación del total. Lo que está mal son las filas intermedias, justo donde vive la regla de negocio.</p>
-<p>El arreglo tiene dos piezas. Una columna de desempate al final del <code>ORDER BY</code> para que no queden empatadas. Y el marco escrito a mano, por filas.</p>
-<pre><code class="language-sql">SELECT id, fecha, importe,
-       sum(importe) OVER (PARTITION BY cliente_id ORDER BY fecha, id
-                          ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS acumulado
+<p>Faltan los dos pedidos del 31. <code>creado_en</code> es una marca de tiempo, y una fecha sin hora se lee como la medianoche:</p>
+<pre><code class="language-sql">SELECT &#39;2026-08-31&#39;::timestamptz AS limite_superior;
+</code></pre>
+<pre><code class="language-text">    limite_superior
+------------------------
+ 2026-08-31 00:00:00+02
+</code></pre>
+<p><code>BETWEEN</code> incluye los dos extremos. El periodo va de la medianoche del 1 a la medianoche del 31. Lo que pasó el último día después de las 00:00 queda fuera. La forma que no depende de la hora del último día es no nombrarlo:</p>
+<pre><code class="language-sql">SELECT count(*) AS pedidos, sum(total) AS ventas_agosto
 FROM pedidos
-WHERE cliente_id = 1 AND fecha &gt;= &#39;2026-09-01&#39; AND fecha &lt; &#39;2026-10-01&#39;;
+WHERE creado_en &gt;= &#39;2026-08-01&#39; AND creado_en &lt; &#39;2026-09-01&#39;;
 </code></pre>
-<pre><code class="language-text"> id |   fecha    | importe | acumulado
-----+------------+---------+-----------
- 11 | 2026-09-02 |  120.00 |    120.00
- 12 | 2026-09-05 |  150.00 |    270.00
- 13 | 2026-09-05 |   90.00 |    360.00
- 14 | 2026-09-12 |   60.00 |    420.00
+<pre><code class="language-text"> pedidos | ventas_agosto
+---------+---------------
+       4 |        260.40
 </code></pre>
-<p><code>ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW</code> es desde la primera fila de la partición hasta esta, contando filas. <code>id</code> desempata porque los pedidos se numeran al crearse. Si hubiera hora, iría la hora.</p>
-<p>Con el desempate solo, este resultado sale igual, porque ya no hay empatadas. El marco escrito evita depender de que alguien se acuerde del desempate.</p>
-<p>Con <code>ROWS</code> solo, el problema cambia de forma. La documentación de <code>SELECT</code> lo avisa. El modo por filas puede dar resultados impredecibles si el <code>ORDER BY</code> no ordena las filas de forma única.</p>
-<p>En el original: «Beware that the ROWS mode can produce unpredictable results if the ORDER BY ordering does not order the rows uniquely». Fuente: SELECT.</p>
-<p>Medido con <code>ROWS</code> y <code>ORDER BY fecha</code>, antes y después de corregir la dirección del pedido 12. Las salidas van lado a lado.</p>
-<pre><code class="language-text"> antes                                     después
- id |   fecha    | importe | acumulado      id |   fecha    | importe | acumulado
-----+------------+---------+-----------    ----+------------+---------+-----------
- 11 | 2026-09-02 |  120.00 |    120.00      11 | 2026-09-02 |  120.00 |    120.00
- 12 | 2026-09-05 |  150.00 |    270.00      13 | 2026-09-05 |   90.00 |    210.00
- 13 | 2026-09-05 |   90.00 |    360.00      12 | 2026-09-05 |  150.00 |    360.00
- 14 | 2026-09-12 |   60.00 |    420.00      14 | 2026-09-12 |   60.00 |    420.00
+<p>Eso es un intervalo semiabierto: cerrado al principio y abierto al final. En el original: &quot;Each time period is considered to represent the half-open interval start &lt;= time &lt; end&quot;. Fuente: Date/Time Functions and Operators.</p>
+<p>El wiki de PostgreSQL tiene una entrada para no usar <code>BETWEEN</code> con marcas de tiempo. En el original: &quot;So the query might seem to work, but as soon as you get an entry exactly on midnight, you&#39;ll end up double-counting it&quot;. Fuente: Don&#39;t Do This, sección Don&#39;t use BETWEEN (especially with timestamps). Con <code>BETWEEN &#39;2026-08-01&#39; AND &#39;2026-09-01&#39;</code>, un pedido a las 00:00:00 del 1 de septiembre entra en agosto y en septiembre.</p>
+<h3>La misma consulta cambia con la zona de la sesión</h3>
+<p>Una marca de tiempo con zona se guarda siempre en Tiempo Universal Coordinado (UTC) y no recuerda la zona original. Al leerla, se convierte a la zona de la sesión. En el original: &quot;In either case, the value is stored internally as UTC, and the originally stated or assumed time zone is not retained. When a timestamp with time zone value is output, it is always converted from UTC to the current timezone zone, and displayed as local time in that zone&quot;. Fuente: Date/Time Types.</p>
+<p><code>date_trunc</code> redondea un momento al principio de su mes y, por defecto, usa la zona de la sesión. En el original: &quot;By default, truncation is done with respect to the current TimeZone setting&quot;. Fuente: la misma página de funciones de fecha y hora.</p>
+<p>La misma consulta, primero con la sesión en UTC, que es lo que trae el servidor:</p>
+<pre><code class="language-sql">SET TimeZone = &#39;UTC&#39;;
+SELECT date_trunc(&#39;month&#39;, creado_en) AS mes, count(*) AS pedidos, sum(total) AS ventas
+FROM pedidos
+WHERE creado_en &gt;= &#39;2026-07-01&#39; AND creado_en &lt; &#39;2026-10-01&#39;
+GROUP BY 1 ORDER BY 1;
 </code></pre>
-<p>El envío gratis ha saltado del pedido de 90 € al de 150 € porque alguien cambió una dirección. Con <code>ORDER BY fecha, id</code>, la misma corrección no mueve nada.</p>
-<p>Pruébalo ahora con tu asistente. Reto «El envío gratis» de la práctica de ventanas.</p>
-<h3>Un árbol de categorías solo se recorre entero con una consulta recursiva</h3>
-<p>La tercera regla, el descuento en toda la Transmisión, depende de cómo están guardadas las categorías. Cada una apunta a la categoría de la que cuelga con <code>padre_id</code>. Las de primer nivel lo tienen vacío.</p>
-<pre><code class="language-text"> id |      nombre       | padre_id
-----+-------------------+----------
-  1 | Frenos            |
-  2 | Transmisión       |
-  3 | Cadenas           |        2
-  4 | Cassettes         |        2
-  5 | Eslabones rápidos |        3
+<pre><code class="language-text">          mes           | pedidos | ventas
+------------------------+---------+--------
+ 2026-08-01 00:00:00+00 |       5 | 350.39
+ 2026-09-01 00:00:00+00 |       3 | 303.50
 </code></pre>
-<p>Transmisión tiene dos hijas, Cadenas y Cassettes. Cadenas tiene a su vez una, Eslabones rápidos.</p>
-<p>La consulta que sale primero mira solo la categoría.</p>
-<pre><code class="language-sql">SELECT nombre FROM piezas WHERE categoria_id = 2;
+<p>Con la sesión en Madrid:</p>
+<pre><code class="language-sql">SET TimeZone = &#39;Europe/Madrid&#39;;
 </code></pre>
-<p>Devuelve 3 piezas: el cambio trasero, la maneta y el cable. Si alguien se da cuenta, el arreglo que sale solo es agregar las hijas.</p>
-<pre><code class="language-sql">SELECT nombre FROM piezas
-WHERE categoria_id = 2
-   OR categoria_id IN (SELECT id FROM categorias WHERE padre_id = 2);
+<pre><code class="language-text">          mes           | pedidos | ventas
+------------------------+---------+--------
+ 2026-08-01 00:00:00+02 |       4 | 260.40
+ 2026-09-01 00:00:00+02 |       3 | 374.99
 </code></pre>
-<p>Devuelve 6. Incluye las cadenas y el cassette. Tiene mejor pinta. Se deja fuera el eslabón rápido, que cuelga de Cadenas. Es el más peligroso de los dos. Con un número creíble delante, nadie vuelve a mirar.</p>
-<p>Lo que recorre el árbol entero, tenga los niveles que tenga, es una CTE recursiva.</p>
-<pre><code class="language-sql">WITH RECURSIVE bajo_transmision AS (
-  SELECT id, nombre, 1 AS nivel
-  FROM categorias
-  WHERE id = 2
-  UNION ALL
-  SELECT c.id, c.nombre, b.nivel + 1
-  FROM categorias c
-  JOIN bajo_transmision b ON c.padre_id = b.id
-)
-SELECT b.nivel, b.nombre AS categoria, p.nombre AS pieza
-FROM bajo_transmision b
-JOIN piezas p ON p.categoria_id = b.id
-ORDER BY b.nivel, b.nombre, p.nombre;
+<p>Los dos tienen buena pinta y no coinciden en ningún mes. El pedido 5 se hizo a las 00:40 del 1 de septiembre en Madrid, que en UTC son las 22:40 del 31 de agosto, así que en UTC cae en agosto. El 8, a las 00:30 del 1 de octubre, en UTC es 30 de septiembre: entra en el trimestre y se suma a septiembre. Son los 18,50 € de más. Los límites del <code>WHERE</code> también se movieron: <code>&#39;2026-10-01&#39;</code> sin zona es la medianoche en la zona de la sesión.</p>
+<p>La zona se escribe en la consulta, al agrupar y en los límites:</p>
+<pre><code class="language-sql">SELECT date_trunc(&#39;month&#39;, creado_en AT TIME ZONE &#39;Europe/Madrid&#39;) AS mes,
+       count(*) AS pedidos, sum(total) AS ventas
+FROM pedidos
+WHERE creado_en &gt;= &#39;2026-07-01 00:00 Europe/Madrid&#39;
+  AND creado_en &lt;  &#39;2026-10-01 00:00 Europe/Madrid&#39;
+GROUP BY 1 ORDER BY 1;
 </code></pre>
-<pre><code class="language-text"> nivel |     categoria     |       pieza
--------+-------------------+--------------------
-     1 | Transmisión       | Cable de cambio
-     1 | Transmisión       | Cambio trasero 12v
-     1 | Transmisión       | Maneta de cambio
-     2 | Cadenas           | Cadena 11v
-     2 | Cadenas           | Cadena 12v
-     2 | Cassettes         | Cassette 10-51
-     3 | Eslabones rápidos | Eslabón rápido 12v
+<p>La salida es la misma con la sesión en UTC y en Madrid:</p>
+<pre><code class="language-text">         mes         | pedidos | ventas
+---------------------+---------+--------
+ 2026-08-01 00:00:00 |       4 | 260.40
+ 2026-09-01 00:00:00 |       3 | 374.99
 </code></pre>
-<p>Siete piezas. La mitad de arriba del <code>UNION ALL</code> es el punto de partida, Transmisión. La de abajo busca las categorías cuyo padre ya está en el resultado. Se repite con las nuevas hasta que una vuelta no encuentra ninguna.</p>
-<p>Según la documentación, <code>RECURSIVE</code> permite que una consulta <code>WITH</code> se refiera a su propio resultado.</p>
-<p>En el original: «Using RECURSIVE, a WITH query can refer to its own output». Fuente: la misma página de WITH Queries.</p>
-<p>Pruébalo ahora con tu asistente. Reto «El descuento de Transmisión» de la práctica de ventanas.</p>
-<h3>Un ciclo cuelga la consulta, y el límite de profundidad lo convierte en un número inflado</h3>
-<p>Si alguien mueve por error Transmisión dentro de Eslabones rápidos, el árbol se convierte en un ciclo. Transmisión, Cadenas, Eslabones rápidos, Transmisión otra vez.</p>
-<p>La documentación avisa de que la parte recursiva tiene que acabar devolviendo cero filas, o se repetirá sin fin.</p>
-<p>En el original: «it is important to be sure that the recursive part of the query will eventually return no tuples, or else the query will loop indefinitely». Una tupla, aquí, es una fila.</p>
-<p>La consulta de antes, contando piezas, con un límite de tres segundos puesto para no esperar:</p>
-<pre><code class="language-text">ERROR:  canceling statement due to statement timeout
+<p><code>date_trunc(&#39;month&#39;, creado_en, &#39;Europe/Madrid&#39;)</code> agrupa igual. El resultado sigue siendo un momento con zona y se muestra en la de la sesión. Con la sesión en UTC, agosto sale etiquetado así:</p>
+<pre><code class="language-text">          mes           | pedidos | ventas
+------------------------+---------+--------
+ 2026-07-31 22:00:00+00 |       4 | 260.40
+ 2026-08-31 22:00:00+00 |       3 | 374.99
 </code></pre>
-<p>Eso es ruidoso y barato. El arreglo que sale solo es limitar la profundidad, agregando <code>WHERE b.nivel &lt; 10</code> a la mitad que se repite. La consulta termina, y cuenta:</p>
-<pre><code class="language-text"> piezas
---------
-     24
+<p>Los totales son los buenos. Un gráfico que pinte el mes a partir de esa etiqueta escribirá «julio» encima de las ventas de agosto. Con <code>AT TIME ZONE</code> la etiqueta es la hora de Madrid sin zona.</p>
+<p>Reto: «Las ventas de agosto».</p>
+<h3>Un mes sin ventas desaparece</h3>
+<p><code>GROUP BY</code> agrupa las filas que existen. En julio no hay ninguna, así que no hay grupo. La gestoría pega esas dos filas en su plantilla y las ventas de agosto acaban en la casilla de julio. En un gráfico, dos barras en vez de tres, y ninguna marca el hueco.</p>
+<p>Se parte del calendario. <code>generate_series</code> genera una fila por mes. Cada pedido se cuelga de su mes con un <code>LEFT JOIN</code>, que conserva el mes aunque no tenga pedidos:</p>
+<pre><code class="language-sql">SELECT m.mes,
+       count(p.id)               AS pedidos,
+       count(*)                  AS &quot;count(*)&quot;,
+       coalesce(sum(p.total), 0) AS ventas
+FROM generate_series(timestamp &#39;2026-07-01&#39;, timestamp &#39;2026-09-01&#39;, interval &#39;1 month&#39;) AS m(mes)
+LEFT JOIN pedidos p
+       ON date_trunc(&#39;month&#39;, p.creado_en AT TIME ZONE &#39;Europe/Madrid&#39;) = m.mes
+GROUP BY m.mes ORDER BY m.mes;
 </code></pre>
-<p>24 piezas en una categoría que tiene 7. El límite ha dado vueltas al ciclo hasta el nivel diez, contando varias veces las mismas piezas, sin error ni aviso. Un fallo que colgaba la consulta se ha convertido en un número con buena pinta.</p>
-<p>El arreglo bueno es detectar el ciclo. Desde PostgreSQL 14 existe la cláusula <code>CYCLE</code>. Se escribe detrás de la CTE y lleva la cuenta del camino recorrido.</p>
-<pre><code class="language-sql">WITH RECURSIVE bajo_transmision AS (
-  SELECT id, nombre, 1 AS nivel FROM categorias WHERE id = 2
-  UNION ALL
-  SELECT c.id, c.nombre, b.nivel + 1
-  FROM categorias c JOIN bajo_transmision b ON c.padre_id = b.id
-) CYCLE id SET en_ciclo USING camino
-SELECT nivel, nombre, en_ciclo, camino FROM bajo_transmision;
+<pre><code class="language-text">         mes         | pedidos | count(*) | ventas
+---------------------+---------+----------+--------
+ 2026-07-01 00:00:00 |       0 |        1 |      0
+ 2026-08-01 00:00:00 |       4 |        4 | 260.40
+ 2026-09-01 00:00:00 |       3 |        3 | 374.99
 </code></pre>
-<pre><code class="language-text"> nivel |      nombre       | en_ciclo |      camino
--------+-------------------+----------+-------------------
-     1 | Transmisión       | f        | {(2)}
-     2 | Cadenas           | f        | {(2),(3)}
-     2 | Cassettes         | f        | {(2),(4)}
-     3 | Eslabones rápidos | f        | {(2),(3),(5)}
-     4 | Transmisión       | t        | {(2),(3),(5),(2)}
+<p><code>count(*)</code> dice que julio tiene un pedido: cuenta filas, y la fila de julio existe, con los datos del pedido vacíos. <code>count(p.id)</code> cuenta solo donde hay pedido y da el cero verdadero.</p>
+<p>La suma de ninguna fila no es cero. En el original: &quot;In particular, sum of no rows returns null, not zero as one might expect&quot;. Fuente: Aggregate Functions. Por eso <code>coalesce(…, 0)</code>: aquí un mes sin pedidos sí vendió cero euros.</p>
+<p>Reto: «El informe del trimestre por mes».</p>
+<h3>Un promedio depende de qué signifique el vacío</h3>
+<p><code>dias_entrega</code> está vacío en el pedido 7, que no ha llegado. Ese vacío se llama <code>NULL</code>: no es cero ni texto vacío. Es «no hay valor». Las funciones de agregado lo saltan. <code>avg</code> es la media de los valores que sí existen. En el original: &quot;Computes the average (arithmetic mean) of all the non-null input values&quot;.</p>
+<p>Convertirlo en cero cambia la media:</p>
+<pre><code class="language-sql">SELECT date_trunc(&#39;month&#39;, creado_en AT TIME ZONE &#39;Europe/Madrid&#39;) AS mes,
+       round(avg(dias_entrega), 2)              AS media,
+       round(avg(coalesce(dias_entrega, 0)), 2) AS media_con_ceros
+FROM pedidos
+WHERE creado_en &gt;= &#39;2026-07-01 00:00 Europe/Madrid&#39;
+  AND creado_en &lt;  &#39;2026-10-01 00:00 Europe/Madrid&#39;
+GROUP BY 1 ORDER BY 1;
 </code></pre>
-<p>Se para sola al volver a Transmisión. Marca esa fila con <code>en_ciclo</code> y enseña el camino. <code>f</code> es falso: todavía no hay ciclo. <code>t</code> es verdadero: esta fila cierra el ciclo. Contando las piezas sin ella, con <code>WHERE NOT b.en_ciclo</code>, salen las 7 de verdad. La fila marcada es la prueba de un error en los datos que alguien tiene que corregir.</p>
+<pre><code class="language-text">         mes         | media | media_con_ceros
+---------------------+-------+-----------------
+ 2026-08-01 00:00:00 |  3.50 |            3.50
+ 2026-09-01 00:00:00 |  2.50 |            1.67
+</code></pre>
+<p>En agosto no hay vacíos y coinciden. En septiembre, <code>coalesce</code> convierte el pedido que no ha llegado en uno entregado en cero días, y la media baja de 2,50 a 1,67. En esta tienda el vacío significa «aún no entregado», así que <code>avg(dias_entrega)</code> a secas es la buena. Si la columna fuera el descuento y el vacío significara «sin descuento», sería al revés. Eso no está en el esquema. Está en la regla de negocio.</p>
+<p>Reto: «El tiempo medio de entrega».</p>
+<h3>Dividir dos enteros tira los decimales</h3>
+<pre><code class="language-sql">SELECT date_trunc(&#39;month&#39;, creado_en AT TIME ZONE &#39;Europe/Madrid&#39;) AS mes,
+       sum(dias_entrega) / count(dias_entrega)                    AS dividido,
+       round(sum(dias_entrega)::numeric / count(dias_entrega), 2) AS dividido_en_decimal
+FROM pedidos
+WHERE creado_en &gt;= &#39;2026-07-01 00:00 Europe/Madrid&#39;
+  AND creado_en &lt;  &#39;2026-10-01 00:00 Europe/Madrid&#39;
+GROUP BY 1 ORDER BY 1;
+</code></pre>
+<pre><code class="language-text">         mes         | dividido | dividido_en_decimal
+---------------------+----------+---------------------
+ 2026-08-01 00:00:00 |        3 |                3.50
+ 2026-09-01 00:00:00 |        2 |                2.50
+</code></pre>
+<p><code>dias_entrega</code> es entero, su suma y su recuento también. En PostgreSQL, dividir un entero entre otro devuelve un entero: 14 entre 4 da 3, no 3,5. No avisa y no redondea: trunca. Convertir uno de los dos con <code>::numeric</code> recupera los decimales. <code>avg</code> sobre enteros ya devuelve un decimal. La media escrita a mano, la de una media ponderada o un porcentaje, no.</p>
+<p>Reto: «El porcentaje de pedidos entregados».</p>
+<h3>Cuadrar contra un total que no dependa del informe</h3>
+<p>La suma de las filas tiene que dar lo mismo que el total del periodo, calculado aparte, con los límites en hora de Madrid:</p>
+<pre><code class="language-sql">SELECT count(*) AS pedidos, sum(total) AS total_del_trimestre
+FROM pedidos
+WHERE creado_en &gt;= &#39;2026-07-01 00:00 Europe/Madrid&#39;
+  AND creado_en &lt;  &#39;2026-10-01 00:00 Europe/Madrid&#39;;
+</code></pre>
+<pre><code class="language-text"> pedidos | total_del_trimestre
+---------+---------------------
+       7 |              635.39
+</code></pre>
+<p>El informe de la sesión en UTC sumaba 350,39 + 303,50 = 653,89. No cuadra. La diferencia, 18,50, es el pedido de octubre. El informe con la zona escrita suma 260,40 + 374,99 = 635,39 y cuadra. Lo mismo hacia abajo: la suma por días tiene que dar la suma por meses.</p>
+<p>Esta comprobación caza las filas que entran o salen del periodo, no las que cambian de mes dentro de él. El pedido 5 viajó de septiembre a agosto sin mover el total del trimestre.</p>
+<p>La segunda comprobación mira a mano las filas de frontera, con la sesión en UTC:</p>
+<pre><code class="language-sql">SELECT id,
+       to_char(creado_en AT TIME ZONE &#39;Europe/Madrid&#39;, &#39;DD/MM HH24:MI&#39;) AS hora_madrid,
+       to_char(date_trunc(&#39;month&#39;, creado_en), &#39;YYYY-MM&#39;)                            AS mes_sin_zona,
+       to_char(date_trunc(&#39;month&#39;, creado_en AT TIME ZONE &#39;Europe/Madrid&#39;), &#39;YYYY-MM&#39;) AS mes_madrid
+FROM pedidos WHERE id IN (4, 5, 8) ORDER BY id;
+</code></pre>
+<pre><code class="language-text"> id | hora_madrid | mes_sin_zona | mes_madrid
+----+-------------+--------------+------------
+  4 | 31/08 23:59 | 2026-08      | 2026-08
+  5 | 01/09 00:40 | 2026-08      | 2026-09
+  8 | 01/10 00:30 | 2026-09      | 2026-10
+</code></pre>
+<p>Si en los datos reales no hay pedidos en esas horas, se crean en una copia: uno a las 23:59 del último día, otro pasada la medianoche en Madrid, y uno con el campo vacío.</p>
 </section>
 <section class="bloque bloque-preguntas"><h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>
-<p><strong>«¿Partir una consulta en pasos con WITH no la hace más lenta?»</strong></p>
-<p>En PostgreSQL, desde la versión 12, un paso así no se calcula aparte. Se funde con la consulta si no tiene efectos secundarios, no es recursivo y se usa una sola vez. <code>MATERIALIZED</code> lo impide.</p>
-<p>En el original: «CTEs are automatically inlined if they have no side-effects, are not recursive, and are referenced only once in the query. Inlining can be prevented by specifying MATERIALIZED». Fuente: PostgreSQL 12 Release Notes (Notas de la versión 12).</p>
-<p>Antes de esa versión, cada paso se calculaba siempre por separado y antes que el resto.</p>
-<p><strong>«¿Y si le pido al asistente que lo escriba bien?»</strong></p>
-<p>A las tres consultas no les falta SQL. Les falta una regla de negocio. Qué pasa con los empates. Qué pedido va primero en un mismo día. Qué hacer con un ciclo. Un asistente no puede adivinarla.</p>
-<p>Lo que sí le puedes pedir es que, por cada función de ventana, diga qué desempate y qué marco usa. Y que entregue la consulta en pasos que puedas ejecutar sueltos.</p>
+<p><strong>«¿No basta con configurar el servidor en hora de Madrid?»</strong></p>
+<p>Cambia qué respuesta sale, no de qué depende. La misma consulta lanzada desde otra herramienta, un cuaderno de análisis o un proceso nocturno con otra zona devuelve el otro informe. Escribir la zona hace que diga lo mismo la lance quien la lance.</p>
+<p><strong>«¿Y <code>BETWEEN &#39;2026-08-01&#39; AND &#39;2026-08-31 23:59:59&#39;</code>?»</strong></p>
+<p>Tapa la medianoche y abre otro caso: una marca de tiempo guarda fracciones de segundo, y un pedido a las 23:59:59,5 queda fuera. Sobre ese instante, <code>BETWEEN</code> responde <code>f</code> y el intervalo semiabierto <code>t</code>. El semiabierto no necesita saber cuál es el último instante del mes.</p>
 </section>
-<section class="bloque bloque-palabras"><h2 id="palabras-de-esta-leccion-juntas">Palabras de esta lección, juntas</h2>
-<ul>
-<li><strong>Función de ventana.</strong> Calcula sobre un grupo de filas, su partición, sin juntarlas en una. Se reconoce por el <code>OVER</code>.</li>
-<li><strong>Empatadas (peers).</strong> Filas que el <code>ORDER BY</code> de la ventana no distingue.</li>
-<li><strong>Marco (window frame).</strong> Las filas de la partición sobre las que se calcula cada fila. Por defecto, con <code>ORDER BY</code>, llega hasta la actual y sus empatadas.</li>
-<li><strong>CTE.</strong> Un paso con nombre dentro de una consulta: <code>WITH nombre AS (…)</code> .</li>
-<li><strong>CTE recursiva.</strong> Una CTE con <code>WITH RECURSIVE</code> que se usa a sí misma hasta no encontrar filas nuevas.</li>
-</ul>
-<p>Pruébalo ahora con tu asistente. Reto opcional «Un error en el árbol de categorías» de la práctica de ventanas.</p>
-</section>
-<section class="bloque bloque-tema"><h2 id="que-te-llevas">Qué te llevas</h2>
-<p>Por cada <code>OVER</code> con <code>ORDER BY</code>, pregunta qué pasa con los empates. Si la última columna del <code>ORDER BY</code> no es única dentro de la partición, hay empatadas. Alguien tiene que decidir qué se hace con ellas.</p>
-<p>Para los N primeros, elige la función por la regla de negocio. <code>rank</code> si las empatadas entran. <code>dense_rank</code> si cuentas niveles. <code>row_number</code> solo con un desempate que haya elegido el negocio.</p>
-<p>En un acumulado, escribe el marco y el desempate. Compruébalo en una fila intermedia. El total final sale bien aunque la consulta esté mal.</p>
-<p>Pide las consultas largas en pasos con <code>WITH</code> y ejecuta cada paso suelto con <code>SELECT * FROM &lt;paso&gt;</code>. El fallo de la portada no se veía en el resultado final y sí en el paso intermedio.</p>
-<p>Para recorrer un árbol, <code>WITH RECURSIVE</code> con <code>CYCLE</code>. Un límite de profundidad sin detectar ciclos cambia una consulta que se cuelga por una que cuenta de más.</p>
-<p>Prueba con datos que tengan empates y con un árbol de tres niveles. Sin ellos, la consulta correcta y la incorrecta dan lo mismo.</p>
-<p class="siguiente">Siguiente lección: cómo leer el plan de ejecución, por qué una consulta que devuelve lo correcto puede ser la lenta, y cómo se ve antes de ponerla en producción. Está en <code>claro/modulo-10/6.md</code>.</p>
+<section class="bloque bloque-accion"><h2 id="que-hacer">Qué hacer</h2>
+<p>Si hay <code>BETWEEN</code> sobre una marca de tiempo, cámbialo por <code>&gt;=</code> el primer instante y <code>&lt;</code> el primero del periodo siguiente.</p>
+<p>Si la consulta no escribe la zona, depende de la sesión. Escríbela en la agrupación (<code>AT TIME ZONE &#39;Europe/Madrid&#39;</code>) y en los límites (<code>&#39;2026-10-01 00:00 Europe/Madrid&#39;</code>).</p>
+<p>Si el informe tiene que llevar todos los meses: <code>generate_series</code> más <code>LEFT JOIN</code>, <code>count(columna)</code> en vez de <code>count(*)</code>, y <code>coalesce(sum(…), 0)</code> solo donde un vacío signifique cero.</p>
+<p>Antes de aceptar un <code>coalesce</code> en una media, pregunta qué significa el vacío. Si es «todavía no se sabe», convertirlo en cero cambia la media.</p>
+<p>En una división escrita a mano, mira si los dos lados son enteros y convierte uno a decimal.</p>
+<p>Cuadra el informe contra un total calculado aparte y mira las filas de frontera: el último minuto del mes, el primero del siguiente en tu zona, y una fila con el campo vacío.</p>
+<p class="siguiente">Siguiente lección: funciones de ventana y consultas con <code>WITH</code>. Está en <code>claro/modulo-10/6.md</code>.</p>
 </section></article>
       <nav class="paso" aria-label="Lecciones vecinas">
     <a href="4.html">← Módulo 10 · 4</a>

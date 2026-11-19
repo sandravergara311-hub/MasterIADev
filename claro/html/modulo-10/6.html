@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Módulo 10 · Lección 6 — Una consulta puede estar bien y ser lenta, y el plan lo avisa antes</title>
+  <title>Módulo 10 · Lección 6 — Una función de ventana calcula sin agrupar, y los empates los decides tú</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560&family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,460;8..60,620&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
   <header class="techo">
     <button class="icono menu" type="button" data-menu>Lecciones</button>
     <a class="marca" href="../index.html">En claro</a>
-    <span class="aqui-titulo">Módulo 10 · Lección 6 — Una consulta puede estar bien y ser lenta, y el plan lo avisa antes</span>
+    <span class="aqui-titulo">Módulo 10 · Lección 6 — Una función de ventana calcula sin agrupar, y los empates los decides tú</span>
     <div class="acciones">
       <button class="icono" type="button" data-letra="menos" aria-label="Texto más chico">A−</button>
       <button class="icono" type="button" data-letra="mas" aria-label="Texto más grande">A+</button>
@@ -31,262 +31,268 @@
 <details><summary>Módulo 7</summary><ol><li><a href="../modulo-7/1.html">1. El mapa: qué regla se aplica cuando hay varios repositorios</a></li><li><a href="../modulo-7/2.html">2. Qué decide dónde acaba un repositorio</a></li><li><a href="../modulo-7/3.html">3. El agente solo ve su directorio de trabajo</a></li><li><a href="../modulo-7/4.html">4. Dónde vive la spec cuando el sistema son tres repositorios</a></li><li><a href="../modulo-7/5.html">5. Un cambio que cruza dos repositorios no es un solo cambio</a></li><li><a href="../modulo-7/6.html">6. Lo que se comparte, lo que se versiona y lo que no se puede fundir</a></li><li><a href="../modulo-7/7.html">7. Herramientas de esta sesión</a></li><li><a href="../modulo-7/8.html">8. Ejercicio: haz que una regla se cumpla en el otro repositorio</a></li><li><a href="../modulo-7/9.html">9. Dónde profundizar</a></li><li><a href="../modulo-7/sesion.html">Resumen de la clase</a></li></ol></details>
 <details><summary>Módulo 8</summary><ol><li><a href="../modulo-8/1.html">1. El mapa: de escribir reglas a comprobar si funcionan</a></li><li><a href="../modulo-8/2.html">2. Una regla escrita no es una regla cumplida</a></li><li><a href="../modulo-8/3.html">3. Un eval da una tasa, no un verde</a></li><li><a href="../modulo-8/4.html">4. Sin línea base, un número no significa nada</a></li><li><a href="../modulo-8/5.html">5. Quién puntúa un ensayo, y en qué orden</a></li><li><a href="../modulo-8/6.html">6. Un verde que nunca estuvo en rojo no prueba nada</a></li><li><a href="../modulo-8/7.html">7. Dónde profundizar</a></li><li><a href="../modulo-8/8.html">8. Dónde profundizar</a></li><li><a href="../modulo-8/9.html">9. Mide una regla que creías cumplida</a></li><li><a href="../modulo-8/10.html">10. Fuentes sobre sistemas repartidos en varios repositorios</a></li></ol></details>
 <details><summary>Módulo 9</summary><ol><li><a href="../modulo-9/1.html">1. El mapa: qué datos bloqueas, qué riesgos revisas y qué evidencia guardas</a></li><li><a href="../modulo-9/2.html">2. Un pedido no es una consulta, es una transferencia de datos</a></li><li><a href="../modulo-9/3.html">3. La casilla de riesgo la decide el uso, no la tecnología</a></li><li><a href="../modulo-9/4.html">4. El código generado falla distinto, y quien lo usa confía más</a></li><li><a href="../modulo-9/5.html">5. El ataque no entra por donde escribes, entra por lo que el agente lee</a></li><li><a href="../modulo-9/6.html">6. Cumplir no es no hacerlo mal, es poder demostrar qué pasó</a></li><li><a href="../modulo-9/7.html">7. Ejercicio FlowSync: bloquea el dato que no debe salir y guarda el rastro</a></li><li><a href="../modulo-9/8.html">8. Dónde comprobar lo que dice el módulo</a></li></ol></details>
-<details open><summary>Módulo 10</summary><ol><li><a href="1.html">1. El mapa: no te fíes de un resultado solo porque no salió un error</a></li><li><a href="2.html">2. Un cambio en la forma de guardar los datos es lo más difícil de deshacer</a></li><li><a href="3.html">3. Juntar listas puede multiplicar filas, o perderlas, sin dar ningún error</a></li><li><a href="4.html">4. Agrupar por mes es decidir qué es un mes</a></li><li><a href="5.html">5. Numerar sin juntar las filas, y decidir tú qué pasa cuando hay empate</a></li><li><a href="6.html" class="actual">6. Una consulta puede estar bien y ser lenta, y el plan lo avisa antes</a></li><li><a href="7.html">7. Una consulta puede estar bien y ser lenta, y el plan lo avisa antes</a></li></ol></details></nav>
+<details open><summary>Módulo 10</summary><ol><li><a href="1.html">1. El mapa: un resultado sin error puede estar mal</a></li><li><a href="2.html">2. El asistente no inventa columnas, inventa valores</a></li><li><a href="3.html">3. Una migración es el cambio que peor se deshace</a></li><li><a href="4.html">4. Una unión puede multiplicar filas o perderlas sin dar error</a></li><li><a href="5.html">5. Agrupar por mes es decidir qué es un mes</a></li><li><a href="6.html" class="actual">6. Una función de ventana calcula sin agrupar, y los empates los decides tú</a></li><li><a href="7.html">7. Una consulta puede ser correcta y lenta, y el plan lo avisa antes que producción</a></li></ol></details></nav>
     <div class="lectura">
       
-      <article><h1>Módulo 10 · Lección 6 — Una consulta puede estar bien y ser lenta, y el plan lo avisa antes</h1>
+      <article><h1>Módulo 10 · Lección 6 — Una función de ventana calcula sin agrupar, y los empates los decides tú</h1>
 <p class="origen">Texto original: <code>original/modulo-10/6.md</code><br>Obligatoria. Lectura de unos 30 minutos.</p>
 
 <section class="bloque bloque-frase"><h2 id="en-una-frase">En una frase</h2>
-<p>Que una búsqueda encuentre a la persona correcta no dice cuánto cuesta encontrarla. En la prueba, con 50 clientes, no se nota. En la tienda real, cada inicio de sesión lee 300.000 filas aunque el atajo de búsqueda esté ahí.</p>
-</section>
-<section class="bloque bloque-palabras"><h2 id="palabras-que-vas-a-escuchar">Palabras que vas a escuchar</h2>
-<ul>
-<li><strong>Índice.</strong> Un atajo ordenado para encontrar filas sin leer la lista entera. Como el índice alfabético de un libro.</li>
-<li><strong>Plan de ejecución.</strong> El árbol de pasos con el que el motor resuelve una consulta. Lo decide el planificador antes de ejecutarla.</li>
-<li><strong>Planificador.</strong> La parte del motor que elige esos pasos.</li>
-<li><strong>Seq Scan.</strong> Recorrido secuencial. Leer la tabla entera, fila a fila.</li>
-<li><strong>Index Scan.</strong> Ir al índice y leer solo las filas que cumplen.</li>
-<li><strong>Parallel Seq Scan.</strong> El recorrido de la tabla entera, repartido entre varios procesos. <code>Gather</code> junta lo que traen.</li>
-<li><strong>Bitmap Index Scan y Bitmap Heap Scan.</strong> El primero marca en el índice qué filas cumplen. El segundo va a buscarlas a la tabla.</li>
-<li><strong>EXPLAIN.</strong> Muestra el plan sin ejecutar la consulta.</li>
-<li><strong>EXPLAIN ANALYZE.</strong> Ejecuta la consulta de verdad y agrega lo que pasó.</li>
-<li><strong>Índice de expresión.</strong> Un índice sobre el resultado de una función, como <code>lower(email)</code>, no sobre la columna tal cual.</li>
-<li><strong>Clase de operadores.</strong> La forma de comparar que usa un índice. <code>text_pattern_ops</code> compara carácter a carácter.</li>
-<li><strong>N+1.</strong> Una página que hace una consulta por la lista y luego una consulta más por cada fila. Con 200 pedidos, son 201 consultas.</li>
-</ul>
+<p>Cuando dos filas empatan, la base no elige un criterio de negocio. Elige una, o trata a las dos igual, según una regla que casi nadie escribió.</p>
 </section>
 <section class="bloque bloque-caso"><h2 id="caso-real-la-bicicleteria">Caso real: la bicicletería</h2>
-<p>Bicicletas del Parque tiene 300.000 clientes, 500.000 pedidos y 200.000 piezas en catálogo. La tabla <code>clientes</code> tiene un índice sobre la columna <code>email</code>. Los correos se guardan tal como los escribió cada cliente al registrarse. Una clienta, Marta Gil, figura como <code>Marta.Gil@Correo.es</code>. No es Marta, la dueña. La regla del inicio de sesión es encontrarla aunque teclee <code>marta.gil@correo.es</code>, sin distinguir mayúsculas.</p>
-<p>Leo le pide al asistente la consulta del inicio de sesión: <code>WHERE lower(email) = &#39;marta.gil@correo.es&#39;</code>. <code>lower</code> pasa el texto a minúsculas. Devuelve a Marta Gil. Las pruebas pasan contra la base de desarrollo, que tiene 50 clientes. Se aprueba.</p>
-<p>En producción, cada inicio de sesión lee los 300.000 clientes para encontrar a uno. Producción es el sistema que ya usan los clientes. El índice sobre <code>email</code> sigue ahí, y no se usa.</p>
-<p>Nada ha fallado. La consulta devuelve la fila correcta. Las pruebas están en verde. Una sola ejecución ni siquiera llama la atención. Lo que ha cambiado es lo que cuesta. Ese costo crece con la tabla. No revienta.</p>
+<p>La campaña de septiembre de Bicicletas del Parque tiene tres reglas. La portada enseña las dos piezas más vendidas en agosto de cada categoría, y una pieza que empata con otra que entra, entra también. El envío es gratis a partir del pedido con el que un cliente supera los 300 € en el mes, no antes. El 10 % de descuento cubre toda la Transmisión, subcategorías incluidas.</p>
+<p>Salen tres consultas. Ninguna da error. La portada enseña dos piezas de frenos donde tocaban tres. Ana tiene envío gratis en un pedido de 150 € que no le tocaba. El descuento llega a tres de las siete piezas de Transmisión. A las tres les falta una decisión: qué hacer con dos piezas que venden lo mismo, con dos pedidos del mismo día y con una categoría que cuelga de otra.</p>
 </section>
-<section class="bloque bloque-tema"><h2 id="como-leerla-segun-de-donde-vengas">Cómo leerla según de dónde vengas</h2>
-<p>Si escribes el programa, aquí tienes cómo se lee un plan de ejecución de PostgreSQL con lo justo, dos patrones que dejan un índice sin usar y cómo cazar las consultas de más que lanza un mapeador de objetos. Un mapeador de objetos es la capa que traduce entre las tablas y los objetos del programa.</p>
-<p>Si vienes de producto o de gestión, quédate con esto. «Funciona en desarrollo» no dice nada sobre lo que tarda en producción. Y sí hay algo concreto que pedir para saberlo antes.</p>
-<p>Si no tienes formación técnica, un índice es como el índice alfabético de un libro. Esta lección va de las formas de preguntar que obligan a leerse el libro entero aunque el índice esté ahí.</p>
-</section>
-<section class="bloque bloque-tema"><h2 id="puedes-practicar-mientras-lees">Puedes practicar mientras lees</h2>
-<p>En la práctica del plan de ejecución del repositorio <code>consultas-sql-ai4devs</code> están los datos de esta lección, en una base PostgreSQL que se levanta con un comando, y unos retos. Le pides la consulta al asistente y compruebas tú si el resultado es el correcto.</p>
-<p>Cada reto va al final de la sección que practica. Para tenerla lista, clona el repositorio y ejecuta <code>make cargar</code>. Necesitas Docker, make y git. En Windows, dentro de WSL.</p>
+<section class="bloque bloque-tema"><h2 id="como-leerla">Cómo leerla</h2>
+<p>Si escribes el programa: los comportamientos por defecto de las funciones de ventana y de <code>WITH</code> que devuelven un resultado bien formado y equivocado, y cómo revisar una consulta larga por pasos.</p>
+<p>Si vienes de producto o de gestión: «las dos más vendidas» o «a partir del pedido que supera 300 €» no están completas hasta que alguien dice qué pasa con los empates. Esa decisión es de negocio.</p>
+<p>Si no tienes formación técnica: cuando dos filas empatan, la base no aplica un criterio sensato.</p>
 </section>
 <section class="bloque bloque-desarrollo"><h2 id="el-desarrollo">El desarrollo</h2>
-<h3>Una consulta lenta devuelve lo mismo que una rápida</h3>
-<p>Primero, por qué el asistente escribió <code>lower()</code>. El correo se guarda como lo tecleó el cliente. Con la comparación a secas, la búsqueda de Marta Gil devuelve esto.</p>
-<pre><code class="language-sql">SELECT id, nombre FROM clientes WHERE email = &#39;marta.gil@correo.es&#39;;
+<p>La práctica de ventanas está en <code>consultas-sql-ai4devs</code>. Clona y ejecuta <code>make cargar</code>. Necesitas Docker, make y git. En Windows, dentro de WSL.</p>
+<p>Las consultas son de PostgreSQL, sobre datos de juguete: once piezas, cinco categorías y diez pedidos, lo justo para que haya empates.</p>
+<pre><code class="language-text">categorias     (id, nombre, padre_id)      -- padre_id: la categoría de la que cuelga
+piezas         (id, nombre, categoria_id)
+clientes       (id, nombre)
+pedidos        (id, cliente_id, fecha, importe, direccion)
+lineas_pedido  (pedido_id, pieza_id, cantidad)
 </code></pre>
-<pre><code class="language-text"> id | nombre
-----+--------
-(0 rows)
+<p>Las unidades de agosto por pieza están en la vista <code>ventas</code>: una consulta guardada con nombre, con las columnas <code>categoria</code>, <code>pieza</code> y <code>unidades</code>.</p>
+<h3>La ventana calcula sin juntar las filas</h3>
+<p><code>GROUP BY</code> junta cada grupo en una fila:</p>
+<pre><code class="language-sql">SELECT categoria, sum(unidades) AS total_categoria
+FROM ventas
+GROUP BY categoria;
 </code></pre>
-<p>Cero filas, porque <code>marta.gil</code> y <code>Marta.Gil</code> son textos distintos. Pasar las dos partes a minúsculas lo arregla.</p>
-<pre><code class="language-sql">SELECT id, nombre FROM clientes WHERE lower(email) = &#39;marta.gil@correo.es&#39;;
+<pre><code class="language-text">  categoria  | total_categoria
+-------------+-----------------
+ Frenos      |             100
+ Transmisión |             105
 </code></pre>
-<pre><code class="language-text">   id   |  nombre
---------+-----------
- 300000 | Marta Gil
-(1 row)
+<p>Entran siete piezas y salen dos filas. Para dejar cada pieza con el total de su categoría:</p>
+<pre><code class="language-sql">SELECT categoria, pieza, unidades,
+       sum(unidades) OVER (PARTITION BY categoria) AS total_categoria
+FROM ventas
+ORDER BY categoria, unidades DESC;
 </code></pre>
-<p>La consulta es correcta y cumple la regla. Ninguna prueba que compare filas la distingue de una rápida, porque el resultado es el mismo. La diferencia está en cómo ha llegado el motor a ese resultado. Eso es el plan.</p>
-<h3>EXPLAIN enseña el plan sin ejecutar; EXPLAIN ANALYZE la ejecuta</h3>
-<p>Antes de ejecutar una consulta, PostgreSQL decide cómo la va a ejecutar. Si usa un índice o recorre la tabla entera. Qué lee primero. Cómo junta los resultados. A esa decisión se le llama plan de ejecución. A la parte del motor que la toma, planificador.</p>
-<p><code>EXPLAIN</code> delante de una consulta enseña el plan sin ejecutarla.</p>
-<pre><code class="language-sql">EXPLAIN SELECT id, nombre FROM clientes WHERE lower(email) = &#39;marta.gil@correo.es&#39;;
+<pre><code class="language-text">  categoria  |         pieza          | unidades | total_categoria
+-------------+------------------------+----------+-----------------
+ Frenos      | Pastillas orgánicas    |       40 |             100
+ Frenos      | Pastillas sinterizadas |       25 |             100
+ Frenos      | Disco 160 mm           |       25 |             100
+ Frenos      | Latiguillo             |       10 |             100
+ Transmisión | Maneta de cambio       |       40 |             105
+ Transmisión | Cambio trasero 12v     |       40 |             105
+ Transmisión | Cable de cambio        |       25 |             105
 </code></pre>
-<pre><code class="language-text">                                 QUERY PLAN
------------------------------------------------------------------------------
- Gather  (cost=1000.00..6117.00 rows=1500 width=22)
-   Workers Planned: 2
-   -&gt;  Parallel Seq Scan on clientes  (cost=0.00..4967.00 rows=625 width=22)
-         Filter: (lower(email) = &#39;marta.gil@correo.es&#39;::text)
+<p><code>OVER</code> convierte <code>sum</code> en una función de ventana. <code>PARTITION BY categoria</code> dice qué filas forman el grupo de cada una: su partición. En el original: &quot;window functions do not cause rows to become grouped into a single output row like non-window aggregate calls would. Instead, the rows retain their separate identities&quot;. Fuente: Window Functions, del tutorial oficial.</p>
+<p>Dentro de <code>OVER</code> caben un <code>ORDER BY</code>, que ordena las filas de cada partición, y un marco, que dice sobre qué filas se calcula. Los dos tienen un valor por defecto. Lo que hacen cuando hay empates rompe las dos primeras consultas.</p>
+<h3><code>WITH</code> pone nombre al paso intermedio</h3>
+<p>Poner la numeración en el filtro falla en alto:</p>
+<pre><code class="language-sql">SELECT categoria, pieza, unidades
+FROM ventas
+WHERE row_number() OVER (PARTITION BY categoria ORDER BY unidades DESC) &lt;= 2;
 </code></pre>
-<p>Un plan es un árbol que se lee de dentro hacia fuera. Cada línea con <code>-&gt;</code> es un nodo, un paso. El de fuera recibe lo que producen los de dentro. Al principio basta con mirar tres cosas.</p>
-<p>El tipo de nodo. <code>Seq Scan</code> es leer la tabla entera, fila a fila. <code>Index Scan</code> es ir al índice y leer solo las filas que cumplen. <code>Parallel Seq Scan</code> es el recorrido secuencial repartido entre varios procesos. <code>Gather</code> junta lo que traen.</p>
-<p><code>rows</code>, las filas que el planificador espera. Aquí, 1.500. Es una estimación. El planificador todavía no ha mirado ninguna fila.</p>
-<p><code>Filter</code>, la condición que se aplica fila a fila mientras se recorre.</p>
-<p>El <code>cost</code> no son milisegundos. La documentación de PostgreSQL sobre <code>EXPLAIN</code> dice que se mide en unidades arbitrarias.</p>
-<p>En el original: «The costs are measured in arbitrary units determined by the planner&#39;s cost parameters».</p>
-<p>Sirve para comparar planes entre sí.</p>
-<p><code>EXPLAIN ANALYZE</code> hace otra cosa. Ejecuta la consulta y agrega a cada nodo lo que pasó de verdad. La misma consulta, sobre la misma base:</p>
-<pre><code class="language-text">                                                       QUERY PLAN
--------------------------------------------------------------------------------------------------------------------------
- Gather  (cost=1000.00..6117.00 rows=1500 width=22) (actual time=25.332..26.243 rows=1 loops=1)
-   Workers Planned: 2
-   Workers Launched: 2
-   -&gt;  Parallel Seq Scan on clientes  (cost=0.00..4967.00 rows=625 width=22) (actual time=24.592..24.592 rows=0 loops=3)
-         Filter: (lower(email) = &#39;marta.gil@correo.es&#39;::text)
-         Rows Removed by Filter: 100000
- Planning Time: 0.018 ms
- Execution Time: 26.247 ms
+<pre><code class="language-text">ERROR:  window functions are not allowed in WHERE
 </code></pre>
-<p>Lo nuevo va entre el segundo par de paréntesis, y se lee así.</p>
-<p><code>actual time</code>, en milisegundos: cuándo empezó a devolver filas el nodo y cuándo terminó.</p>
-<p><code>rows</code> real frente a <code>rows</code> estimado. El planificador esperaba 1.500 filas y salió 1. Según la documentación, lo más importante suele ser si las filas estimadas se parecen a la realidad.</p>
-<p>En el original: «The thing that&#39;s usually most important to look for is whether the estimated row counts are reasonably close to reality».</p>
-<p>Una estimación que se equivoca por mil es un planificador que decide a ciegas.</p>
-<p><code>loops</code>, cuántas veces se ejecutó el nodo. Cuando es mayor que uno, <code>rows</code> y <code>actual time</code> son la media por ejecución, y hay que multiplicar. Aquí <code>loops=3</code> son los tres procesos que se repartieron la tabla. Cada uno descartó 100.000 filas (<code>Rows Removed by Filter</code>). 300.000 filas leídas para devolver una.</p>
-<p><code>Execution Time</code>, el total: 26 milisegundos en esa ejecución, con PostgreSQL 17. El número cambiará en tu máquina. La forma no.</p>
-<p>26 milisegundos no parecen mucho, y por eso esto pasa las revisiones. Pero es lo que cuesta leer 300.000 filas. Crece con la tabla y se paga en cada inicio de sesión.</p>
-<h3>EXPLAIN ANALYZE sobre una escritura la ejecuta de verdad</h3>
-<p>Que <code>EXPLAIN ANALYZE</code> ejecute la consulta es inofensivo con un <code>SELECT</code>. No lo es con todo lo demás. La página de referencia de <code>EXPLAIN</code> lo avisa. Ten en cuenta que la sentencia se ejecuta de verdad cuando se usa la opción <code>ANALYZE</code>.</p>
-<p>En el original: «Keep in mind that the statement is actually executed when the ANALYZE option is used».</p>
-<p>Comprobado sobre la base de desarrollo, con un descuento del 10 % al pedido 7, que empieza valiendo <code>264.00</code>. De cada salida se deja solo la del <code>SELECT</code>. Con <code>EXPLAIN</code> a secas:</p>
-<pre><code class="language-sql">EXPLAIN UPDATE pedidos SET total = total * 0.90 WHERE id = 7;
-SELECT id, total FROM pedidos WHERE id = 7;
+<p>La función de ventana se calcula después del <code>WHERE</code>. Hay que numerar en un paso y filtrar en otro:</p>
+<pre><code class="language-sql">WITH clasificadas AS (
+  SELECT categoria, pieza, unidades,
+         row_number() OVER (PARTITION BY categoria ORDER BY unidades DESC) AS puesto
+  FROM ventas
+)
+SELECT categoria, pieza, unidades
+FROM clasificadas
+WHERE puesto &lt;= 2;
 </code></pre>
-<pre><code class="language-text"> id | total
-----+--------
-  7 | 264.00
+<pre><code class="language-text">  categoria  |         pieza          | unidades
+-------------+------------------------+----------
+ Frenos      | Pastillas orgánicas    |       40
+ Frenos      | Pastillas sinterizadas |       25
+ Transmisión | Maneta de cambio       |       40
+ Transmisión | Cambio trasero 12v     |       40
 </code></pre>
-<p>Intacto. Se ha planificado y no se ha ejecutado. La misma línea con <code>EXPLAIN ANALYZE</code>:</p>
-<pre><code class="language-sql">EXPLAIN ANALYZE UPDATE pedidos SET total = total * 0.90 WHERE id = 7;
-SELECT id, total FROM pedidos WHERE id = 7;
+<p><code>clasificadas</code> es una Common Table Expression (CTE), un paso con nombre. Una consulta larga encadena varios, separados por comas. En el original: &quot;These statements, which are often referred to as Common Table Expressions or CTEs, can be thought of as defining temporary tables that exist just for one query&quot;. Fuente: WITH Queries (Common Table Expressions).</p>
+<p>Cada paso se puede ejecutar solo: se deja el <code>WITH</code> y se cambia el último <code>SELECT</code> por <code>SELECT * FROM clasificadas</code>.</p>
+<pre><code class="language-text">  categoria  |         pieza          | unidades | puesto
+-------------+------------------------+----------+--------
+ Frenos      | Pastillas orgánicas    |       40 |      1
+ Frenos      | Pastillas sinterizadas |       25 |      2
+ Frenos      | Disco 160 mm           |       25 |      3
+ Frenos      | Latiguillo             |       10 |      4
+ Transmisión | Maneta de cambio       |       40 |      1
+ Transmisión | Cambio trasero 12v     |       40 |      2
+ Transmisión | Cable de cambio        |       25 |      3
 </code></pre>
-<pre><code class="language-text"> id | total
-----+--------
-  7 | 237.60
+<p>Dos piezas de frenos con 25 unidades y puestos distintos. El resultado final no lo enseña, porque la tercera ya no aparece.</p>
+<h3>Qué función numera es una regla de negocio</h3>
+<p>Sobre las mismas siete piezas:</p>
+<pre><code class="language-sql">SELECT categoria, pieza, unidades,
+       row_number() OVER w AS row_number,
+       rank()       OVER w AS rank,
+       dense_rank() OVER w AS dense_rank
+FROM ventas
+WINDOW w AS (PARTITION BY categoria ORDER BY unidades DESC)
+ORDER BY categoria, unidades DESC, row_number;
 </code></pre>
-<p>El pedido ya queda en <code>237.60</code>. Querías ver un plan y has aplicado un descuento. La misma página da el remedio: una transacción que se deshace al terminar. Una transacción, aquí, es un grupo de operaciones que se confirman juntas o se descartan juntas.</p>
-<pre><code class="language-sql">BEGIN;
-EXPLAIN ANALYZE UPDATE pedidos SET total = total * 0.90 WHERE id = 7;
-ROLLBACK;
-SELECT id, total FROM pedidos WHERE id = 7;
+<pre><code class="language-text">  categoria  |         pieza          | unidades | row_number | rank | dense_rank
+-------------+------------------------+----------+------------+------+------------
+ Frenos      | Pastillas orgánicas    |       40 |          1 |    1 |          1
+ Frenos      | Pastillas sinterizadas |       25 |          2 |    2 |          2
+ Frenos      | Disco 160 mm           |       25 |          3 |    2 |          2
+ Frenos      | Latiguillo             |       10 |          4 |    4 |          3
+ Transmisión | Maneta de cambio       |       40 |          1 |    1 |          1
+ Transmisión | Cambio trasero 12v     |       40 |          2 |    1 |          1
+ Transmisión | Cable de cambio        |       25 |          3 |    3 |          2
 </code></pre>
-<pre><code class="language-text"> id | total
-----+--------
-  7 | 237.60
+<p><code>row_number</code> numera 1, 2, 3, 4 pase lo que pase, también a dos piezas empatadas.</p>
+<p><code>rank</code> da el mismo puesto a las empatadas y se salta los siguientes: 1, 2, 2, 4. En el original: &quot;Returns the rank of the current row, with gaps&quot;.</p>
+<p><code>dense_rank</code> da el mismo puesto sin huecos: 1, 2, 2, 3. En el original: &quot;Returns the rank of the current row, without gaps&quot;. Fuente de las tres: Window Functions.</p>
+<p>La regla dice que quien empata con una que entra, entra también. Con <code>puesto &lt;= 2</code>, en Frenos la segunda y la tercera empatan a 25 y entran las dos: tres piezas, como da <code>rank</code>. En Transmisión, la tercera, con 25, no empata con ninguna que entre: dos piezas, como da <code>rank</code>. <code>dense_rank</code> saca tres, porque responde a otra pregunta: los dos niveles de ventas más altos. <code>row_number</code> responde a exactamente dos, las que sean.</p>
+<p>Esto se llama top-N por grupo. La documentación de RisingWave lo resume así. En el original: &quot;In the ranking function clause, you can include a PARTITION BY clause to fetch top N rows per group&quot;. Fuente: Top-N by group.</p>
+<p>Las filas que el <code>ORDER BY</code> de la ventana no distingue se llaman empatadas (peers). En el original: &quot;Rows that are not distinct when considering only the ORDER BY columns are said to be peers. The four ranking functions (including cume_dist) are defined so that they give the same answer for all rows of a peer group&quot;. <code>row_number</code> no está entre esas cuatro: les reparte números en un orden que nadie fijó.</p>
+<p>La portada enseña como segunda de frenos las pastillas sinterizadas. La página de Frenos usa la misma consulta con <code>AND categoria = &#39;Frenos&#39;</code>, sobre los mismos datos:</p>
+<pre><code class="language-text"> categoria |        pieza        | unidades
+-----------+---------------------+----------
+ Frenos    | Pastillas orgánicas |       40
+ Frenos    | Disco 160 mm        |       25
 </code></pre>
-<p>El plan sale con sus tiempos reales y el pedido sigue en <code>237.60</code>, lo que valía antes de esa transacción. <code>BEGIN</code> abre el grupo. <code>ROLLBACK</code> lo descarta.</p>
-<p>La regla, en una línea. <code>EXPLAIN</code> es de solo lectura siempre. <code>EXPLAIN ANALYZE</code> sobre un <code>INSERT</code>, <code>UPDATE</code> o <code>DELETE</code>, solo dentro de <code>BEGIN</code> … <code>ROLLBACK</code>.</p>
-<p>Pruébalo ahora con tu asistente. Reto opcional «ver el plan de un descuento sin aplicarlo» de la práctica del plan de ejecución.</p>
-<h3>Con 50 filas, el plan de la consulta buena y el de la mala son el mismo</h3>
-<p>Aquí está la razón por la que las pruebas no lo cazaron. Sobre la base de desarrollo, con sus 50 clientes, la consulta del asistente da este plan.</p>
-<pre><code class="language-text"> Seq Scan on clientes  (cost=0.00..1.75 rows=1 width=18) (actual time=0.021..0.021 rows=1 loops=1)
-   Filter: (lower(email) = &#39;marta.gil@correo.es&#39;::text)
-   Rows Removed by Filter: 49
- Execution Time: 0.024 ms
+<p>Cada página enseña una segunda pieza distinta. El filtro cambió el camino del motor. Con <code>rank</code>, las dos enseñan las tres piezas. Si la regla fuera exactamente dos, <code>row_number</code> sirve con un desempate al final del <code>ORDER BY</code>, como <code>ORDER BY unidades DESC, pieza</code>. Medido, las dos páginas enseñan entonces el disco, primero por orden alfabético. Qué desempate es el bueno (el nombre, el stock, el margen) lo decide negocio.</p>
+<p>Reto: «La portada: las dos más vendidas de cada categoría».</p>
+<h3>El acumulado por defecto suma también los pedidos del mismo día</h3>
+<p>Sobre los pedidos de Ana, la clienta 1:</p>
+<pre><code class="language-sql">SELECT id, fecha, importe,
+       sum(importe) OVER (PARTITION BY cliente_id ORDER BY fecha) AS acumulado
+FROM pedidos
+WHERE cliente_id = 1 AND fecha &gt;= &#39;2026-09-01&#39; AND fecha &lt; &#39;2026-10-01&#39;;
 </code></pre>
-<p>Y esta es la comparación a secas con el correo exacto, la que sí puede usar el índice sobre <code>email</code>, en la misma base.</p>
-<pre><code class="language-text"> Seq Scan on clientes  (cost=0.00..1.62 rows=1 width=18) (actual time=0.005..0.005 rows=1 loops=1)
-   Filter: (email = &#39;Marta.Gil@Correo.es&#39;::text)
-   Rows Removed by Filter: 49
- Execution Time: 0.009 ms
+<pre><code class="language-text"> id |   fecha    | importe | acumulado
+----+------------+---------+-----------
+ 11 | 2026-09-02 |  120.00 |    120.00
+ 12 | 2026-09-05 |  150.00 |    360.00
+ 13 | 2026-09-05 |   90.00 |    360.00
+ 14 | 2026-09-12 |   60.00 |    420.00
 </code></pre>
-<p>De cada plan se quita aquí la línea de <code>Planning Time</code>, que no cambia nada. Las dos son <code>Seq Scan</code>. Con 50 filas, leer la tabla entera cuesta menos que ir al índice, y el planificador elige bien.</p>
-<p>Sobre la base grande, esa segunda consulta cambia de plan.</p>
-<pre><code class="language-text"> Index Scan using clientes_email_idx on clientes  (cost=0.42..8.44 rows=1 width=22) (actual time=0.007..0.007 rows=1 loops=1)
-   Index Cond: (email = &#39;Marta.Gil@Correo.es&#39;::text)
- Execution Time: 0.011 ms
+<p>Los dos del día 5, de 150 € y de 90 €, aparecen con 360, y los dos superan los 300. El de 150 € sale con envío gratis y no le tocaba: con él Ana llevaba 270 €, y fue el de 90 € el que pasó de 300.</p>
+<p>El marco por defecto, con <code>ORDER BY</code>, va del principio de la partición a la fila actual, más las siguientes iguales a ella en ese orden. En el original: &quot;By default, if ORDER BY is supplied then the frame consists of all rows from the start of the partition up through the current row, plus any following rows that are equal to the current row according to the ORDER BY clause&quot;. Fuente: Window Functions.</p>
+<p>La última fila es correcta. Ana acaba el mes con 420 €. Lo que está mal son las filas intermedias.</p>
+<p>El arreglo: un desempate al final del <code>ORDER BY</code> y el marco escrito por filas.</p>
+<pre><code class="language-sql">SELECT id, fecha, importe,
+       sum(importe) OVER (PARTITION BY cliente_id ORDER BY fecha, id
+                          ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS acumulado
+FROM pedidos
+WHERE cliente_id = 1 AND fecha &gt;= &#39;2026-09-01&#39; AND fecha &lt; &#39;2026-10-01&#39;;
 </code></pre>
-<p>Con volumen realista, una consulta usa el índice y la otra no. Con 50 filas, ninguna. El planificador decide con el tamaño de la tabla. El plan de la base de desarrollo no dice nada sobre el de producción.</p>
-<p>La base de pruebas no necesita datos reales para tener volumen. <code>generate_series</code> genera filas en el propio motor. Así se llenó la tabla de clientes de esta lección.</p>
-<pre><code class="language-sql">INSERT INTO clientes (email, nombre, alta_en)
-SELECT &#39;cliente&#39; || lpad(i::text, 6, &#39;0&#39;) || &#39;@correo.es&#39;, &#39;Cliente &#39; || i, date &#39;2023-01-01&#39; + (i % 900)
-FROM generate_series(1, 299999) AS i;
-ANALYZE;
+<pre><code class="language-text"> id |   fecha    | importe | acumulado
+----+------------+---------+-----------
+ 11 | 2026-09-02 |  120.00 |    120.00
+ 12 | 2026-09-05 |  150.00 |    270.00
+ 13 | 2026-09-05 |   90.00 |    360.00
+ 14 | 2026-09-12 |   60.00 |    420.00
 </code></pre>
-<p><code>lpad</code> rellena el número con ceros a la izquierda hasta seis caracteres. El <code>ANALYZE</code> del final es el comando suelto, no la opción de <code>EXPLAIN</code>. Recoge las estadísticas con las que el planificador estima las filas.</p>
-<h3>Envolver la columna en una función deja fuera su índice</h3>
-<p>El índice sobre <code>email</code> guarda los valores de <code>email</code> ordenados. La consulta del asistente no busca un valor de <code>email</code>. Busca un valor de <code>lower(email)</code>, que es otra cosa. Ese índice no lo tiene. Por eso el motor calcula <code>lower()</code> fila a fila, las 300.000.</p>
-<p>El arreglo es indexar exactamente lo que la consulta busca. Es un índice de expresión.</p>
-<pre><code class="language-sql">CREATE INDEX clientes_email_lower_idx ON clientes (lower(email));
-ANALYZE clientes;
+<p><code>ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW</code> es desde la primera fila de la partición hasta esta, contando filas. <code>id</code> desempata porque los pedidos se numeran al crearse. Si hubiera hora, iría la hora.</p>
+<p>Con el desempate solo, este resultado sale igual, porque ya no hay empatadas. El marco escrito evita depender de que alguien se acuerde del desempate. Con <code>ROWS</code> solo, el modo por filas puede dar resultados impredecibles si el <code>ORDER BY</code> no ordena de forma única. En el original: &quot;Beware that the ROWS mode can produce unpredictable results if the ORDER BY ordering does not order the rows uniquely&quot;. Fuente: SELECT. Medido con <code>ROWS</code> y <code>ORDER BY fecha</code>, antes y después de corregir la dirección del pedido 12:</p>
+<pre><code class="language-text"> antes                                     después
+ id |   fecha    | importe | acumulado      id |   fecha    | importe | acumulado
+----+------------+---------+-----------    ----+------------+---------+-----------
+ 11 | 2026-09-02 |  120.00 |    120.00      11 | 2026-09-02 |  120.00 |    120.00
+ 12 | 2026-09-05 |  150.00 |    270.00      13 | 2026-09-05 |   90.00 |    210.00
+ 13 | 2026-09-05 |   90.00 |    360.00      12 | 2026-09-05 |  150.00 |    360.00
+ 14 | 2026-09-12 |   60.00 |    420.00      14 | 2026-09-12 |   60.00 |    420.00
 </code></pre>
-<p>La consulta del asistente, sin cambiar una letra, sobre la base grande:</p>
-<pre><code class="language-text"> Index Scan using clientes_email_lower_idx on clientes  (cost=0.42..8.44 rows=1 width=22) (actual time=0.032..0.033 rows=1 loops=1)
-   Index Cond: (lower(email) = &#39;marta.gil@correo.es&#39;::text)
- Execution Time: 0.040 ms
+<p>El envío gratis salta del pedido de 90 € al de 150 € porque alguien cambió una dirección. Con <code>ORDER BY fecha, id</code>, la misma corrección no mueve nada.</p>
+<p>Reto: «El envío gratis».</p>
+<h3>Un árbol de categorías se recorre entero con una consulta recursiva</h3>
+<p>Cada categoría apunta a la de la que cuelga con <code>padre_id</code>. Las de primer nivel lo tienen vacío, <code>NULL</code>.</p>
+<pre><code class="language-text"> id |      nombre       | padre_id
+----+-------------------+----------
+  1 | Frenos            |
+  2 | Transmisión       |
+  3 | Cadenas           |        2
+  4 | Cassettes         |        2
+  5 | Eslabones rápidos |        3
 </code></pre>
-<p>Tres cosas han cambiado en el plan. El nodo pasa de <code>Parallel Seq Scan</code> a <code>Index Scan</code>. La condición pasa de <code>Filter</code>, que se aplica fila a fila, a <code>Index Cond</code>, que se resuelve dentro del índice. Y la estimación pasa de 1.500 a 1, porque el <code>ANALYZE</code> recoge también estadísticas de la expresión indexada. De 26 milisegundos a 0,04 en una ejecución.</p>
-<p>Es el ejemplo que usa la documentación de PostgreSQL sobre índices de expresión. Una consulta con <code>lower(col1)</code> puede usar un índice si se ha definido uno sobre el resultado de esa función.</p>
-<p>En el original: «This query can use an index if one has been defined on the result of the lower(col1) function».</p>
-<p>La misma página pone el precio. Son relativamente caros de mantener, porque la expresión se calcula al insertar o actualizar cada fila.</p>
-<p>En el original: «Index expressions are relatively expensive to maintain».</p>
-<p>Se crean para las consultas que los necesitan, no por si acaso.</p>
-<p>Cómo se llama esto fuera de aquí, para que puedas buscarlo. Una condición que puede usar un índice se llama sargable, de Search ARGumentable. La guía de optimización de SQL Server de Microsoft lo define como un predicado que puede usar un índice para acelerar la ejecución de la consulta. Un predicado es la condición que se está comprobando.</p>
-<p>En el original: «The term SARGable in relational databases refers to a Search ARGumentable predicate that can use an index to speed up the execution of the query».</p>
-<p>Entre sus ejemplos de condiciones que no lo son están las dos de esta lección. Una función sobre la columna (<code>WHERE UPPER(LastName) = &#39;Smith&#39;</code>) y un texto que empieza por comodín (<code>WHERE LastName LIKE &#39;%Smith&#39;</code>). Un comodín es un signo que significa «cualquier texto».</p>
-<p>Pruébalo ahora con tu asistente. Reto «El inicio de sesión» de la práctica del plan de ejecución.</p>
-<h3>Buscar por el principio de un texto puede usar un índice; buscar por el final, no</h3>
-<p>El catálogo tiene 200.000 piezas con referencias como <code>SHI-001235</code> y un índice normal sobre <code>referencia</code>. El buscador interno filtra con <code>LIKE</code> de dos formas. Las referencias que empiezan por <code>SHI-0012</code> (20 piezas) y la que acaba en <code>001235</code> (una). <code>LIKE</code> compara un texto con un patrón. <code>%</code> significa «cualquier cosa».</p>
-<p>Con el índice normal, las dos recorren la tabla entera. En el plan, <code>~~</code> es cómo escribe PostgreSQL el operador <code>LIKE</code>.</p>
-<pre><code class="language-text">-- empieza por &#39;SHI-0012&#39;
- Seq Scan on piezas  (cost=0.00..3971.00 rows=2020 width=23) (actual time=0.066..9.713 rows=20 loops=1)
-   Filter: (referencia ~~ &#39;SHI-0012%&#39;::text)
-   Rows Removed by Filter: 199980
-
--- acaba en &#39;001235&#39;
- Seq Scan on piezas  (cost=0.00..3971.00 rows=20 width=23) (actual time=0.087..10.645 rows=1 loops=1)
-   Filter: (referencia ~~ &#39;%001235&#39;::text)
-   Rows Removed by Filter: 199999
+<p>Transmisión tiene dos hijas, Cadenas y Cassettes, y Cadenas tiene a Eslabones rápidos.</p>
+<pre><code class="language-sql">SELECT nombre FROM piezas WHERE categoria_id = 2;
 </code></pre>
-<p>La del final era de esperar. La del principio sorprende. Hay un índice sobre esa columna y no se usa. El motivo es la intercalación de la base (collation): las reglas para ordenar texto según el idioma. Esta usa <code>en_US.utf8</code>, la que trae por defecto la imagen de Docker con la que se midió. La documentación de tipos de índice lo avisa. Un índice de árbol sirve para <code>LIKE</code> si el patrón está anclado al principio. Si la base no usa la intercalación <code>C</code>, el índice necesita una clase de operadores especial.</p>
-<p>En el original: «However, if your database does not use the C locale you will need to create the index with a special operator class to support indexing of pattern-matching queries».</p>
-<p>Esa clase es <code>text_pattern_ops</code>. Compara carácter a carácter, en vez de con las reglas del idioma.</p>
-<pre><code class="language-sql">CREATE INDEX piezas_referencia_patron_idx ON piezas (referencia text_pattern_ops);
+<p>Devuelve 3 piezas: el cambio trasero, la maneta y el cable. Agregar las hijas directas:</p>
+<pre><code class="language-sql">SELECT nombre FROM piezas
+WHERE categoria_id = 2
+   OR categoria_id IN (SELECT id FROM categorias WHERE padre_id = 2);
 </code></pre>
-<p>Las mismas dos consultas:</p>
-<pre><code class="language-text">-- empieza por &#39;SHI-0012&#39;
- Index Scan using piezas_referencia_patron_idx on piezas  (cost=0.42..8.44 rows=20 width=23) (actual time=0.032..0.037 rows=20 loops=1)
-   Index Cond: ((referencia ~&gt;=~ &#39;SHI-0012&#39;::text) AND (referencia ~&lt;~ &#39;SHI-0013&#39;::text))
-   Filter: (referencia ~~ &#39;SHI-0012%&#39;::text)
-
--- acaba en &#39;001235&#39;
- Seq Scan on piezas  (cost=0.00..3971.00 rows=20 width=23) (actual time=0.084..9.572 rows=1 loops=1)
-   Filter: (referencia ~~ &#39;%001235&#39;::text)
-   Rows Removed by Filter: 199999
+<p>Devuelve 6. Incluye las cadenas y el cassette, y deja fuera el eslabón rápido, que cuelga de Cadenas. Con un número creíble, nadie vuelve a mirar.</p>
+<p>Lo que recorre el árbol, tenga los niveles que tenga, es una CTE recursiva:</p>
+<pre><code class="language-sql">WITH RECURSIVE bajo_transmision AS (
+  SELECT id, nombre, 1 AS nivel
+  FROM categorias
+  WHERE id = 2
+  UNION ALL
+  SELECT c.id, c.nombre, b.nivel + 1
+  FROM categorias c
+  JOIN bajo_transmision b ON c.padre_id = b.id
+)
+SELECT b.nivel, b.nombre AS categoria, p.nombre AS pieza
+FROM bajo_transmision b
+JOIN piezas p ON p.categoria_id = b.id
+ORDER BY b.nivel, b.nombre, p.nombre;
 </code></pre>
-<p>La línea <code>Index Cond</code> enseña por qué funciona una y la otra no. El motor ha convertido «empieza por SHI-0012» en un rango: todo lo que va de <code>SHI-0012</code> a <code>SHI-0013</code>. En un índice ordenado, eso es un tramo seguido. «Acaba en 001235» no es ningún tramo. Las referencias que acaban así están repartidas por todo el índice. No hay dónde saltar y se lee la tabla.</p>
-<p>Para buscar por el final o por el medio hay otro tipo de índice. La extensión <code>pg_trgm</code> de PostgreSQL trocea el texto en grupos de tres caracteres (trigramas). Su documentación dice que sus índices sirven para <code>LIKE</code>, <code>ILIKE</code> y otros operadores.</p>
-<p>En el original: «additionally support trigram-based index searches for LIKE, ILIKE, ~, ~* and = queries».</p>
-<p>Con uno creado sobre <code>referencia</code>, la búsqueda por el final deja de leer la tabla. El plan, recortado a sus dos nodos:</p>
-<pre><code class="language-text"> Bitmap Heap Scan on piezas  (cost=51.77..125.02 rows=20 width=23) (actual time=0.064..0.064 rows=1 loops=1)
-   -&gt;  Bitmap Index Scan on piezas_referencia_trgm_idx  (cost=0.00..51.76 rows=20 width=0) (actual time=0.060..0.060 rows=1 loops=1)
+<pre><code class="language-text"> nivel |     categoria     |       pieza
+-------+-------------------+--------------------
+     1 | Transmisión       | Cable de cambio
+     1 | Transmisión       | Cambio trasero 12v
+     1 | Transmisión       | Maneta de cambio
+     2 | Cadenas           | Cadena 11v
+     2 | Cadenas           | Cadena 12v
+     2 | Cassettes         | Cassette 10-51
+     3 | Eslabones rápidos | Eslabón rápido 12v
 </code></pre>
-<p>Es el tercer tipo de nodo que verás a menudo. El <code>Bitmap Index Scan</code> marca en el índice qué filas cumplen. El <code>Bitmap Heap Scan</code> va a buscarlas a la tabla.</p>
-<p>Pruébalo ahora con tu asistente. Reto «El buscador de piezas» de la práctica del plan de ejecución.</p>
-<h3>El N+1 no sale en ningún plan: cada consulta es rápida, y son doscientas una</h3>
-<p>El último caso no lo enseña ningún plan. No es una consulta lenta. Es una página que lanza demasiadas.</p>
-<p>La tienda tiene una página de administración con los 200 últimos pedidos y el nombre de su cliente. Con un ORM (Object-Relational Mapper), la capa que traduce entre tablas y objetos, lo natural es pedir los pedidos y, dentro del bucle que los pinta, pedirle a cada uno su cliente. Una consulta más cada vez.</p>
-<p>La guía de consultas de Rails lo describe así. El código parece correcto a primera vista, y el problema está en el número total de consultas.</p>
-<p>En el original: «This code looks fine at the first sight, but the problem lies within the total number of queries executed».</p>
-<p>Una para los pedidos, más N, una por pedido: N+1.</p>
-<p>Medido sobre la base grande con un guion de consultas por cada forma de escribir la página. El del bucle lleva las 201 que mandaría el ORM. <code>pgbench</code>, la herramienta de medir que trae PostgreSQL, ejecuta cada guion 20 veces y da la media.</p>
-<pre><code class="language-text">10a-una-por-pedido.sql | consultas: 201 | latency average = 11.396 ms
-10b-precarga.sql | consultas: 2 | latency average = 0.455 ms
-10c-join.sql | consultas: 1 | latency average = 0.480 ms
+<p>Siete piezas. La mitad de arriba del <code>UNION ALL</code> es el punto de partida. La de abajo busca las categorías cuyo padre ya está en el resultado y se repite hasta que una vuelta no encuentra ninguna. En el original: &quot;Using RECURSIVE, a WITH query can refer to its own output&quot;. Fuente: la misma página de WITH Queries.</p>
+<p>Reto: «El descuento de Transmisión».</p>
+<h3>Un ciclo cuelga la consulta. Un límite de profundidad la convierte en un número inflado</h3>
+<p>Si alguien mueve Transmisión dentro de Eslabones rápidos, el árbol se hace un ciclo: Transmisión, Cadenas, Eslabones rápidos, Transmisión otra vez. En el original: &quot;it is important to be sure that the recursive part of the query will eventually return no tuples, or else the query will loop indefinitely&quot;. La consulta de antes, contando piezas, con un límite de tres segundos:</p>
+<pre><code class="language-text">ERROR:  canceling statement due to statement timeout
 </code></pre>
-<p>Las tres traen los mismos 200 nombres. Está comprobado. Cada consulta del bucle, por separado, es un <code>Index Scan</code> sobre la clave primaria. Si miras su plan, está perfecto. Lo caro es el número, y el número solo se ve contando.</p>
-<p>El tiempo engaña más aquí que en ningún otro caso. En esta medición <code>pgbench</code> y la base comparten computadora. Con la base en otra, cada uno de los 201 viajes paga la distancia. El recuento no cambia de un ambiente a otro.</p>
-<p>Los dos arreglos están en la salida. El <code>JOIN</code> junta pedidos y clientes en una consulta. La precarga (eager loading) pide los pedidos y después todos sus clientes de una vez. En Lucid, el ORM de AdonisJS, es el método <code>preload</code>. Su documentación dice que lanza una consulta extra por relación, sin importar cuántos registros se devolvieron, lo que evita los problemas de N+1.</p>
-<p>En el original: «Preloading issues one extra query per relationship regardless of how many parents were returned, which avoids N+1 issues».</p>
-<p>Para cazarlo hay que ver todas las consultas que lanza una petición. Los ORM suelen tener un modo que las registra. En Lucid es el modo de depuración de la conexión. Carga la página y cuéntalas. Si el número crece con las filas que pinta, es un N+1.</p>
-<p>Pruébalo ahora con tu asistente. Reto «La página de administración» de la práctica del plan de ejecución.</p>
-<h3>Pídele al asistente el plan, no solo la consulta</h3>
-<p>Nada de lo anterior es exclusivo de un asistente. Son consultas correctas que cualquiera con prisa escribe igual. Lo que cambia con un asistente es que escribir la consulta ya no cuesta nada y comprobar su plan cuesta lo mismo que antes. Si no se pide, no ocurre.</p>
-<p>Lo que conviene pedirle:</p>
-<ul>
-<li>El plan junto con la consulta, sobre volumen realista. «Llena la tabla con 300.000 clientes con <code>generate_series</code> y enséñame el <code>EXPLAIN ANALYZE</code>».</li>
-<li>Que señale los <code>Seq Scan</code> sobre tablas grandes y las estimaciones que se alejen de las filas reales.</li>
-<li>Que no lance <code>EXPLAIN ANALYZE</code> sobre una escritura fuera de <code>BEGIN</code> … <code>ROLLBACK</code>. <code>EXPLAIN</code> a secas lo puede lanzar siempre.</li>
-<li>Cuántas consultas lanza la página, no solo lo que tarda.</li>
-</ul>
+<p>Eso es ruidoso y barato. Limitar la profundidad con <code>WHERE b.nivel &lt; 10</code> en la mitad que se repite hace que la consulta termine y cuente:</p>
+<pre><code class="language-text"> piezas
+--------
+     24
+</code></pre>
+<p>24 piezas en una categoría que tiene 7. El límite dio vueltas al ciclo hasta el nivel diez, contando varias veces las mismas piezas, sin aviso.</p>
+<p>Desde PostgreSQL 14 existe <code>CYCLE</code>:</p>
+<pre><code class="language-sql">WITH RECURSIVE bajo_transmision AS (
+  SELECT id, nombre, 1 AS nivel FROM categorias WHERE id = 2
+  UNION ALL
+  SELECT c.id, c.nombre, b.nivel + 1
+  FROM categorias c JOIN bajo_transmision b ON c.padre_id = b.id
+) CYCLE id SET en_ciclo USING camino
+SELECT nivel, nombre, en_ciclo, camino FROM bajo_transmision;
+</code></pre>
+<pre><code class="language-text"> nivel |      nombre       | en_ciclo |      camino
+-------+-------------------+----------+-------------------
+     1 | Transmisión       | f        | {(2)}
+     2 | Cadenas           | f        | {(2),(3)}
+     2 | Cassettes         | f        | {(2),(4)}
+     3 | Eslabones rápidos | f        | {(2),(3),(5)}
+     4 | Transmisión       | t        | {(2),(3),(5),(2)}
+</code></pre>
+<p>Se para al volver a Transmisión, marca esa fila con <code>en_ciclo</code> y enseña el camino. Contando las piezas con <code>WHERE NOT b.en_ciclo</code>, salen las 7, y la fila marcada es la prueba de un error en los datos.</p>
 </section>
 <section class="bloque bloque-preguntas"><h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>
-<p><strong>«¿Por qué no pongo un índice en cada columna y me olvido?»</strong></p>
-<p>Porque cada índice hay que mantenerlo al escribir y ocupa espacio. Y porque un índice que existe no garantiza que se use. El de <code>email</code> estaba y la consulta no podía aprovecharlo. Se crea el que responde a una consulta concreta, y se comprueba en el plan.</p>
-<p><strong>«26 milisegundos no es lento. ¿De verdad importa?»</strong></p>
-<p>Por uno, no. La cuenta es 300.000 filas leídas por inicio de sesión. Crece con cada cliente nuevo, por cada inicio de sesión al mismo tiempo.</p>
+<p><strong>«¿Partir una consulta en pasos con <code>WITH</code> no la hace más lenta?»</strong></p>
+<p>En PostgreSQL, desde la versión 12, un paso así se funde con la consulta si no tiene efectos secundarios, no es recursivo y se usa una sola vez. <code>MATERIALIZED</code> lo impide. En el original: &quot;CTEs are automatically inlined if they have no side-effects, are not recursive, and are referenced only once in the query. Inlining can be prevented by specifying MATERIALIZED&quot;. Fuente: PostgreSQL 12 Release Notes. Antes de esa versión, cada paso se calculaba siempre por separado y antes que el resto.</p>
+<p><strong>«¿Y si le pido al asistente que lo escriba bien?»</strong></p>
+<p>A las tres consultas no les falta SQL. Les falta una regla: qué pasa con los empates, qué pedido va primero en un mismo día, qué hacer con un ciclo. Un asistente no puede adivinarla. Sí puedes pedirle que, por cada función de ventana, diga qué desempate y qué marco usa, y que entregue la consulta en pasos que puedas ejecutar sueltos.</p>
+<p>Reto opcional: «Un error en el árbol de categorías».</p>
 </section>
-<section class="bloque bloque-tema"><h2 id="que-te-llevas">Qué te llevas</h2>
-<p>Que una consulta devuelva las filas correctas no dice lo que cuesta. Míralo con <code>EXPLAIN ANALYZE</code>: tipo de nodo, filas estimadas frente a reales, y tiempo.</p>
-<p>Mira el plan con volumen realista. Con 50 filas, la consulta buena y la mala hacen <code>Seq Scan</code> y el plan no las distingue.</p>
-<p>Una columna envuelta en una función no usa su índice. Indexa la expresión: <code>CREATE INDEX … (lower(email))</code>.</p>
-<p><code>LIKE &#39;texto%&#39;</code> necesita <code>text_pattern_ops</code> si la base no usa la intercalación <code>C</code>. <code>LIKE &#39;%texto&#39;</code> necesita un índice de trigramas. Compruébalo en el plan.</p>
-<p><code>EXPLAIN ANALYZE</code> ejecuta. Sobre una escritura, entre <code>BEGIN</code> y <code>ROLLBACK</code>.</p>
-<p>Cuenta las consultas de cada página. Si crecen con las filas, es un N+1: <code>JOIN</code> o precarga.</p>
-<p class="siguiente">Siguiente lección: el original anuncia cuatro lecciones opcionales sobre columnas vectoriales. La primera cuenta qué es un campo vectorial y por qué es una columna más de una tabla que ya tienes. Esos archivos todavía no están en la carpeta. El archivo <code>original/modulo-10/7.md</code> repite este mismo texto.</p>
+<section class="bloque bloque-accion"><h2 id="que-hacer">Qué hacer</h2>
+<p>Por cada <code>OVER</code> con <code>ORDER BY</code>, pregunta qué pasa con los empates. Si la última columna del <code>ORDER BY</code> no es única dentro de la partición, hay empatadas.</p>
+<p>Para los N primeros: <code>rank</code> si las empatadas entran, <code>dense_rank</code> si cuentas niveles, <code>row_number</code> solo con un desempate que haya elegido negocio.</p>
+<p>En un acumulado, escribe el marco y el desempate, y compruébalo en una fila intermedia. El total sale bien aunque la consulta esté mal.</p>
+<p>Pide las consultas largas en pasos con <code>WITH</code> y ejecuta cada paso con <code>SELECT * FROM</code> ese paso. El fallo de la portada no se veía en el resultado final y sí en el paso intermedio.</p>
+<p>Para recorrer un árbol, <code>WITH RECURSIVE</code> con <code>CYCLE</code>. Un límite de profundidad sin detectar ciclos cambia una consulta que se cuelga por una que cuenta de más.</p>
+<p>Prueba con datos que tengan empates y con un árbol de tres niveles. Sin ellos, la consulta correcta y la incorrecta dan lo mismo.</p>
+<p class="siguiente">Siguiente lección: cómo leer el plan de ejecución. Está en <code>claro/modulo-10/7.md</code>.</p>
 </section></article>
       <nav class="paso" aria-label="Lecciones vecinas">
     <a href="5.html">← Módulo 10 · 5</a>

@@ -84,6 +84,17 @@ Si una comparación de la vida diaria ayuda a ver la idea, úsala en la misma fr
 
 Si el original da por hecho un conocimiento, dilo tal cual (el módulo no enseña eso desde cero) y aun así explica las palabras que hacen falta para seguir esta lección.
 
+## Concreto y sin repetir
+
+Explica lo que esa lección enseña, con el ejemplo y el dato. No des una segunda vuelta a la misma idea.
+
+- Define cada palabra una sola vez, en la frase donde aparece por primera vez. No abras un glosario y luego repitas esas definiciones en el caso, en el desarrollo y en el cierre.
+- El caso son dos o tres frases: qué salió mal y qué cambia al aplicar la idea. No vuelvas a contar el ejemplo dentro del desarrollo.
+- En el desarrollo van el número, el comando, la cita, el error y la comprobación. Al lado, una frase que diga para qué sirve. Si la frase solo reformula el dato, no la pongas.
+- «Qué te llevas» o «Qué hacer» es la lista de acciones. No es un resumen de la lección.
+- Si una sección del original solo repite lo ya dicho, no la copies. Si trae un dato nuevo, quédate con el dato.
+- Concreto no significa más técnico. El lenguaje sigue siendo el de alguien que no sabe de informática, de inteligencia artificial ni de agentes.
+
 ## Cómo se escribe
 
 - Español de Latinoamérica, de tú. Frases cortas. Una idea por oración. Si una idea tiene tres partes, sepáralas en tres oraciones.
@@ -98,6 +109,7 @@ Si el original da por hecho un conocimiento, dilo tal cual (el módulo no enseñ
 - El archivo de `claro` tiene el mismo nombre que el de `original`.
 - Se entiende sin haber leído el original y sin saber de informática, de inteligencia artificial ni de agentes.
 - No se perdió ningún dato, comando, cita, error ni comprobación del original.
+- Ninguna explicación se repite en dos secciones.
 - El caso es el del módulo, no uno nuevo en cada lección.
 - Comandos, ramas y fechas coinciden con el original.
 - No quedó una captura sin explicar.
