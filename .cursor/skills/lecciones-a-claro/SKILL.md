@@ -1,15 +1,16 @@
 ---
 name: lecciones-a-claro
 description: >-
-  Rewrites Master IA 4 Devs lessons from original/ into claro/ in plain Latin
-  American Spanish, with one real-world case per module. Use when the user
-  asks to pasar lecciones a claro, reescribir un módulo, generar la versión
-  clara, or when new lesson files appear under original/.
+  Rewrites Master IA 4 Devs lessons from original/ into claro/ in very plain
+  Latin American Spanish, so a person with no computing, AI, or agent
+  background can follow every fact. One real-world case per module. Use when
+  the user asks to pasar lecciones a claro, reescribir un módulo, generar la
+  versión clara, or when new lesson files appear under original/.
 ---
 
 # De original a claro
 
-Pasa lecciones de `original/` a `claro/` sin copiar el texto del máster. El resultado se lee como si se lo explicaras a un colega en Latinoamérica.
+Pasa lecciones de `original/` a `claro/` sin copiar el texto del máster. El resultado lo tiene que entender una persona sin conocimientos de informática, de inteligencia artificial ni de agentes.
 
 ## Cuándo correrla
 
@@ -21,7 +22,7 @@ Pasa lecciones de `original/` a `claro/` sin copiar el texto del máster. El res
 
 1. Lista los `.md` del módulo en `original/`, en orden numérico (`1.md`, `2.md`, …).
 2. Léelos todos antes de escribir. El caso real tiene que aguantar el módulo entero.
-3. Elige un caso nuevo. No reutilices Clínica Norte (módulo 1) ni Inmobiliaria Calle (módulo 2). Un oficio cotidiano, las mismas personas en todas las lecciones del módulo.
+3. Elige un caso nuevo. No reutilices Clínica Norte, Inmobiliaria Calle, Taller Rueda, Biblioteca del Barrio, Farmacia Sol, Diario La Esquina, Colegio Los Álamos, Cowork La Mesa, Aseguradora del Valle ni Bicicletas del Parque. Un oficio cotidiano, las mismas personas en todas las lecciones del módulo.
 4. Escribe `claro/modulo-N/X.md` con el mismo número. Una lección por archivo.
 5. Si el original está vacío, no inventes la lección. Deja solo el título, la ruta del original y una frase: el archivo original está vacío.
 6. Al terminar, di qué archivos creaste y cuál es el caso del módulo.
@@ -71,10 +72,22 @@ Siguiente lección: una frase de qué viene.
 
 Omite las secciones que la lección no necesita. Un ejercicio largo usa "La tarea" y "Cómo se entrega" en lugar de "Qué hacer".
 
+## Para quién se escribe
+
+La versión clara la lee alguien que no trabaja con computadoras, con inteligencia artificial ni con agentes. Tiene que poder seguir la lección entera.
+
+Eso no autoriza a quitar nada. Cada número, fecha, comando, cita, mensaje de error, regla y comprobación del original sigue en el archivo. Se puede decir más despacio. No se puede saltar un paso, un ejemplo ni un ejercicio.
+
+No des por sabido qué es una tabla, una consulta, un agente, una migración, un modelo, un repositorio o cualquier otra palabra del oficio. La primera vez, dilo en palabras de todos los días y deja el nombre técnico al lado, porque esa persona lo va a ver en la clase y en los comandos.
+
+Si una comparación de la vida diaria ayuda a ver la idea, úsala en la misma frase. La comparación no reemplaza el dato.
+
+Si el original da por hecho un conocimiento, dilo tal cual (el módulo no enseña eso desde cero) y aun así explica las palabras que hacen falta para seguir esta lección.
+
 ## Cómo se escribe
 
-- Español de Latinoamérica, de tú. Frases cortas. Una idea por oración.
-- La primera vez que aparezca un término del curso, dilo en palabras simples al lado. Ejemplo: un harness es la configuración que rodea al agente.
+- Español de Latinoamérica, de tú. Frases cortas. Una idea por oración. Si una idea tiene tres partes, sepáralas en tres oraciones.
+- La primera vez que aparezca un término del curso, dilo en palabras simples al lado. Ejemplo: un harness es la configuración que rodea al agente. Un agente es un asistente de la computadora: le escribes lo que quieres y él propone o hace el trabajo.
 - "Clase en vivo", no "directo". "Pedido" junto a prompt. "Computadora", no "ordenador". "Falla", no "avería". "Encargado del edificio", no "portero".
 - No uses: vale, vosotros, coger, chuleta, mutua, enchufar, currar, móvil, a ojo, se apañe.
 - El caso ocurre en un trabajo reconocible (clínica, inmobiliaria, taller, colegio). Los números y las reglas salen de la lección, no de un adorno.
@@ -83,7 +96,8 @@ Omite las secciones que la lección no necesita. Un ejercicio largo usa "La tare
 ## Antes de dar por lista una lección
 
 - El archivo de `claro` tiene el mismo nombre que el de `original`.
-- Se entiende sin haber leído el original.
+- Se entiende sin haber leído el original y sin saber de informática, de inteligencia artificial ni de agentes.
+- No se perdió ningún dato, comando, cita, error ni comprobación del original.
 - El caso es el del módulo, no uno nuevo en cada lección.
 - Comandos, ramas y fechas coinciden con el original.
 - No quedó una captura sin explicar.

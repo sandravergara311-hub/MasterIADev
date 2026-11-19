@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Módulo 10 · Lección 5 — Numerar sin juntar las filas, y decidir tú qué pasa cuando hay empate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560&family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,460;8..60,620&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../estilos.css">
+</head>
+<body>
+  <div class="barra" aria-hidden="true"><span></span></div>
+  <header class="techo">
+    <button class="icono menu" type="button" data-menu>Lecciones</button>
+    <a class="marca" href="../index.html">En claro</a>
+    <span class="aqui-titulo">Módulo 10 · Lección 5 — Numerar sin juntar las filas, y decidir tú qué pasa cuando hay empate</span>
+    <div class="acciones">
+      <button class="icono" type="button" data-letra="menos" aria-label="Texto más chico">A−</button>
+      <button class="icono" type="button" data-letra="mas" aria-label="Texto más grande">A+</button>
+      <button class="icono" type="button" data-tema-boton>Noche</button>
+    </div>
+  </header>
+  <div class="marco">
+    <nav class="indice" aria-label="Módulos"><details><summary>Módulo 1</summary><ol><li><a href="../modulo-1/1.html">1. El mapa: para qué sirve un harness</a></li><li><a href="../modulo-1/2.html">2. Los tres pilares importan lo mismo</a></li><li><a href="../modulo-1/3.html">3. El contexto: menos información, y más útil</a></li><li><a href="../modulo-1/4.html">4. Cómo pedir el trabajo, y cómo usar los tres pilares juntos</a></li><li><a href="../modulo-1/5.html">5. Deja la computadora y las cuentas listas</a></li><li><a href="../modulo-1/6.html">6. Ejercicio: el mismo pedido, con harness y sin él</a></li><li><a href="../modulo-1/7.html">7. Por qué una sesión larga sale cara</a></li><li><a href="../modulo-1/8.html">8. Comandos que sí vas a usar</a></li><li><a href="../modulo-1/9.html">9. Modelos en tu computadora, y cuándo no conviene</a></li><li><a href="../modulo-1/10.html">10. El original está vacío</a></li></ol></details>
+<details><summary>Módulo 2</summary><ol><li><a href="../modulo-2/1.html">1. El mapa: de una idea vaga a un plano que no hay que adivinar</a></li><li><a href="../modulo-2/2.html">2. Planificar es ahora el trabajo caro</a></li><li><a href="../modulo-2/3.html">3. Cada documento responde una sola pregunta</a></li><li><a href="../modulo-2/4.html">4. Escribe el PRD por capas, no de un tirón</a></li><li><a href="../modulo-2/5.html">5. La historia, el criterio y los huecos</a></li><li><a href="../modulo-2/6.html">6. Dónde vive el backlog, y con qué permiso</a></li><li><a href="../modulo-2/7.html">7. Estimar, ordenar y saber cuándo está terminado</a></li><li><a href="../modulo-2/8.html">8. Hay varias herramientas. El orden no cambia</a></li><li><a href="../modulo-2/9.html">9. Dónde profundizar, cuando haga falta</a></li><li><a href="../modulo-2/10.html">10. Ejercicio: recorta el MVP hasta poder defenderlo</a></li></ol></details>
+<details><summary>Módulo 3</summary><ol><li><a href="../modulo-3/1.html">1. El mapa: dos caminos, y cuándo usar cada uno</a></li><li><a href="../modulo-3/2.html">2. Dos caminos: directo o con contrato</a></li><li><a href="../modulo-3/3.html">3. Explorar, planear, ejecutar</a></li><li><a href="../modulo-3/4.html">4. OpenSpec por dentro</a></li><li><a href="../modulo-3/5.html">5. Que el agente lea la spec, y cuándo no usar OpenSpec</a></li><li><a href="../modulo-3/6.html">6. Ejercicio: escribe la spec de lo que ya funciona</a></li><li><a href="../modulo-3/7.html">7. Dónde profundizar</a></li></ol></details>
+<details><summary>Módulo 4</summary><ol><li><a href="../modulo-4/1.html">1. El mapa: de &quot;lo implementé&quot; a &quot;está listo&quot;</a></li><li><a href="../modulo-4/2.html">2. Verde no es lo mismo que correcto</a></li><li><a href="../modulo-4/3.html">3. Revisar para romper, no para aprobar</a></li><li><a href="../modulo-4/4.html">4. La documentación que se queda atrás</a></li><li><a href="../modulo-4/5.html">5. Cuatro documentos. Tres se generan. Uno se decide.</a></li><li><a href="../modulo-4/6.html">6. Ejercicio: mide qué está probado de verdad</a></li><li><a href="../modulo-4/7.html">7. Dónde profundizar</a></li></ol></details>
+<details><summary>Módulo 5</summary><ol><li><a href="../modulo-5/1.html">1. El mapa: de la costumbre al guardarraíl</a></li><li><a href="../modulo-5/2.html">2. De la regla escrita al guardarraíl que se ejecuta</a></li><li><a href="../modulo-5/3.html">3. Qué se automatiza, y qué solo lo parece</a></li><li><a href="../modulo-5/4.html">4. Un agente dentro del pipeline</a></li><li><a href="../modulo-5/5.html">5. Lo que cuesta, y por qué se apagan los guardarraíles</a></li><li><a href="../modulo-5/6.html">6. Ejercicio: audita las reglas que escribiste</a></li><li><a href="../modulo-5/7.html">7. Dónde profundizar</a></li></ol></details>
+<details><summary>Módulo 6</summary><ol><li><a href="../modulo-6/1.html">1. El mapa: auditar lo que no escribiste</a></li><li><a href="../modulo-6/2.html">2. Heredado no es viejo. Es lo que nadie puede explicar</a></li><li><a href="../modulo-6/3.html">3. El cuello no es encontrar. Es comprobar</a></li><li><a href="../modulo-6/4.html">4. Lo más grave no va primero</a></li><li><a href="../modulo-6/5.html">5. Un pedido de una línea, si el rigor vive en otro sitio</a></li><li><a href="../modulo-6/6.html">6. Ejercicio: prioriza una auditoría de verdad</a></li><li><a href="../modulo-6/7.html">7. Dónde profundizar</a></li></ol></details>
+<details><summary>Módulo 7</summary><ol><li><a href="../modulo-7/1.html">1. El mapa: qué regla se aplica cuando hay varios repositorios</a></li><li><a href="../modulo-7/2.html">2. Qué decide dónde acaba un repositorio</a></li><li><a href="../modulo-7/3.html">3. El agente solo ve su directorio de trabajo</a></li><li><a href="../modulo-7/4.html">4. Dónde vive la spec cuando el sistema son tres repositorios</a></li><li><a href="../modulo-7/5.html">5. Un cambio que cruza dos repositorios no es un solo cambio</a></li><li><a href="../modulo-7/6.html">6. Lo que se comparte, lo que se versiona y lo que no se puede fundir</a></li><li><a href="../modulo-7/7.html">7. Herramientas de esta sesión</a></li><li><a href="../modulo-7/8.html">8. Ejercicio: haz que una regla se cumpla en el otro repositorio</a></li><li><a href="../modulo-7/9.html">9. Dónde profundizar</a></li><li><a href="../modulo-7/sesion.html">Resumen de la clase</a></li></ol></details>
+<details><summary>Módulo 8</summary><ol><li><a href="../modulo-8/1.html">1. El mapa: de escribir reglas a comprobar si funcionan</a></li><li><a href="../modulo-8/2.html">2. Una regla escrita no es una regla cumplida</a></li><li><a href="../modulo-8/3.html">3. Un eval da una tasa, no un verde</a></li><li><a href="../modulo-8/4.html">4. Sin línea base, un número no significa nada</a></li><li><a href="../modulo-8/5.html">5. Quién puntúa un ensayo, y en qué orden</a></li><li><a href="../modulo-8/6.html">6. Un verde que nunca estuvo en rojo no prueba nada</a></li><li><a href="../modulo-8/7.html">7. Dónde profundizar</a></li><li><a href="../modulo-8/8.html">8. Dónde profundizar</a></li><li><a href="../modulo-8/9.html">9. Mide una regla que creías cumplida</a></li><li><a href="../modulo-8/10.html">10. Fuentes sobre sistemas repartidos en varios repositorios</a></li></ol></details>
+<details><summary>Módulo 9</summary><ol><li><a href="../modulo-9/1.html">1. El mapa: qué datos bloqueas, qué riesgos revisas y qué evidencia guardas</a></li><li><a href="../modulo-9/2.html">2. Un pedido no es una consulta, es una transferencia de datos</a></li><li><a href="../modulo-9/3.html">3. La casilla de riesgo la decide el uso, no la tecnología</a></li><li><a href="../modulo-9/4.html">4. El código generado falla distinto, y quien lo usa confía más</a></li><li><a href="../modulo-9/5.html">5. El ataque no entra por donde escribes, entra por lo que el agente lee</a></li><li><a href="../modulo-9/6.html">6. Cumplir no es no hacerlo mal, es poder demostrar qué pasó</a></li><li><a href="../modulo-9/7.html">7. Ejercicio FlowSync: bloquea el dato que no debe salir y guarda el rastro</a></li><li><a href="../modulo-9/8.html">8. Dónde comprobar lo que dice el módulo</a></li></ol></details>
+<details open><summary>Módulo 10</summary><ol><li><a href="1.html">1. El mapa: no te fíes de un resultado solo porque no salió un error</a></li><li><a href="2.html">2. Un cambio en la forma de guardar los datos es lo más difícil de deshacer</a></li><li><a href="3.html">3. Juntar listas puede multiplicar filas, o perderlas, sin dar ningún error</a></li><li><a href="4.html">4. Agrupar por mes es decidir qué es un mes</a></li><li><a href="5.html" class="actual">5. Numerar sin juntar las filas, y decidir tú qué pasa cuando hay empate</a></li><li><a href="6.html">6. Una consulta puede estar bien y ser lenta, y el plan lo avisa antes</a></li><li><a href="7.html">7. Una consulta puede estar bien y ser lenta, y el plan lo avisa antes</a></li></ol></details></nav>
+    <div class="lectura">
+      
+      <article><h1>Módulo 10 · Lección 5 — Numerar sin juntar las filas, y decidir tú qué pasa cuando hay empate</h1>
+<p class="origen">Texto original: <code>original/modulo-10/5.md</code><br>Obligatoria. Lectura de unos 30 minutos.</p>
+
+<section class="bloque bloque-frase"><h2 id="en-una-frase">En una frase</h2>
+<p>«Las dos más vendidas» y «el envío gratis a partir de 300 €» no están completos hasta que alguien dice qué pasa cuando dos piezas venden lo mismo o dos pedidos son del mismo día. Si no lo escribes, la base elige por su cuenta.</p>
+</section>
+<section class="bloque bloque-palabras"><h2 id="palabras-que-vas-a-escuchar">Palabras que vas a escuchar</h2>
+<ul>
+<li><strong>Función de ventana.</strong> Un cálculo sobre un grupo de filas que no las junta en una sola. Se reconoce por la palabra <code>OVER</code>. El grupo se llama partición.</li>
+<li><strong>Empatadas.</strong> Filas que el orden de la ventana no distingue. Por ejemplo, dos piezas con las mismas unidades.</li>
+<li><strong>Marco.</strong> Las filas de la partición sobre las que se calcula cada fila. Por defecto, con un orden, llega hasta la fila actual y también incluye a las que empatan con ella.</li>
+<li><strong>CTE.</strong> Common Table Expression. Un paso con nombre dentro de una consulta: <code>WITH nombre AS (…)</code>. Solo existe mientras dura esa consulta.</li>
+<li><strong>CTE recursiva.</strong> Un paso con <code>WITH RECURSIVE</code> que se usa a sí mismo hasta no encontrar filas nuevas. Sirve para recorrer un árbol de categorías.</li>
+<li><strong>Vista.</strong> Una consulta guardada con nombre. Se usa como si fuera una tabla.</li>
+</ul>
+</section>
+<section class="bloque bloque-caso"><h2 id="caso-real-la-bicicleteria">Caso real: la bicicletería</h2>
+<p>Bicicletas del Parque prepara la campaña de septiembre. Marta escribe tres reglas.</p>
+<ol>
+<li>La portada enseña las dos piezas más vendidas en agosto de cada categoría. Una pieza que empata en unidades con otra que entra, entra también.</li>
+<li>El envío es gratis a partir del pedido con el que un cliente supera los 300 € en el mes, no antes.</li>
+<li>El 10 % de descuento aplica a toda la Transmisión, subcategorías incluidas.</li>
+</ol>
+<p>Salen tres consultas. Se revisan, tienen buena pinta y se aprueban. Ninguna da error. La portada enseña dos piezas de frenos donde tocaban tres. Ana, la clienta 1, tiene envío gratis en un pedido de 150 € que no le tocaba. El descuento llega a tres de las siete piezas de Transmisión.</p>
+<p>Ninguna tiene una errata. Las tres usan la herramienta que toca: una función de ventana en las dos primeras y una consulta recursiva en la tercera. A las tres les falta una decisión que nadie escribió y que el motor tomó por su cuenta. Qué hacer con dos piezas que venden lo mismo. Qué hacer con dos pedidos del mismo día. Qué hacer con una categoría que cuelga de otra que cuelga de otra.</p>
+</section>
+<section class="bloque bloque-tema"><h2 id="como-leerla-segun-de-donde-vengas">Cómo leerla según de dónde vengas</h2>
+<p>Si escribes el programa, aquí están los comportamientos por defecto de las funciones de ventana y de <code>WITH</code> que devuelven un resultado bien formado y equivocado. También cómo revisar una consulta larga por pasos.</p>
+<p>Si vienes de producto o de gestión, quédate con esto. «Las dos más vendidas» o «a partir del pedido que supera 300 €» no están completas hasta que alguien dice qué pasa con los empates. Esa decisión es tuya, no de quien escribe la consulta.</p>
+<p>Si no tienes formación técnica, cuando dos filas empatan la base no aplica un criterio sensato. Elige una, o trata a las dos igual, según una regla que casi nadie conoce.</p>
+</section>
+<section class="bloque bloque-tema"><h2 id="puedes-practicar-mientras-lees">Puedes practicar mientras lees</h2>
+<p>En la práctica de ventanas del repositorio <code>consultas-sql-ai4devs</code> están los datos de esta lección, en una base PostgreSQL que se levanta con un comando, y unos retos. Le pides la consulta al asistente y compruebas tú si el resultado es el correcto.</p>
+<p>Cada reto va al final de la sección que practica. Para tenerla lista, clona el repositorio y ejecuta <code>make cargar</code>. Necesitas Docker, make y git. En Windows, dentro de WSL.</p>
+</section>
+<section class="bloque bloque-desarrollo"><h2 id="el-desarrollo">El desarrollo</h2>
+<h3>Las tablas del ejemplo</h3>
+<p>Las consultas son de PostgreSQL, ejecutadas tal cual sobre datos de juguete: once piezas, cinco categorías y diez pedidos. Lo justo para que haya empates.</p>
+<pre><code class="language-text">categorias     (id, nombre, padre_id)      -- padre_id: la categoría de la que cuelga
+piezas         (id, nombre, categoria_id)
+clientes       (id, nombre)
+pedidos        (id, cliente_id, fecha, importe, direccion)
+lineas_pedido  (pedido_id, pieza_id, cantidad)
+</code></pre>
+<p><code>padre_id</code> vacío significa que la categoría no cuelga de ninguna. En SQL ese vacío se escribe <code>NULL</code>.</p>
+<p>Las unidades vendidas en agosto por pieza están en una vista, <code>ventas</code>. Tiene las columnas <code>categoria</code>, <code>pieza</code> y <code>unidades</code>.</p>
+<h3>Una función de ventana calcula sobre un grupo sin juntar las filas</h3>
+<p>La herramienta clásica para calcular por grupos es <code>GROUP BY</code>. Junta todas las filas de cada grupo en una sola.</p>
+<pre><code class="language-sql">SELECT categoria, sum(unidades) AS total_categoria
+FROM ventas
+GROUP BY categoria;
+</code></pre>
+<pre><code class="language-text">  categoria  | total_categoria
+-------------+-----------------
+ Frenos      |             100
+ Transmisión |             105
+</code></pre>
+<p>Entran siete piezas y salen dos filas. Para enseñar cada pieza con el total de su categoría al lado, hace falta otra cosa.</p>
+<pre><code class="language-sql">SELECT categoria, pieza, unidades,
+       sum(unidades) OVER (PARTITION BY categoria) AS total_categoria
+FROM ventas
+ORDER BY categoria, unidades DESC;
+</code></pre>
+<pre><code class="language-text">  categoria  |         pieza          | unidades | total_categoria
+-------------+------------------------+----------+-----------------
+ Frenos      | Pastillas orgánicas    |       40 |             100
+ Frenos      | Pastillas sinterizadas |       25 |             100
+ Frenos      | Disco 160 mm           |       25 |             100
+ Frenos      | Latiguillo             |       10 |             100
+ Transmisión | Maneta de cambio       |       40 |             105
+ Transmisión | Cambio trasero 12v     |       40 |             105
+ Transmisión | Cable de cambio        |       25 |             105
+</code></pre>
+<p>La misma suma, y las siete filas siguen ahí. <code>OVER</code> convierte <code>sum</code> en una función de ventana. <code>PARTITION BY categoria</code> dice qué filas forman el grupo de cada una: su partición.</p>
+<p>La documentación de PostgreSQL lo explica así. Una función de ventana no junta las filas en una sola fila de salida como haría un agregado normal. Cada fila conserva su identidad.</p>
+<p>En el original: «window functions do not cause rows to become grouped into a single output row like non-window aggregate calls would. Instead, the rows retain their separate identities». Fuente: Window Functions (Funciones de ventana), del tutorial oficial.</p>
+<p>Dentro de <code>OVER</code> caben dos cosas más, y las dos traen un valor por defecto. Un <code>ORDER BY</code>, que ordena las filas de cada partición. Un marco, que dice sobre qué filas de la partición se calcula. Lo que hacen los dos cuando hay filas empatadas es lo que rompe las dos primeras consultas del escenario.</p>
+<h3>Para quedarte con los primeros de cada grupo hace falta un paso con nombre</h3>
+<p>La portada necesita numerar las piezas dentro de cada categoría y quedarse con los dos primeros puestos. Lo que sale primero es poner la numeración en el filtro. El motor lo rechaza en alto.</p>
+<pre><code class="language-sql">SELECT categoria, pieza, unidades
+FROM ventas
+WHERE row_number() OVER (PARTITION BY categoria ORDER BY unidades DESC) &lt;= 2;
+</code></pre>
+<pre><code class="language-text">ERROR:  window functions are not allowed in WHERE
+</code></pre>
+<p>La función de ventana se calcula después del <code>WHERE</code>. Hay que numerar en un paso y filtrar en otro. La forma legible es con <code>WITH</code>. La consulta de la portada llegó así.</p>
+<pre><code class="language-sql">WITH clasificadas AS (
+  SELECT categoria, pieza, unidades,
+         row_number() OVER (PARTITION BY categoria ORDER BY unidades DESC) AS puesto
+  FROM ventas
+)
+SELECT categoria, pieza, unidades
+FROM clasificadas
+WHERE puesto &lt;= 2;
+</code></pre>
+<pre><code class="language-text">  categoria  |         pieza          | unidades
+-------------+------------------------+----------
+ Frenos      | Pastillas orgánicas    |       40
+ Frenos      | Pastillas sinterizadas |       25
+ Transmisión | Maneta de cambio       |       40
+ Transmisión | Cambio trasero 12v     |       40
+</code></pre>
+<p><code>clasificadas</code> es una CTE, un paso con nombre. Una consulta larga encadena varios, separados por comas. La documentación las describe como tablas temporales que solo existen durante una consulta.</p>
+<p>En el original: «These statements, which are often referred to as Common Table Expressions or CTEs, can be thought of as defining temporary tables that exist just for one query». Fuente: WITH Queries (Common Table Expressions) (Consultas WITH).</p>
+<p>Lo que las hace útiles para revisar es que cada paso se puede ejecutar solo. Se deja el <code>WITH</code> como está y se cambia el último <code>SELECT</code> por <code>SELECT * FROM clasificadas</code>. Esto es lo que devuelve ese paso.</p>
+<pre><code class="language-text">  categoria  |         pieza          | unidades | puesto
+-------------+------------------------+----------+--------
+ Frenos      | Pastillas orgánicas    |       40 |      1
+ Frenos      | Pastillas sinterizadas |       25 |      2
+ Frenos      | Disco 160 mm           |       25 |      3
+ Frenos      | Latiguillo             |       10 |      4
+ Transmisión | Maneta de cambio       |       40 |      1
+ Transmisión | Cambio trasero 12v     |       40 |      2
+ Transmisión | Cable de cambio        |       25 |      3
+</code></pre>
+<p>Aquí está el fallo, a la vista. Dos piezas de frenos con 25 unidades cada una y puestos distintos. El resultado final no lo enseñaba, porque la tercera ya no aparece. Leyendo la consulta no se ve. Ejecutando el paso, salta.</p>
+<h3>Qué función numera es una regla de negocio, no un detalle de escritura</h3>
+<p>PostgreSQL tiene tres funciones para numerar dentro de una partición. Ante un empate hacen tres cosas distintas. Sobre las mismas siete piezas:</p>
+<pre><code class="language-sql">SELECT categoria, pieza, unidades,
+       row_number() OVER w AS row_number,
+       rank()       OVER w AS rank,
+       dense_rank() OVER w AS dense_rank
+FROM ventas
+WINDOW w AS (PARTITION BY categoria ORDER BY unidades DESC)
+ORDER BY categoria, unidades DESC, row_number;
+</code></pre>
+<p><code>WINDOW w AS</code> pone nombre al <code>OVER</code> para no repetirlo.</p>
+<pre><code class="language-text">  categoria  |         pieza          | unidades | row_number | rank | dense_rank
+-------------+------------------------+----------+------------+------+------------
+ Frenos      | Pastillas orgánicas    |       40 |          1 |    1 |          1
+ Frenos      | Pastillas sinterizadas |       25 |          2 |    2 |          2
+ Frenos      | Disco 160 mm           |       25 |          3 |    2 |          2
+ Frenos      | Latiguillo             |       10 |          4 |    4 |          3
+ Transmisión | Maneta de cambio       |       40 |          1 |    1 |          1
+ Transmisión | Cambio trasero 12v     |       40 |          2 |    1 |          1
+ Transmisión | Cable de cambio        |       25 |          3 |    3 |          2
+</code></pre>
+<p><code>row_number</code> numera 1, 2, 3, 4 pase lo que pase, también a dos piezas empatadas.</p>
+<p><code>rank</code> da el mismo puesto a las empatadas y se salta los siguientes: 1, 2, 2, 4. Es el puesto con huecos.</p>
+<p>En el original: «Returns the rank of the current row, with gaps».</p>
+<p><code>dense_rank</code> da el mismo puesto a las empatadas sin dejar huecos: 1, 2, 2, 3.</p>
+<p>En el original: «Returns the rank of the current row, without gaps». Fuente de las tres: Window Functions (Funciones de ventana).</p>
+<p>La regla del escenario decide cuál es la buena. Una pieza que empata con otra que entra, entra también. Con <code>puesto &lt;= 2</code>, en Frenos la segunda y la tercera empatan a 25 y entran las dos: tres piezas, como da <code>rank</code>. En Transmisión, la tercera, con 25, no empata con ninguna que entre: dos piezas, como da <code>rank</code>. <code>dense_rank</code> saca tres, porque responde a otra pregunta: los dos niveles de ventas más altos. <code>row_number</code> responde a exactamente dos, las que sean.</p>
+<p>El problema se llama top-N por grupo (top-N per group). La documentación de RisingWave, una base de datos, lo resume. En la cláusula de la función de numeración se puede incluir un <code>PARTITION BY</code> para sacar los N primeros de cada grupo.</p>
+<p>En el original: «In the ranking function clause, you can include a PARTITION BY clause to fetch top N rows per group». Fuente: Top-N by group (Los N primeros por grupo).</p>
+<h3>Sin desempate, row_number ordena las empatadas como le toca</h3>
+<p>La documentación llama empatadas (peers) a las filas que el <code>ORDER BY</code> de la ventana no distingue. Dice que las funciones de puesto les dan a todas la misma respuesta.</p>
+<p>En el original: «Rows that are not distinct when considering only the ORDER BY columns are said to be peers. The four ranking functions (including cume_dist) are defined so that they give the same answer for all rows of a peer group».</p>
+<p><code>row_number</code> no está entre esas cuatro. A las empatadas les reparte números en un orden que nadie ha fijado.</p>
+<p>Se ve en cuanto la consulta se usa en dos sitios. La portada, como arriba, enseña como segunda de frenos las pastillas sinterizadas. La página de Frenos usa la misma consulta con un filtro más, <code>AND categoria = &#39;Frenos&#39;</code>, sobre los mismos datos.</p>
+<pre><code class="language-text"> categoria |        pieza        | unidades
+-----------+---------------------+----------
+ Frenos    | Pastillas orgánicas |       40
+ Frenos    | Disco 160 mm        |       25
+</code></pre>
+<p>Cada página enseña una segunda pieza distinta. El filtro cambió el camino del motor, y con él, qué empatada llega antes. Con <code>rank</code>, las dos enseñan las tres piezas.</p>
+<p>Si la regla fuera exactamente dos, <code>row_number</code> sirve con un desempate al final del <code>ORDER BY</code>, como <code>ORDER BY unidades DESC, pieza</code>. Medido, las dos páginas enseñan entonces el disco, primero por orden alfabético. Qué desempate es el bueno (el nombre, el stock, el margen) lo decide el negocio.</p>
+<p>Pruébalo ahora con tu asistente. Reto «La portada: las dos más vendidas de cada categoría» de la práctica de ventanas.</p>
+<h3>El acumulado por defecto suma también los pedidos empatados en fecha</h3>
+<p>La segunda regla necesita, para cada pedido de septiembre, cuánto lleva gastado ese cliente en el mes hasta ese pedido incluido. Es un total acumulado. La consulta que sale sola, sobre los pedidos de Ana, la clienta 1:</p>
+<pre><code class="language-sql">SELECT id, fecha, importe,
+       sum(importe) OVER (PARTITION BY cliente_id ORDER BY fecha) AS acumulado
+FROM pedidos
+WHERE cliente_id = 1 AND fecha &gt;= &#39;2026-09-01&#39; AND fecha &lt; &#39;2026-10-01&#39;;
+</code></pre>
+<pre><code class="language-text"> id |   fecha    | importe | acumulado
+----+------------+---------+-----------
+ 11 | 2026-09-02 |  120.00 |    120.00
+ 12 | 2026-09-05 |  150.00 |    360.00
+ 13 | 2026-09-05 |   90.00 |    360.00
+ 14 | 2026-09-12 |   60.00 |    420.00
+</code></pre>
+<p>Los dos pedidos del día 5, de 150 € y de 90 €, aparecen con 360 acumulados. Los dos superan los 300. El de 150 € sale con envío gratis y no le tocaba. Con él Ana llevaba 270 €. Fue el de 90 € el que pasó de 300.</p>
+<p>No es un error de suma. Es el marco por defecto, que incluye a las empatadas. Según la documentación, por defecto y con <code>ORDER BY</code>, el marco va del principio de la partición a la fila actual, más las siguientes que sean iguales a ella en ese orden.</p>
+<p>En el original: «By default, if ORDER BY is supplied then the frame consists of all rows from the start of the partition up through the current row, plus any following rows that are equal to the current row according to the ORDER BY clause». Fuente: Window Functions, el mismo tutorial.</p>
+<p>Por eso pasa la revisión. La última fila es correcta. Ana acaba el mes con 420 €, que es lo que da cualquier comprobación del total. Lo que está mal son las filas intermedias, justo donde vive la regla de negocio.</p>
+<p>El arreglo tiene dos piezas. Una columna de desempate al final del <code>ORDER BY</code> para que no queden empatadas. Y el marco escrito a mano, por filas.</p>
+<pre><code class="language-sql">SELECT id, fecha, importe,
+       sum(importe) OVER (PARTITION BY cliente_id ORDER BY fecha, id
+                          ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS acumulado
+FROM pedidos
+WHERE cliente_id = 1 AND fecha &gt;= &#39;2026-09-01&#39; AND fecha &lt; &#39;2026-10-01&#39;;
+</code></pre>
+<pre><code class="language-text"> id |   fecha    | importe | acumulado
+----+------------+---------+-----------
+ 11 | 2026-09-02 |  120.00 |    120.00
+ 12 | 2026-09-05 |  150.00 |    270.00
+ 13 | 2026-09-05 |   90.00 |    360.00
+ 14 | 2026-09-12 |   60.00 |    420.00
+</code></pre>
+<p><code>ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW</code> es desde la primera fila de la partición hasta esta, contando filas. <code>id</code> desempata porque los pedidos se numeran al crearse. Si hubiera hora, iría la hora.</p>
+<p>Con el desempate solo, este resultado sale igual, porque ya no hay empatadas. El marco escrito evita depender de que alguien se acuerde del desempate.</p>
+<p>Con <code>ROWS</code> solo, el problema cambia de forma. La documentación de <code>SELECT</code> lo avisa. El modo por filas puede dar resultados impredecibles si el <code>ORDER BY</code> no ordena las filas de forma única.</p>
+<p>En el original: «Beware that the ROWS mode can produce unpredictable results if the ORDER BY ordering does not order the rows uniquely». Fuente: SELECT.</p>
+<p>Medido con <code>ROWS</code> y <code>ORDER BY fecha</code>, antes y después de corregir la dirección del pedido 12. Las salidas van lado a lado.</p>
+<pre><code class="language-text"> antes                                     después
+ id |   fecha    | importe | acumulado      id |   fecha    | importe | acumulado
+----+------------+---------+-----------    ----+------------+---------+-----------
+ 11 | 2026-09-02 |  120.00 |    120.00      11 | 2026-09-02 |  120.00 |    120.00
+ 12 | 2026-09-05 |  150.00 |    270.00      13 | 2026-09-05 |   90.00 |    210.00
+ 13 | 2026-09-05 |   90.00 |    360.00      12 | 2026-09-05 |  150.00 |    360.00
+ 14 | 2026-09-12 |   60.00 |    420.00      14 | 2026-09-12 |   60.00 |    420.00
+</code></pre>
+<p>El envío gratis ha saltado del pedido de 90 € al de 150 € porque alguien cambió una dirección. Con <code>ORDER BY fecha, id</code>, la misma corrección no mueve nada.</p>
+<p>Pruébalo ahora con tu asistente. Reto «El envío gratis» de la práctica de ventanas.</p>
+<h3>Un árbol de categorías solo se recorre entero con una consulta recursiva</h3>
+<p>La tercera regla, el descuento en toda la Transmisión, depende de cómo están guardadas las categorías. Cada una apunta a la categoría de la que cuelga con <code>padre_id</code>. Las de primer nivel lo tienen vacío.</p>
+<pre><code class="language-text"> id |      nombre       | padre_id
+----+-------------------+----------
+  1 | Frenos            |
+  2 | Transmisión       |
+  3 | Cadenas           |        2
+  4 | Cassettes         |        2
+  5 | Eslabones rápidos |        3
+</code></pre>
+<p>Transmisión tiene dos hijas, Cadenas y Cassettes. Cadenas tiene a su vez una, Eslabones rápidos.</p>
+<p>La consulta que sale primero mira solo la categoría.</p>
+<pre><code class="language-sql">SELECT nombre FROM piezas WHERE categoria_id = 2;
+</code></pre>
+<p>Devuelve 3 piezas: el cambio trasero, la maneta y el cable. Si alguien se da cuenta, el arreglo que sale solo es agregar las hijas.</p>
+<pre><code class="language-sql">SELECT nombre FROM piezas
+WHERE categoria_id = 2
+   OR categoria_id IN (SELECT id FROM categorias WHERE padre_id = 2);
+</code></pre>
+<p>Devuelve 6. Incluye las cadenas y el cassette. Tiene mejor pinta. Se deja fuera el eslabón rápido, que cuelga de Cadenas. Es el más peligroso de los dos. Con un número creíble delante, nadie vuelve a mirar.</p>
+<p>Lo que recorre el árbol entero, tenga los niveles que tenga, es una CTE recursiva.</p>
+<pre><code class="language-sql">WITH RECURSIVE bajo_transmision AS (
+  SELECT id, nombre, 1 AS nivel
+  FROM categorias
+  WHERE id = 2
+  UNION ALL
+  SELECT c.id, c.nombre, b.nivel + 1
+  FROM categorias c
+  JOIN bajo_transmision b ON c.padre_id = b.id
+)
+SELECT b.nivel, b.nombre AS categoria, p.nombre AS pieza
+FROM bajo_transmision b
+JOIN piezas p ON p.categoria_id = b.id
+ORDER BY b.nivel, b.nombre, p.nombre;
+</code></pre>
+<pre><code class="language-text"> nivel |     categoria     |       pieza
+-------+-------------------+--------------------
+     1 | Transmisión       | Cable de cambio
+     1 | Transmisión       | Cambio trasero 12v
+     1 | Transmisión       | Maneta de cambio
+     2 | Cadenas           | Cadena 11v
+     2 | Cadenas           | Cadena 12v
+     2 | Cassettes         | Cassette 10-51
+     3 | Eslabones rápidos | Eslabón rápido 12v
+</code></pre>
+<p>Siete piezas. La mitad de arriba del <code>UNION ALL</code> es el punto de partida, Transmisión. La de abajo busca las categorías cuyo padre ya está en el resultado. Se repite con las nuevas hasta que una vuelta no encuentra ninguna.</p>
+<p>Según la documentación, <code>RECURSIVE</code> permite que una consulta <code>WITH</code> se refiera a su propio resultado.</p>
+<p>En el original: «Using RECURSIVE, a WITH query can refer to its own output». Fuente: la misma página de WITH Queries.</p>
+<p>Pruébalo ahora con tu asistente. Reto «El descuento de Transmisión» de la práctica de ventanas.</p>
+<h3>Un ciclo cuelga la consulta, y el límite de profundidad lo convierte en un número inflado</h3>
+<p>Si alguien mueve por error Transmisión dentro de Eslabones rápidos, el árbol se convierte en un ciclo. Transmisión, Cadenas, Eslabones rápidos, Transmisión otra vez.</p>
+<p>La documentación avisa de que la parte recursiva tiene que acabar devolviendo cero filas, o se repetirá sin fin.</p>
+<p>En el original: «it is important to be sure that the recursive part of the query will eventually return no tuples, or else the query will loop indefinitely». Una tupla, aquí, es una fila.</p>
+<p>La consulta de antes, contando piezas, con un límite de tres segundos puesto para no esperar:</p>
+<pre><code class="language-text">ERROR:  canceling statement due to statement timeout
+</code></pre>
+<p>Eso es ruidoso y barato. El arreglo que sale solo es limitar la profundidad, agregando <code>WHERE b.nivel &lt; 10</code> a la mitad que se repite. La consulta termina, y cuenta:</p>
+<pre><code class="language-text"> piezas
+--------
+     24
+</code></pre>
+<p>24 piezas en una categoría que tiene 7. El límite ha dado vueltas al ciclo hasta el nivel diez, contando varias veces las mismas piezas, sin error ni aviso. Un fallo que colgaba la consulta se ha convertido en un número con buena pinta.</p>
+<p>El arreglo bueno es detectar el ciclo. Desde PostgreSQL 14 existe la cláusula <code>CYCLE</code>. Se escribe detrás de la CTE y lleva la cuenta del camino recorrido.</p>
+<pre><code class="language-sql">WITH RECURSIVE bajo_transmision AS (
+  SELECT id, nombre, 1 AS nivel FROM categorias WHERE id = 2
+  UNION ALL
+  SELECT c.id, c.nombre, b.nivel + 1
+  FROM categorias c JOIN bajo_transmision b ON c.padre_id = b.id
+) CYCLE id SET en_ciclo USING camino
+SELECT nivel, nombre, en_ciclo, camino FROM bajo_transmision;
+</code></pre>
+<pre><code class="language-text"> nivel |      nombre       | en_ciclo |      camino
+-------+-------------------+----------+-------------------
+     1 | Transmisión       | f        | {(2)}
+     2 | Cadenas           | f        | {(2),(3)}
+     2 | Cassettes         | f        | {(2),(4)}
+     3 | Eslabones rápidos | f        | {(2),(3),(5)}
+     4 | Transmisión       | t        | {(2),(3),(5),(2)}
+</code></pre>
+<p>Se para sola al volver a Transmisión. Marca esa fila con <code>en_ciclo</code> y enseña el camino. <code>f</code> es falso: todavía no hay ciclo. <code>t</code> es verdadero: esta fila cierra el ciclo. Contando las piezas sin ella, con <code>WHERE NOT b.en_ciclo</code>, salen las 7 de verdad. La fila marcada es la prueba de un error en los datos que alguien tiene que corregir.</p>
+</section>
+<section class="bloque bloque-preguntas"><h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>
+<p><strong>«¿Partir una consulta en pasos con WITH no la hace más lenta?»</strong></p>
+<p>En PostgreSQL, desde la versión 12, un paso así no se calcula aparte. Se funde con la consulta si no tiene efectos secundarios, no es recursivo y se usa una sola vez. <code>MATERIALIZED</code> lo impide.</p>
+<p>En el original: «CTEs are automatically inlined if they have no side-effects, are not recursive, and are referenced only once in the query. Inlining can be prevented by specifying MATERIALIZED». Fuente: PostgreSQL 12 Release Notes (Notas de la versión 12).</p>
+<p>Antes de esa versión, cada paso se calculaba siempre por separado y antes que el resto.</p>
+<p><strong>«¿Y si le pido al asistente que lo escriba bien?»</strong></p>
+<p>A las tres consultas no les falta SQL. Les falta una regla de negocio. Qué pasa con los empates. Qué pedido va primero en un mismo día. Qué hacer con un ciclo. Un asistente no puede adivinarla.</p>
+<p>Lo que sí le puedes pedir es que, por cada función de ventana, diga qué desempate y qué marco usa. Y que entregue la consulta en pasos que puedas ejecutar sueltos.</p>
+</section>
+<section class="bloque bloque-palabras"><h2 id="palabras-de-esta-leccion-juntas">Palabras de esta lección, juntas</h2>
+<ul>
+<li><strong>Función de ventana.</strong> Calcula sobre un grupo de filas, su partición, sin juntarlas en una. Se reconoce por el <code>OVER</code>.</li>
+<li><strong>Empatadas (peers).</strong> Filas que el <code>ORDER BY</code> de la ventana no distingue.</li>
+<li><strong>Marco (window frame).</strong> Las filas de la partición sobre las que se calcula cada fila. Por defecto, con <code>ORDER BY</code>, llega hasta la actual y sus empatadas.</li>
+<li><strong>CTE.</strong> Un paso con nombre dentro de una consulta: <code>WITH nombre AS (…)</code> .</li>
+<li><strong>CTE recursiva.</strong> Una CTE con <code>WITH RECURSIVE</code> que se usa a sí misma hasta no encontrar filas nuevas.</li>
+</ul>
+<p>Pruébalo ahora con tu asistente. Reto opcional «Un error en el árbol de categorías» de la práctica de ventanas.</p>
+</section>
+<section class="bloque bloque-tema"><h2 id="que-te-llevas">Qué te llevas</h2>
+<p>Por cada <code>OVER</code> con <code>ORDER BY</code>, pregunta qué pasa con los empates. Si la última columna del <code>ORDER BY</code> no es única dentro de la partición, hay empatadas. Alguien tiene que decidir qué se hace con ellas.</p>
+<p>Para los N primeros, elige la función por la regla de negocio. <code>rank</code> si las empatadas entran. <code>dense_rank</code> si cuentas niveles. <code>row_number</code> solo con un desempate que haya elegido el negocio.</p>
+<p>En un acumulado, escribe el marco y el desempate. Compruébalo en una fila intermedia. El total final sale bien aunque la consulta esté mal.</p>
+<p>Pide las consultas largas en pasos con <code>WITH</code> y ejecuta cada paso suelto con <code>SELECT * FROM &lt;paso&gt;</code>. El fallo de la portada no se veía en el resultado final y sí en el paso intermedio.</p>
+<p>Para recorrer un árbol, <code>WITH RECURSIVE</code> con <code>CYCLE</code>. Un límite de profundidad sin detectar ciclos cambia una consulta que se cuelga por una que cuenta de más.</p>
+<p>Prueba con datos que tengan empates y con un árbol de tres niveles. Sin ellos, la consulta correcta y la incorrecta dan lo mismo.</p>
+<p class="siguiente">Siguiente lección: cómo leer el plan de ejecución, por qué una consulta que devuelve lo correcto puede ser la lenta, y cómo se ve antes de ponerla en producción. Está en <code>claro/modulo-10/6.md</code>.</p>
+</section></article>
+      <nav class="paso" aria-label="Lecciones vecinas">
+    <a href="4.html">← Módulo 10 · 4</a>
+    <a class="siguiente-paso" href="6.html">Módulo 10 · 6 →</a>
+  </nav>
+    </div>
+  </div>
+  <script src="../app.js"></script>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Módulo 10 · Lección 3 — Juntar listas puede multiplicar filas, o perderlas, sin dar ningún error</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560&family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,460;8..60,620&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../estilos.css">
+</head>
+<body>
+  <div class="barra" aria-hidden="true"><span></span></div>
+  <header class="techo">
+    <button class="icono menu" type="button" data-menu>Lecciones</button>
+    <a class="marca" href="../index.html">En claro</a>
+    <span class="aqui-titulo">Módulo 10 · Lección 3 — Juntar listas puede multiplicar filas, o perderlas, sin dar ningún error</span>
+    <div class="acciones">
+      <button class="icono" type="button" data-letra="menos" aria-label="Texto más chico">A−</button>
+      <button class="icono" type="button" data-letra="mas" aria-label="Texto más grande">A+</button>
+      <button class="icono" type="button" data-tema-boton>Noche</button>
+    </div>
+  </header>
+  <div class="marco">
+    <nav class="indice" aria-label="Módulos"><details><summary>Módulo 1</summary><ol><li><a href="../modulo-1/1.html">1. El mapa: para qué sirve un harness</a></li><li><a href="../modulo-1/2.html">2. Los tres pilares importan lo mismo</a></li><li><a href="../modulo-1/3.html">3. El contexto: menos información, y más útil</a></li><li><a href="../modulo-1/4.html">4. Cómo pedir el trabajo, y cómo usar los tres pilares juntos</a></li><li><a href="../modulo-1/5.html">5. Deja la computadora y las cuentas listas</a></li><li><a href="../modulo-1/6.html">6. Ejercicio: el mismo pedido, con harness y sin él</a></li><li><a href="../modulo-1/7.html">7. Por qué una sesión larga sale cara</a></li><li><a href="../modulo-1/8.html">8. Comandos que sí vas a usar</a></li><li><a href="../modulo-1/9.html">9. Modelos en tu computadora, y cuándo no conviene</a></li><li><a href="../modulo-1/10.html">10. El original está vacío</a></li></ol></details>
+<details><summary>Módulo 2</summary><ol><li><a href="../modulo-2/1.html">1. El mapa: de una idea vaga a un plano que no hay que adivinar</a></li><li><a href="../modulo-2/2.html">2. Planificar es ahora el trabajo caro</a></li><li><a href="../modulo-2/3.html">3. Cada documento responde una sola pregunta</a></li><li><a href="../modulo-2/4.html">4. Escribe el PRD por capas, no de un tirón</a></li><li><a href="../modulo-2/5.html">5. La historia, el criterio y los huecos</a></li><li><a href="../modulo-2/6.html">6. Dónde vive el backlog, y con qué permiso</a></li><li><a href="../modulo-2/7.html">7. Estimar, ordenar y saber cuándo está terminado</a></li><li><a href="../modulo-2/8.html">8. Hay varias herramientas. El orden no cambia</a></li><li><a href="../modulo-2/9.html">9. Dónde profundizar, cuando haga falta</a></li><li><a href="../modulo-2/10.html">10. Ejercicio: recorta el MVP hasta poder defenderlo</a></li></ol></details>
+<details><summary>Módulo 3</summary><ol><li><a href="../modulo-3/1.html">1. El mapa: dos caminos, y cuándo usar cada uno</a></li><li><a href="../modulo-3/2.html">2. Dos caminos: directo o con contrato</a></li><li><a href="../modulo-3/3.html">3. Explorar, planear, ejecutar</a></li><li><a href="../modulo-3/4.html">4. OpenSpec por dentro</a></li><li><a href="../modulo-3/5.html">5. Que el agente lea la spec, y cuándo no usar OpenSpec</a></li><li><a href="../modulo-3/6.html">6. Ejercicio: escribe la spec de lo que ya funciona</a></li><li><a href="../modulo-3/7.html">7. Dónde profundizar</a></li></ol></details>
+<details><summary>Módulo 4</summary><ol><li><a href="../modulo-4/1.html">1. El mapa: de &quot;lo implementé&quot; a &quot;está listo&quot;</a></li><li><a href="../modulo-4/2.html">2. Verde no es lo mismo que correcto</a></li><li><a href="../modulo-4/3.html">3. Revisar para romper, no para aprobar</a></li><li><a href="../modulo-4/4.html">4. La documentación que se queda atrás</a></li><li><a href="../modulo-4/5.html">5. Cuatro documentos. Tres se generan. Uno se decide.</a></li><li><a href="../modulo-4/6.html">6. Ejercicio: mide qué está probado de verdad</a></li><li><a href="../modulo-4/7.html">7. Dónde profundizar</a></li></ol></details>
+<details><summary>Módulo 5</summary><ol><li><a href="../modulo-5/1.html">1. El mapa: de la costumbre al guardarraíl</a></li><li><a href="../modulo-5/2.html">2. De la regla escrita al guardarraíl que se ejecuta</a></li><li><a href="../modulo-5/3.html">3. Qué se automatiza, y qué solo lo parece</a></li><li><a href="../modulo-5/4.html">4. Un agente dentro del pipeline</a></li><li><a href="../modulo-5/5.html">5. Lo que cuesta, y por qué se apagan los guardarraíles</a></li><li><a href="../modulo-5/6.html">6. Ejercicio: audita las reglas que escribiste</a></li><li><a href="../modulo-5/7.html">7. Dónde profundizar</a></li></ol></details>
+<details><summary>Módulo 6</summary><ol><li><a href="../modulo-6/1.html">1. El mapa: auditar lo que no escribiste</a></li><li><a href="../modulo-6/2.html">2. Heredado no es viejo. Es lo que nadie puede explicar</a></li><li><a href="../modulo-6/3.html">3. El cuello no es encontrar. Es comprobar</a></li><li><a href="../modulo-6/4.html">4. Lo más grave no va primero</a></li><li><a href="../modulo-6/5.html">5. Un pedido de una línea, si el rigor vive en otro sitio</a></li><li><a href="../modulo-6/6.html">6. Ejercicio: prioriza una auditoría de verdad</a></li><li><a href="../modulo-6/7.html">7. Dónde profundizar</a></li></ol></details>
+<details><summary>Módulo 7</summary><ol><li><a href="../modulo-7/1.html">1. El mapa: qué regla se aplica cuando hay varios repositorios</a></li><li><a href="../modulo-7/2.html">2. Qué decide dónde acaba un repositorio</a></li><li><a href="../modulo-7/3.html">3. El agente solo ve su directorio de trabajo</a></li><li><a href="../modulo-7/4.html">4. Dónde vive la spec cuando el sistema son tres repositorios</a></li><li><a href="../modulo-7/5.html">5. Un cambio que cruza dos repositorios no es un solo cambio</a></li><li><a href="../modulo-7/6.html">6. Lo que se comparte, lo que se versiona y lo que no se puede fundir</a></li><li><a href="../modulo-7/7.html">7. Herramientas de esta sesión</a></li><li><a href="../modulo-7/8.html">8. Ejercicio: haz que una regla se cumpla en el otro repositorio</a></li><li><a href="../modulo-7/9.html">9. Dónde profundizar</a></li><li><a href="../modulo-7/sesion.html">Resumen de la clase</a></li></ol></details>
+<details><summary>Módulo 8</summary><ol><li><a href="../modulo-8/1.html">1. El mapa: de escribir reglas a comprobar si funcionan</a></li><li><a href="../modulo-8/2.html">2. Una regla escrita no es una regla cumplida</a></li><li><a href="../modulo-8/3.html">3. Un eval da una tasa, no un verde</a></li><li><a href="../modulo-8/4.html">4. Sin línea base, un número no significa nada</a></li><li><a href="../modulo-8/5.html">5. Quién puntúa un ensayo, y en qué orden</a></li><li><a href="../modulo-8/6.html">6. Un verde que nunca estuvo en rojo no prueba nada</a></li><li><a href="../modulo-8/7.html">7. Dónde profundizar</a></li><li><a href="../modulo-8/8.html">8. Dónde profundizar</a></li><li><a href="../modulo-8/9.html">9. Mide una regla que creías cumplida</a></li><li><a href="../modulo-8/10.html">10. Fuentes sobre sistemas repartidos en varios repositorios</a></li></ol></details>
+<details><summary>Módulo 9</summary><ol><li><a href="../modulo-9/1.html">1. El mapa: qué datos bloqueas, qué riesgos revisas y qué evidencia guardas</a></li><li><a href="../modulo-9/2.html">2. Un pedido no es una consulta, es una transferencia de datos</a></li><li><a href="../modulo-9/3.html">3. La casilla de riesgo la decide el uso, no la tecnología</a></li><li><a href="../modulo-9/4.html">4. El código generado falla distinto, y quien lo usa confía más</a></li><li><a href="../modulo-9/5.html">5. El ataque no entra por donde escribes, entra por lo que el agente lee</a></li><li><a href="../modulo-9/6.html">6. Cumplir no es no hacerlo mal, es poder demostrar qué pasó</a></li><li><a href="../modulo-9/7.html">7. Ejercicio FlowSync: bloquea el dato que no debe salir y guarda el rastro</a></li><li><a href="../modulo-9/8.html">8. Dónde comprobar lo que dice el módulo</a></li></ol></details>
+<details open><summary>Módulo 10</summary><ol><li><a href="1.html">1. El mapa: no te fíes de un resultado solo porque no salió un error</a></li><li><a href="2.html">2. Un cambio en la forma de guardar los datos es lo más difícil de deshacer</a></li><li><a href="3.html" class="actual">3. Juntar listas puede multiplicar filas, o perderlas, sin dar ningún error</a></li><li><a href="4.html">4. Agrupar por mes es decidir qué es un mes</a></li><li><a href="5.html">5. Numerar sin juntar las filas, y decidir tú qué pasa cuando hay empate</a></li><li><a href="6.html">6. Una consulta puede estar bien y ser lenta, y el plan lo avisa antes</a></li><li><a href="7.html">7. Una consulta puede estar bien y ser lenta, y el plan lo avisa antes</a></li></ol></details></nav>
+    <div class="lectura">
+      
+      <article><h1>Módulo 10 · Lección 3 — Juntar listas puede multiplicar filas, o perderlas, sin dar ningún error</h1>
+<p class="origen">Texto original: <code>original/modulo-10/3.md</code><br>Obligatoria. El título marca 27 minutos. El cuerpo marca 26 minutos.</p>
+
+<section class="bloque bloque-frase"><h2 id="en-una-frase">En una frase</h2>
+<p>Una pregunta a la base puede ejecutarse sin errores y devolver 9 piezas y 316 euros, cuando en realidad se vendieron 6 piezas y se cobraron 152 euros. El fallo está en cómo se emparejan las listas, no en que los datos no existan.</p>
+</section>
+<section class="bloque bloque-palabras"><h2 id="palabras-que-vas-a-escuchar">Palabras que vas a escuchar</h2>
+<ul>
+<li><strong>SQL.</strong> Structured Query Language. El lenguaje con el que se le hacen preguntas a una base de datos relacional. Relacional significa que los datos viven en listas que se pueden emparejar.</li>
+<li><strong>JOIN.</strong> La operación que empareja filas de dos tablas según una condición. <code>UNION</code> no empareja: apila los resultados de dos preguntas, uno debajo del otro.</li>
+<li><strong>ON.</strong> La parte que dice qué columnas tienen que coincidir para que dos filas formen pareja.</li>
+<li><strong>LEFT JOIN.</strong> Una unión que conserva todas las filas de la lista de la izquierda. Si una fila no encuentra pareja, las columnas de la otra lista quedan en <code>NULL</code>.</li>
+<li><strong>NULL.</strong> La marca de que ahí no hay valor. No es cero ni un texto vacío. Una comparación con <code>NULL</code> no da verdadero ni falso. Da un resultado desconocido.</li>
+<li><strong>Fanout.</strong> Abanico. Al juntar listas en las que un pedido tiene varias piezas y varios pagos, cada pieza se empareja con cada pago. Las filas se multiplican y una suma puede inflarse.</li>
+<li><strong>Anti-join.</strong> La consulta que devuelve las filas de una lista que no tienen pareja en otra.</li>
+<li><strong>WITH.</strong> Permite ponerle nombre a una consulta intermedia y usar su resultado como si fuera una tabla. En la documentación de PostgreSQL se llama common table expression, expresión de tabla común.</li>
+<li><strong>DISTINCT.</strong> Pide que se cuente o se sume cada valor distinto una sola vez. Sobre un importe, dos pagos iguales cuentan como uno. Sobre un identificador, cada pago sigue contando.</li>
+<li><strong>EXPLAIN.</strong> Una orden que pide el plan de ejecución. El plan es la lista de pasos que PostgreSQL va a usar para responder.</li>
+</ul>
+</section>
+<section class="bloque bloque-caso"><h2 id="caso-real-la-bicicleteria">Caso real: la bicicletería</h2>
+<p>Bicicletas del Parque guarda cada pedido en la tabla <code>pedidos</code>. En <code>lineas_pedido</code> guarda una fila por pieza, con su cantidad. En <code>pagos</code> registra los cobros.</p>
+<p>Hay una regla en los pagos. Un pedido puede pagarse en dos plazos iguales. Si cuesta 57 €, quedan dos filas de 28,50 € en <code>pagos</code>.</p>
+<p>Marta pide el cierre de septiembre. Quiere saber cuántas piezas se vendieron y cuánto se cobró. Leo le pide al asistente una consulta que une las tres tablas. A primera vista parece correcta. Se ejecuta sin errores y devuelve 9 piezas y 316 €.</p>
+<p>Se vendieron 6 piezas y se cobraron 152 €.</p>
+<p>Las tablas, las columnas y los valores existen. Tanto una persona como un asistente podrían escribir esta consulta con prisa. El fallo está en cómo junta las tablas. Si un pedido tiene varias piezas y varios pagos, la consulta empareja cada pieza con cada pago. Eso cambia cuántas filas hay antes de sumar. Algunos valores se cuentan varias veces. La base ejecuta la consulta tal como está escrita, sin dar ningún aviso.</p>
+<p>Sin esta comprobación, Marta cree que septiembre fue un buen mes. Con esta comprobación, Leo cuenta las filas antes y después de juntar las listas. Si el número crece, no suma todavía.</p>
+</section>
+<section class="bloque bloque-tema"><h2 id="como-leerla-segun-de-donde-vengas">Cómo leerla según de dónde vengas</h2>
+<p>Si escribes el programa, vas a ver tres consultas que parecen correctas. En cada una podrás comprobar el fallo, corregirlo y saber con qué nombre buscarlo.</p>
+<p>Si vienes de producto o de gestión, una cifra puede salir inflada o quedarse corta aunque la consulta se ejecute sin errores. Para averiguar qué pasó, pregunta: ¿cuántas filas había antes de juntar las tablas y cuántas quedaron después?</p>
+<p>Si no tienes experiencia técnica, imagina dos listas con las piezas y los pagos de un pedido. Cada pieza se empareja con cada pago. Con tres piezas y dos pagos salen seis parejas. Si sumas el importe de cada pareja, cuentas cada pago tres veces.</p>
+</section>
+<section class="bloque bloque-tema"><h2 id="puedes-practicar-mientras-lees">Puedes practicar mientras lees</h2>
+<p>La práctica de uniones del repositorio <code>consultas-sql-ai4devs</code> incluye varios retos y los datos de la lección. Están en una base PostgreSQL que puedes levantar con un solo comando.</p>
+<p>Cada reto está marcado al final de la sección correspondiente. Pídele al asistente que escriba la consulta. Comprueba tú si el resultado es correcto.</p>
+<p>Para empezar, clona el repositorio y ejecuta <code>make cargar</code>. Clonar es copiar ese proyecto a tu computadora. Necesitas Docker, make y git. Docker es la herramienta que levanta la base ya preparada. Make ejecuta los atajos del proyecto, como <code>make cargar</code>. Git es la herramienta que copia el proyecto. En Windows, haz la práctica dentro de WSL (Windows Subsystem for Linux, el Linux que corre dentro de Windows).</p>
+</section>
+<section class="bloque bloque-desarrollo"><h2 id="el-desarrollo">El desarrollo</h2>
+<h3>Un JOIN devuelve una fila por cada pareja que coincide</h3>
+<p>Por cada fila de una tabla, el <code>JOIN</code> devuelve una fila por cada coincidencia en la otra. Si un pedido tiene tres líneas, unir <code>pedidos</code> con <code>lineas_pedido</code> devuelve tres filas para ese pedido, una por línea. El problema aparece al agregar otra tabla que también puede tener varias filas por pedido.</p>
+<p>Los datos de ejemplo son sintéticos. Sintético significa que se armaron para la lección, no son ventas reales de la tienda. Incluyen tres pedidos de septiembre. El pedido 1 lleva tres piezas. El 2 lleva una. El 3 lleva dos. Cada pieza ocupa su propia línea. El pedido 1 se pagó en dos plazos.</p>
+<p>Las consultas de la lección se ejecutaron tal como aparecen en PostgreSQL 17. Las salidas omiten el recuento final de filas, salvo cuando ese dato importa.</p>
+<p>Esto es lo que se cobró en cada pedido.</p>
+<pre><code class="language-text"> pedido_id | pagos | cobrado |   importes
+-----------+-------+---------+--------------
+         1 |     2 |   57.00 | 28.50, 28.50
+         2 |     1 |   45.00 | 45.00
+         3 |     1 |   50.00 | 50.00
+</code></pre>
+<p>Esta es la consulta que preparó el asistente para el cierre.</p>
+<pre><code class="language-sql">SELECT sum(l.cantidad) AS piezas_vendidas,
+       sum(pg.importe) AS cobrado
+FROM pedidos p
+JOIN lineas_pedido l ON l.pedido_id = p.id
+JOIN pagos pg        ON pg.pedido_id = p.id
+WHERE p.fecha &gt;= &#39;2026-09-01&#39; AND p.fecha &lt; &#39;2026-10-01&#39;;
+</code></pre>
+<p><code>sum</code> suma. <code>AS</code> le pone un nombre al resultado. <code>FROM</code> dice de qué lista se parte. <code>WHERE</code> se queda con las fechas de septiembre: desde el 1 de septiembre inclusive, hasta el 1 de octubre sin incluirlo.</p>
+<pre><code class="language-text"> piezas_vendidas | cobrado
+-----------------+---------
+               9 |  316.00
+</code></pre>
+<p>En el pedido 1, las tres líneas se emparejan con los dos pagos y generan seis filas. Cada línea aparece dos veces, una por pago. Cada pago aparece tres veces, una por línea. Al sumar, las tres piezas cuentan como seis. Los 57 € cobrados cuentan como 171 €.</p>
+<p>En el pedido 3, las dos líneas hacen que su único pago de 50 € se cuente dos veces. Solo el pedido 2, con una línea y un pago, aporta las cifras correctas.</p>
+<p>El total parece razonable. Si el mes anterior se cobraron 280 €, ver 316 € puede hacerte pensar que septiembre fue un buen mes.</p>
+<p>Cómo buscar este problema. En las herramientas de análisis de datos se le llama fanout. La documentación de Lightdash, una de ellas, lo define así. Al juntar tablas en SQL, las métricas se pueden inflar sin querer si esas tablas tienen relaciones de uno a muchos. Una relación de uno a muchos significa que un pedido puede tener varias piezas, o varios pagos.</p>
+<p>En el original: «When joining tables in SQL, it can accidentally inflate your metrics if those tables have one-to-many relationships». Fuente: Joins reference (Referencia de uniones), sección SQL fanouts.</p>
+<h3>Unir cada pago con su pedido permite comprobar el total</h3>
+<p>Cada pago pertenece a un solo pedido. Al unir <code>pagos</code> con <code>pedidos</code>, cada fila de pagos encuentra una sola coincidencia. Así puedes filtrar por la fecha del pedido y sumar cada pago una vez. Esta es la consulta de control, con el mismo filtro de fechas que la del cierre.</p>
+<pre><code class="language-sql">SELECT sum(pg.importe) AS cobrado
+FROM pagos pg
+JOIN pedidos p ON p.id = pg.pedido_id
+WHERE p.fecha &gt;= &#39;2026-09-01&#39; AND p.fecha &lt; &#39;2026-10-01&#39;;
+</code></pre>
+<pre><code class="language-text"> cobrado
+---------
+  152.00
+</code></pre>
+<p>La misma consulta, cambiando <code>pagos</code> por <code>lineas_pedido</code> e <code>importe</code> por <code>cantidad</code>, devuelve 6 piezas.</p>
+<p>Fíjate en cuántas coincidencias puede encontrar cada fila. Si partes de un pago o de una línea, cada fila encuentra un solo pedido. Es una unión hacia el lado de «uno». Si partes del pedido y unes las dos tablas de detalle, las de «muchos», cada línea se combina con todos los pagos de ese pedido. En cada pedido, el número de filas resultante es el número de líneas multiplicado por el número de pagos.</p>
+<h3>Cuenta las filas antes y después de unir las tablas</h3>
+<p>Puedes detectar el problema sin conocer el total correcto. Cuenta primero las filas de la tabla cuyos valores vas a sumar. Luego cuenta las que quedan tras la unión.</p>
+<p>Un <code>count(*)</code> con el <code>FROM</code> y el <code>WHERE</code> de la consulta de control devuelve 4 pagos. El mismo <code>count(*)</code> con el <code>FROM</code> y el <code>WHERE</code> de la consulta del cierre devuelve 9 filas. Si sumas <code>importe</code> sobre esas nueve filas, estás contando algún pago más de una vez.</p>
+<p>Para localizar los pedidos afectados, agrupa por pedido. Cuenta cuántas filas resultan de la unión, cuántas líneas distintas hay y cuántos pagos distintos aparecen.</p>
+<pre><code class="language-sql">SELECT p.id AS pedido,
+       count(*) AS filas,
+       count(DISTINCT l.id) AS lineas,
+       count(DISTINCT pg.id) AS pagos
+FROM pedidos p
+JOIN lineas_pedido l ON l.pedido_id = p.id
+JOIN pagos pg        ON pg.pedido_id = p.id
+WHERE p.fecha &gt;= &#39;2026-09-01&#39; AND p.fecha &lt; &#39;2026-10-01&#39;
+GROUP BY p.id ORDER BY p.id;
+</code></pre>
+<p><code>GROUP BY</code> junta las filas de un mismo pedido para contarlas. <code>ORDER BY</code> las ordena.</p>
+<pre><code class="language-text"> pedido | filas | lineas | pagos
+--------+-------+--------+-------
+      1 |     6 |      3 |     2
+      2 |     1 |      1 |     1
+      3 |     2 |      2 |     1
+</code></pre>
+<p>En cada pedido, <code>filas</code> es el producto de <code>lineas</code> y <code>pagos</code>. Si <code>filas</code> supera a <code>pagos</code>, la suma repite importes. Si supera a <code>lineas</code>, repite cantidades. En el pedido 1 se repiten los dos valores. En el 3 solo se repite el importe.</p>
+<p>Por qué puede pasar desapercibido al revisar la consulta. El SQL es válido. El resultado depende de cuántas filas de cada tabla coinciden con cada pedido. Si todos los pedidos tuvieran una línea y un pago, como el pedido 2, la consulta daría el total correcto. Puede cuadrar durante meses y empezar a fallar en cuanto cambien los datos, aunque el SQL siga igual.</p>
+<p>Pruébalo ahora con tu asistente. Haz el reto «El cierre de septiembre» de la práctica de uniones.</p>
+<h3>DISTINCT no arregla el problema</h3>
+<p>Una primera idea para quitar los importes repetidos es agregar <code>DISTINCT</code> dentro de la suma. La consulta del cierre queda así.</p>
+<pre><code class="language-sql">SELECT sum(DISTINCT pg.importe) AS cobrado
+FROM pedidos p
+JOIN lineas_pedido l ON l.pedido_id = p.id
+JOIN pagos pg        ON pg.pedido_id = p.id
+WHERE p.fecha &gt;= &#39;2026-09-01&#39; AND p.fecha &lt; &#39;2026-10-01&#39;;
+</code></pre>
+<pre><code class="language-text"> cobrado
+---------
+  123.50
+</code></pre>
+<p>Ahora el total se queda corto. <code>sum(DISTINCT importe)</code> suma cada importe distinto una vez. En septiembre hay tres importes distintos: 28,50 €, 45 € y 50 €. Suman 123,50 €. Como los dos plazos del pedido 1 son de 28,50 €, la suma solo incluye uno.</p>
+<p>Lo mismo ocurre si dos pedidos distintos se pagan por el mismo importe. En otra ejecución, con dos cobros de 45 € correspondientes a pedidos distintos, el total real era de 147,00 €. <code>sum(DISTINCT)</code> devolvió 73,50 €.</p>
+<p>El error puede pasar desapercibido. Los 123,50 € se acercan más al total real que los 316 € de la consulta anterior. Si todos los pagos tienen importes distintos, la suma puede cuadrar aunque la unión siga multiplicando filas.</p>
+<p>En la consulta de detección, <code>count(DISTINCT pg.id)</code> sí contaba los dos pagos del pedido 1. Cada pago tiene su propio identificador, aunque comparta el importe con otro. Por eso <code>DISTINCT</code> sobre <code>pg.id</code> permite contar pagos. Sobre <code>importe</code>, solo distingue valores.</p>
+<p>Pruébalo ahora con tu asistente. Haz el reto «Quita los repetidos» de la práctica de uniones.</p>
+<h3>Suma cada tabla por pedido antes de unir los totales</h3>
+<p>Primero suma las piezas y los pagos por pedido, cada uno en su propia consulta. Después une esos totales con <code>pedidos</code>. Así, cada pedido encuentra como máximo una fila con el total de piezas y otra con el total cobrado.</p>
+<pre><code class="language-sql">WITH lineas AS (
+  SELECT pedido_id, sum(cantidad) AS piezas
+  FROM lineas_pedido GROUP BY pedido_id
+),
+cobros AS (
+  SELECT pedido_id, sum(importe) AS cobrado
+  FROM pagos GROUP BY pedido_id
+)
+SELECT sum(l.piezas) AS piezas_vendidas,
+       sum(c.cobrado) AS cobrado
+FROM pedidos p
+LEFT JOIN lineas l ON l.pedido_id = p.id
+LEFT JOIN cobros c ON c.pedido_id = p.id
+WHERE p.fecha &gt;= &#39;2026-09-01&#39; AND p.fecha &lt; &#39;2026-10-01&#39;;
+</code></pre>
+<pre><code class="language-text"> piezas_vendidas | cobrado
+-----------------+---------
+               6 |  152.00
+</code></pre>
+<p>El resultado coincide con las dos consultas de control: seis piezas y 152 €. Como <code>lineas</code> y <code>cobros</code> tienen como máximo una fila por pedido, las uniones conservan ese nivel de detalle. Puedes obtener el mismo resultado con subconsultas en el <code>FROM</code>. Una subconsulta es una pregunta metida dentro de otra. Con <code>WITH</code>, los cálculos intermedios quedan a la vista.</p>
+<p>El <code>LEFT JOIN</code> permite contar las piezas de un pedido aunque todavía no tenga pagos. Al agregar a septiembre un pedido de dos cubiertas sin pagar, la versión con <code>JOIN</code> seguía devolviendo 6 piezas. Con <code>LEFT JOIN</code>, el total subía a 8.</p>
+<h3>Un filtro en el WHERE puede eliminar filas que conserva el LEFT JOIN</h3>
+<p>La tienda quiere mandar un cupón a quienes no compraron en septiembre. Para saber a quién enviarlo, necesita un listado de todos los clientes con su número de pedidos del mes, incluidos los que hicieron cero pedidos.</p>
+<p>Ana y Bruno compraron en septiembre. Carla compró por última vez en agosto. David nunca ha comprado.</p>
+<p>Una unión interna (<code>JOIN</code>) solo devuelve las filas que encuentran pareja. El <code>LEFT JOIN</code> conserva todas las filas de la tabla izquierda. Si una fila no encuentra pareja, las columnas de la tabla derecha quedan en <code>NULL</code>.</p>
+<p>Así queda la unión de clientes con pedidos. <code>psql</code>, el programa de terminal para hablar con PostgreSQL, está configurado para mostrar <code>NULL</code> donde falta un valor. La terminal es la pantalla donde escribes órdenes en texto.</p>
+<pre><code class="language-text"> nombre | pedido |   fecha
+--------+--------+------------
+ Ana    |      1 | 2026-09-03
+ Bruno  |      2 | 2026-09-10
+ Bruno  |      3 | 2026-09-18
+ Carla  |      4 | 2026-08-22
+ David  |   NULL | NULL
+</code></pre>
+<p>Queremos contar solo los pedidos de septiembre. Una primera opción es agregar el filtro de fechas al <code>WHERE</code>.</p>
+<pre><code class="language-sql">SELECT c.nombre, count(p.id) AS pedidos_septiembre
+FROM clientes c
+LEFT JOIN pedidos p ON p.cliente_id = c.id
+WHERE p.fecha &gt;= &#39;2026-09-01&#39; AND p.fecha &lt; &#39;2026-10-01&#39;
+GROUP BY c.nombre ORDER BY c.nombre;
+</code></pre>
+<pre><code class="language-text"> nombre | pedidos_septiembre
+--------+--------------------
+ Ana    |                  1
+ Bruno  |                  2
+</code></pre>
+<p>El <code>WHERE</code> filtra las filas después de la unión. La fila de Carla queda fuera porque su pedido es de agosto. La de David queda fuera porque su fecha es <code>NULL</code> y la comparación con <code>NULL</code> no da verdadero. La consulta se ejecuta sin errores, pero el listado pierde a los dos clientes con cero pedidos. El cupón no le llega a nadie.</p>
+<p>Una forma de recuperar las filas sin pedido es agregar <code>OR p.id IS NULL</code> al final del <code>WHERE</code>.</p>
+<pre><code class="language-text"> nombre | pedidos_septiembre
+--------+--------------------
+ Ana    |                  1
+ Bruno  |                  2
+ David  |                  0
+</code></pre>
+<p>David vuelve al listado porque <code>p.id</code> es <code>NULL</code>. Carla sigue fuera. Su pedido de agosto tiene identificador y su fecha queda fuera del intervalo. El listado sigue dejando fuera a una clienta que debería recibir el cupón.</p>
+<p>Para conservar a todos los clientes, mueve el filtro de fechas al <code>ON</code>. Así, solo los pedidos de septiembre pueden coincidir con un cliente.</p>
+<pre><code class="language-sql">SELECT c.nombre, count(p.id) AS pedidos_septiembre
+FROM clientes c
+LEFT JOIN pedidos p ON p.cliente_id = c.id
+                   AND p.fecha &gt;= &#39;2026-09-01&#39; AND p.fecha &lt; &#39;2026-10-01&#39;
+GROUP BY c.nombre ORDER BY c.nombre;
+</code></pre>
+<pre><code class="language-text"> nombre | pedidos_septiembre
+--------+--------------------
+ Ana    |                  1
+ Bruno  |                  2
+ Carla  |                  0
+ David  |                  0
+</code></pre>
+<p>El pedido de agosto de Carla queda fuera de las coincidencias. El <code>LEFT JOIN</code> conserva a Carla y a David con <code>p.id</code> en <code>NULL</code>. Así <code>count(p.id)</code> devuelve cero para los dos. <code>count(p.id)</code> no cuenta los <code>NULL</code>. Por eso cero significa «ningún pedido de septiembre», no «la persona no existe».</p>
+<p>En este ejemplo, la posición del filtro decide si el <code>LEFT JOIN</code> conserva a los clientes sin pedidos en septiembre. La documentación de PostgreSQL lo explica con un ejemplo de la misma forma. Una restricción puesta en el <code>ON</code> se procesa antes de la unión. Una puesta en el <code>WHERE</code>, después. Eso da igual con las uniones normales, pero importa mucho con las externas. El <code>LEFT JOIN</code> es una de ellas.</p>
+<p>En el original: «This is because a restriction placed in the ON clause is processed before the join, while a restriction placed in the WHERE clause is processed after the join. That does not matter with inner joins, but it matters a lot with outer joins». Fuente: Table Expressions (Expresiones de tabla), apartado de las uniones.</p>
+<p>Pruébalo ahora con tu asistente. Haz el reto «El listado del cupón» de la práctica de uniones.</p>
+<h3>Un NULL en la subconsulta puede hacer que NOT IN devuelva cero filas</h3>
+<p>La tienda quiere mandar un correo de bienvenida a los clientes registrados que no han comprado nunca. Para encontrarlos, busca qué clientes no aparecen en <code>pedidos</code>.</p>
+<p>Aquí entra la segunda regla de la tienda. Se puede comprar como invitado. Esos pedidos se guardan con <code>cliente_id</code> en <code>NULL</code>.</p>
+<p><code>NOT IN</code> con una subconsulta se lee casi como la pregunta original. Una subconsulta es una consulta dentro de otra.</p>
+<pre><code class="language-sql">SELECT nombre FROM clientes
+WHERE id NOT IN (SELECT cliente_id FROM pedidos);
+</code></pre>
+<p>Antes de que haya pedidos de invitados, la consulta devuelve a David.</p>
+<pre><code class="language-text"> nombre
+--------
+ David
+</code></pre>
+<p>El 25 de septiembre entra el primer pedido de invitado, con <code>cliente_id</code> en <code>NULL</code>. Al ejecutar la misma consulta, el resultado cambia.</p>
+<pre><code class="language-text"> nombre
+--------
+(0 rows)
+</code></pre>
+<p>David sigue sin haber comprado. Lo que cambia es el resultado de la comparación. <code>id NOT IN (1, 2, 3, NULL)</code> exige que el identificador sea distinto de 1, de 2, de 3 y de <code>NULL</code>. SQL puede confirmar que 4 es distinto de los tres primeros valores. Al compararlo con <code>NULL</code>, el resultado es desconocido. La condición completa devuelve <code>NULL</code>.</p>
+<pre><code class="language-sql">SELECT 4 NOT IN (1, 2, 3) AS sin_vacio, 4 NOT IN (1, 2, 3, NULL) AS con_vacio;
+</code></pre>
+<pre><code class="language-text"> sin_vacio | con_vacio
+-----------+-----------
+ t         | NULL
+</code></pre>
+<p><code>t</code> significa verdadero. El <code>WHERE</code> solo conserva las filas cuya condición da verdadero. Por eso David desaparece.</p>
+<p>La documentación de PostgreSQL lo dice para este caso concreto. Si la expresión de la izquierda es nula, o si no hay ningún valor igual a la derecha y al menos una fila de la derecha es nula, el resultado de <code>NOT IN</code> es nulo, no verdadero.</p>
+<p>En el original: «Note that if the left-hand expression yields null, or if there are no equal right-hand values and at least one right-hand row yields null, the result of the NOT IN construct will be null, not true». Fuente: Subquery Expressions (Expresiones con subconsultas), apartado NOT IN.</p>
+<p>Con <code>NOT EXISTS</code>, la pregunta es si existe algún pedido cuyo <code>cliente_id</code> coincida con el identificador del cliente.</p>
+<pre><code class="language-sql">SELECT nombre FROM clientes c
+WHERE NOT EXISTS (SELECT 1 FROM pedidos p WHERE p.cliente_id = c.id);
+</code></pre>
+<pre><code class="language-text"> nombre
+--------
+ David
+</code></pre>
+<p>La consulta devuelve a David incluso con el pedido de invitado. Para él, la subconsulta no encuentra ningún pedido que cumpla <code>p.cliente_id = c.id</code>. El pedido de invitado tampoco cumple esa condición, porque su <code>cliente_id</code> es <code>NULL</code>.</p>
+<p>Un <code>LEFT JOIN</code> con <code>pedidos</code> que conserve solo las filas con <code>WHERE p.id IS NULL</code> también devuelve a David en este ejemplo.</p>
+<p>Cómo reconocer un anti-join. Un anti-join devuelve las filas del lado izquierdo para las que no hay filas correspondientes en el lado derecho. La referencia de SQL de Oracle lo define así.</p>
+<p>En el original: «An antijoin returns rows from the left side of the predicate for which there are no corresponding rows on the right side of the predicate». Fuente: Joins (Uniones), de la SQL Language Reference de Oracle. Un predicado es la condición que se está comprobando.</p>
+<p>En PostgreSQL puedes ver el plan de ejecución anteponiendo <code>EXPLAIN</code> a la consulta. En una ejecución con estos datos, el plan de <code>NOT EXISTS</code> incluía un paso <code>Hash Right Anti Join</code>. El de <code>NOT IN</code> aplicaba un filtro a cada fila con el resultado de la subconsulta. Antes de agregar el pedido de invitado, las dos consultas devolvían a David.</p>
+<p>Pruébalo ahora con tu asistente. Haz el reto «El correo de bienvenida» de la práctica de uniones.</p>
+</section>
+<section class="bloque bloque-tema"><h2 id="que-te-llevas">Qué te llevas</h2>
+<p>Si un asistente o una persona te entrega una consulta que une varias tablas, haz estas comprobaciones antes de confiar en el resultado.</p>
+<p>Cuenta las filas antes y después de cada unión. Usa <code>count(*)</code> sobre las filas que quieres sumar y sobre el resultado de la unión. Si aumenta el recuento, comprueba qué filas se repiten antes de sumar.</p>
+<p>Compara con una consulta de control. Suma las piezas o los pagos por separado, uniendo solo hacia la tabla de «uno». Si los totales difieren, localiza en qué unión cambia el recuento.</p>
+<p>Suma por separado antes de unir dos tablas de «muchos» del mismo pedido. Agrupa cada tabla por pedido y une los totales. Si ves <code>DISTINCT</code>, fíjate en qué columna se aplica. Un identificador distingue pagos. Dos pagos pueden compartir importe.</p>
+<p>En un <code>LEFT JOIN</code>, pon en el <code>ON</code> las condiciones que definen qué filas cuentan como pareja. Si esperas clientes con cero pedidos, comprueba que aparezcan. Un filtro de fechas en el <code>WHERE</code> puede eliminarlos.</p>
+<p>Usa <code>NOT EXISTS</code> para buscar filas sin pareja. Si la consulta usa <code>NOT IN</code> con una subconsulta, comprueba si la columna admite <code>NULL</code>. En una copia de los datos, agrega un pedido de invitado con <code>cliente_id</code> en <code>NULL</code> y comprueba si David sigue apareciendo.</p>
+<p>Pídele al asistente que justifique el resultado. «Para cada unión, dime si es de uno a muchos y cuántas filas hay antes y después». Si buscas filas sin pareja, pide también el plan con <code>EXPLAIN</code> para ver si PostgreSQL ejecuta un anti-join.</p>
+<p class="siguiente">Siguiente lección: qué significa «un mes» para un <code>GROUP BY</code>, cómo influyen las zonas horarias y qué pasa con un promedio cuando hay valores <code>NULL</code>. Está en <code>claro/modulo-10/4.md</code>.</p>
+</section></article>
+      <nav class="paso" aria-label="Lecciones vecinas">
+    <a href="2.html">← Módulo 10 · 2</a>
+    <a class="siguiente-paso" href="4.html">Módulo 10 · 4 →</a>
+  </nav>
+    </div>
+  </div>
+  <script src="../app.js"></script>
+</body>
+</html>
